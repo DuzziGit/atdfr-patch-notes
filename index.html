@@ -1,0 +1,1087 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="A Terrible Day For Rain October update: Indigo and Violet, the level cap rises to 120, the Magician rework, and the Hollow Night Halloween event.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A Terrible Day For Rain: October update">
+<meta property="og:description" content="A Terrible Day For Rain October update: Indigo and Violet, the level cap rises to 120, the Magician rework, and the Hollow Night Halloween event.">
+<meta property="og:url" content="https://duzzigit.github.io/atdfr-patch-notes/">
+<meta property="og:image" content="https://duzzigit.github.io/atdfr-patch-notes/img/den.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/i/candy.png">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,-apple-system,"Segoe UI",sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>ATDFR October Update</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a rain-dark masthead that paints in the seven realm colours, a sticky category rail,
+   then one banded section per category; Hollow Night and the two realms get their own night palettes. */
+:root{
+  --bg:#edf1f6; --surface:#ffffff; --surface-2:#f5f7fb; --fg:#172030; --muted:#5a6578; --line:#d7dee8;
+  --accent:#3f63d8; --accent-soft:#e3e9fb; --focus:#3f63d8;
+  --new:#167a4c; --new-bg:#ddf3e8; --buff:#1f62c4; --buff-bg:#e0ebfb; --nerf:#b3322a; --nerf-bg:#fbe4e2; --chg:#6b5a12; --chg-bg:#f6efcf;
+  --warn-bg:#fff3d6; --warn-fg:#7a5200;
+  /* deliberately constant bands (same in both themes) */
+  --storm:#111827; --storm-2:#1a2335; --storm-fg:#eef2fa; --storm-muted:#a5b0c5;
+  --hw-bg:#170e22; --hw-surface:#241532; --hw-surface-2:#2e1b40; --hw-line:#3d2752; --hw-fg:#f7efff; --hw-muted:#c4b0d9; --hw-orange:#ff9a3c; --hw-purple:#a873ef; --hw-green:#9be15d;
+  --in-bg:#141838; --in-surface:#1d2250; --in-fg:#eef0ff; --in-muted:#b3b8ea;
+  --vi-bg:#21142f; --vi-surface:#2d1c40; --vi-fg:#fbf1ff; --vi-muted:#d3b9e8;
+  /* realm colours */
+  --red:#d6453a; --green:#3f9a4f; --yellow:#d8a816; --orange:#e5772a; --blue:#2f8fd1; --indigo:#8e93f3; --violet:#b07ce0;
+  /* classes */
+  --warrior:#d9573f; --thief:#8a5cf0; --magician:#2f86e0; --bowman:#25a06a;
+  --display:"Baloo 2","Trebuchet MS",system-ui,sans-serif;
+  --body:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e131b; --surface:#161d29; --surface-2:#1b2331; --fg:#e5eaf3; --muted:#9ba6b9; --line:#273145;
+  --accent:#9fb3ff; --accent-soft:#1f2a47; --focus:#9fb3ff;
+  --new:#6fdba5; --new-bg:#15342a; --buff:#8fb8ff; --buff-bg:#1a2b48; --nerf:#ff8f86; --nerf-bg:#3a1d21; --chg:#f0d36a; --chg-bg:#33300f;
+  --warn-bg:#33290e; --warn-fg:#f4cd70; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e131b; --surface:#161d29; --surface-2:#1b2331; --fg:#e5eaf3; --muted:#9ba6b9; --line:#273145;
+  --accent:#9fb3ff; --accent-soft:#1f2a47; --focus:#9fb3ff;
+  --new:#6fdba5; --new-bg:#15342a; --buff:#8fb8ff; --buff-bg:#1a2b48; --nerf:#ff8f86; --nerf-bg:#3a1d21; --chg:#f0d36a; --chg-bg:#33300f;
+  --warn-bg:#33290e; --warn-fg:#f4cd70; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16.5px;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--storm)}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.prose{max-width:68ch}
+p{margin:0}
+ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:7px}
+li::marker{color:var(--muted)}
+strong,b{font-weight:800}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.05;margin:0;text-wrap:balance}
+kbd{font-family:var(--mono);font-size:.8em;border:1px solid var(--line);border-bottom-width:3px;background:var(--surface);color:var(--fg);border-radius:6px;padding:0 6px;white-space:nowrap}
+.eyebrow{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800}
+.tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:5px;line-height:1.5;white-space:nowrap}
+.tag.new{background:var(--new-bg);color:var(--new)}
+.tag.buff{background:var(--buff-bg);color:var(--buff)}
+.tag.nerf{background:var(--nerf-bg);color:var(--nerf)}
+.tag.upd{background:var(--chg-bg);color:var(--chg)}
+.pix{image-rendering:pixelated}
+.dot{width:11px;height:11px;border-radius:50%;display:inline-block;flex:none}
+
+/* sprites: horizontal sheets, one frame per cell, 150 ms a frame */
+.spr{width:calc(var(--w) * var(--s,1) * 1px);height:calc(var(--h) * var(--s,1) * 1px);flex:none;
+  background-repeat:no-repeat;background-position:0 0;
+  background-size:calc(var(--w) * var(--n) * var(--s,1) * 1px) calc(var(--h) * var(--s,1) * 1px);
+  animation:spr calc(var(--n) * 150ms) steps(var(--n)) infinite}
+.spr.px{image-rendering:pixelated}
+@keyframes spr{to{background-position:calc(var(--w) * var(--n) * var(--s,1) * -1px) 0}}
+@media (prefers-reduced-motion: reduce){.spr{animation:none}}
+
+/* ---------- masthead ---------- */
+.mast{background:var(--storm);color:var(--storm-fg);position:relative;overflow:hidden;isolation:isolate}
+.mast canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.mast::after{content:"";position:absolute;inset:auto 0 0;height:120px;z-index:-1;background:linear-gradient(to bottom,transparent,rgba(0,0,0,.35))}
+.mast .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px;align-items:end;padding-block:56px 0}
+.mast .copy{display:flex;flex-direction:column;gap:16px;padding-bottom:44px;min-width:0}
+.mast .eyebrow{color:var(--storm-muted)}
+.mast h1{font-size:clamp(44px,8.4vw,84px);letter-spacing:-.01em;color:#fff;text-shadow:0 3px 0 #0a0f1a,0 0 26px rgba(160,180,255,.18)}
+.mast h1 .paint{background:linear-gradient(90deg,var(--indigo),var(--violet) 60%,#f3b1ff);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none}
+.mast .lede{font-size:clamp(17px,2.2vw,20px);color:var(--storm-muted);max-width:44ch}
+.mast .lede b{color:var(--storm-fg)}
+.stats{display:flex;flex-wrap:wrap;gap:10px}
+.stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:8px 14px;display:flex;flex-direction:column;min-width:0}
+.stat b{font-family:var(--display);font-size:26px;line-height:1.1;color:#fff;font-variant-numeric:tabular-nums}
+.stat span{font-size:12.5px;color:var(--storm-muted);font-weight:600}
+.stage{display:flex;align-items:flex-end;justify-content:center;gap:4px;min-width:0;position:relative}
+.stage::before{content:"";position:absolute;left:6%;right:6%;bottom:0;height:46px;border-radius:50%;background:radial-gradient(closest-side,rgba(176,124,224,.45),transparent);filter:blur(4px)}
+.stage .spr{position:relative}
+.spectrum{display:flex;gap:6px;padding-block:0 0;height:12px}
+.spectrum i{flex:1;border-radius:6px 6px 0 0;transform-origin:bottom;animation:paint .9s cubic-bezier(.2,.8,.2,1) both}
+.spectrum i:nth-child(2){animation-delay:.08s}.spectrum i:nth-child(3){animation-delay:.16s}.spectrum i:nth-child(4){animation-delay:.24s}.spectrum i:nth-child(5){animation-delay:.32s}.spectrum i:nth-child(6){animation-delay:.4s}.spectrum i:nth-child(7){animation-delay:.48s}
+@keyframes paint{from{transform:scaleY(.25);filter:grayscale(1)}to{transform:none;filter:none}}
+@media (prefers-reduced-motion: reduce){.spectrum i{animation:none}}
+
+/* ---------- category rail ---------- */
+.rail{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.rail .wrap{display:flex;align-items:center;gap:10px}
+.navscroll{flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.navscroll::-webkit-scrollbar{display:none}
+.lang{display:flex;flex:none;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px}
+.lang button{appearance:none;border:0;background:transparent;color:var(--muted);font:800 13px/1 var(--body);padding:6px 10px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.lang button[aria-pressed="true"]{background:var(--accent);color:#fff}
+:root[data-theme="dark"] .lang button[aria-pressed="true"]{color:#0e131b}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .lang button[aria-pressed="true"]{color:#0e131b}}
+.lang button:focus-visible{outline:3px solid var(--focus);outline-offset:1px}
+@media (max-width:520px){.lang button{padding:6px 7px;font-size:12px}}
+:root[data-lang="ko"]{--display:"Jua","Baloo 2",system-ui,sans-serif;--body:"Noto Sans KR","Nunito",system-ui,sans-serif}
+:root[data-lang="zh"]{--display:"Noto Sans SC","Baloo 2",system-ui,sans-serif;--body:"Noto Sans SC","Nunito",system-ui,sans-serif}
+:root[data-lang="ko"] .eyebrow,:root[data-lang="zh"] .eyebrow,:root[data-lang="ko"] .tag,:root[data-lang="zh"] .tag{letter-spacing:.04em}
+:root[data-lang="ko"] h1,:root[data-lang="ko"] h2,:root[data-lang="ko"] h3{font-weight:400;word-break:keep-all}
+:root[data-lang="ko"] body{word-break:keep-all}
+.art-text{font-family:var(--display);font-weight:800;color:#fff;line-height:1.1;text-shadow:0 2px 0 #160c22,2px 0 0 #160c22,-2px 0 0 #160c22,0 -2px 0 #160c22,0 3px 6px rgba(0,0,0,.4)}
+.title-text{font-size:30px;align-self:flex-start}
+.plate-text{font-size:20px}
+.rail nav{display:flex;gap:6px;padding-block:10px;width:max-content}
+.rail a{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:800;color:var(--fg);text-decoration:none;padding:6px 12px;border-radius:999px;border:1px solid transparent;white-space:nowrap}
+.rail a:hover{background:var(--surface)}
+.rail a[aria-current="true"]{background:var(--surface);border-color:var(--line);box-shadow:0 1px 0 var(--line)}
+.rail a .dot{width:9px;height:9px}
+.rail a.hw{color:#c25e00}
+:root[data-theme="dark"] .rail a.hw{color:var(--hw-orange)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .rail a.hw{color:var(--hw-orange)}}
+
+/* ---------- sections ---------- */
+section.band{padding-block:64px;scroll-margin-top:56px}
+section.band + section.band{border-top:1px solid var(--line)}
+.sec-head{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.sec-head .eyebrow{color:var(--muted)}
+.sec-head h2{font-size:clamp(34px,5vw,48px)}
+.sec-head p{color:var(--muted);font-size:18px;max-width:62ch}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.grid > *{min-width:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 22px;display:flex;flex-direction:column;gap:10px}
+.card h3{font-size:22px}
+.card .k{display:flex;align-items:center;gap:12px}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line);display:grid;place-items:center;flex:none}
+.ico img{width:32px;height:32px;object-fit:contain;image-rendering:pixelated}
+.ico.glyph{font-family:var(--display);font-weight:800;font-size:18px;color:var(--muted)}
+.muted{color:var(--muted)}
+.small{font-size:14.5px}
+
+/* login changes */
+.login{background:var(--accent-soft);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:18px}
+.login .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:12px}
+.lc{background:var(--surface);border-radius:14px;padding:14px 16px;display:flex;gap:12px;align-items:flex-start}
+.lc .ico{width:40px;height:40px}
+.lc p{font-size:15px}
+.lc b:first-child{display:block;font-family:var(--display);font-size:18px;line-height:1.2;margin-bottom:2px}
+
+/* ---------- Hollow Night ---------- */
+.hw{background:var(--hw-bg);color:var(--hw-fg);position:relative;overflow:hidden;isolation:isolate}
+.hw::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(600px 300px at 85% 0%,rgba(255,154,60,.18),transparent 70%),
+  radial-gradient(700px 400px at 0% 100%,rgba(168,115,239,.22),transparent 70%)}
+.hw .moon{position:absolute;right:max(16px,6vw);top:46px;width:120px;height:120px;border-radius:50%;z-index:-1;
+  background:radial-gradient(circle at 38% 38%,#fff6dc,#ffd98a 55%,#f0a540);box-shadow:0 0 80px 20px rgba(255,190,90,.25);opacity:.9}
+.hw .sec-head .eyebrow{color:var(--hw-orange)}
+.hw .sec-head h2{font-size:clamp(46px,8vw,80px);color:#fff;text-shadow:0 3px 0 #0b0510}
+.hw .sec-head p{color:var(--hw-muted)}
+.hw-top{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end}
+.when{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch}
+.when .chip{background:var(--hw-surface);border:1px solid var(--hw-line);border-radius:12px;padding:8px 14px;font-size:14px;font-variant-numeric:tabular-nums}
+.when .chip b{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--hw-muted)}
+.when .chip.live{border-color:var(--hw-orange);color:#fff}
+.when .chip.live b{color:var(--hw-orange)}
+.hw .card{background:var(--hw-surface);border-color:var(--hw-line);color:var(--hw-fg)}
+.hw .card .muted,.hw .muted{color:var(--hw-muted)}
+.hw .ico{background:var(--hw-surface-2);border-color:var(--hw-line)}
+.hw .tag.new{background:rgba(155,225,93,.16);color:var(--hw-green)}
+.shot{margin:30px 0 0;display:flex;flex-direction:column;gap:10px}
+.shot img{display:block;width:100%;height:auto;max-width:100%;border-radius:18px;border:1px solid var(--hw-line);box-shadow:0 0 0 6px rgba(255,154,60,.08),0 24px 60px -20px rgba(255,140,40,.35)}
+.shot figcaption{font-size:14.5px;color:var(--hw-muted)}
+.shot figcaption b{color:var(--hw-fg)}
+.hw-grid{display:grid;gap:16px;grid-template-columns:repeat(6,minmax(0,1fr));margin-top:16px}
+.hw-grid > *{min-width:0}
+.span2{grid-column:span 2}.span3{grid-column:span 3}.span4{grid-column:span 4}.span6{grid-column:span 6}
+@media (max-width:900px){.hw-grid{grid-template-columns:minmax(0,1fr)}.span2,.span3,.span4,.span6{grid-column:auto}}
+.elite{display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px;align-items:center;background:linear-gradient(135deg,#3a1d10,#2a1538 60%);border-color:#6b3a1c}
+.elite .portrait{display:grid;place-items:center;width:170px;height:170px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,170,60,.38),rgba(255,170,60,0));flex:none}
+.elite h3{font-size:28px;color:#ffd7a8}
+.facts{display:flex;flex-wrap:wrap;gap:8px}
+.fact{background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:6px 10px;font-size:13.5px;font-weight:600}
+.fact b{color:var(--hw-orange);font-family:var(--display);font-size:17px;margin-right:4px}
+.wings{display:flex;gap:12px;align-items:center;background:rgba(0,0,0,.25);border:1px dashed rgba(255,154,60,.45);border-radius:12px;padding:10px 12px}
+.wings img{width:56px;height:56px;image-rendering:pixelated;flex:none}
+@media (max-width:560px){.elite{grid-template-columns:minmax(0,1fr)}.elite .portrait{width:140px;height:140px;margin-inline:auto}}
+.guests{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+@media (max-width:700px){.guests{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.guest{background:var(--hw-surface-2);border:1px solid var(--hw-line);border-radius:12px;padding:12px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px}
+.guest b{font-family:var(--display);font-size:17px;line-height:1.15}
+.guest span{font-size:13px;color:var(--hw-muted);line-height:1.35}
+.guest span{flex:1}
+.prize{margin-top:8px;align-self:stretch;display:flex;align-items:center;gap:8px;background:rgba(255,154,60,.1);border:1px solid rgba(255,154,60,.35);border-radius:10px;padding:6px 8px;text-align:left;font-weight:800;font-size:13.5px;line-height:1.2;color:var(--hw-fg)}
+.prize img{width:48px;height:48px;image-rendering:pixelated;flex:none}
+.prize small{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--hw-orange)}
+.stage-sm{height:108px;display:flex;align-items:flex-end;justify-content:center;max-width:100%}
+.deco-row{display:flex;align-items:flex-end;gap:14px;overflow:hidden;padding-top:6px;border-bottom:2px solid var(--hw-line)}
+.deco-row img{height:auto;flex:none;max-width:none}
+.deco-row .str{width:min(620px,70%);flex:0 1 auto;max-width:100%}
+.deco-row .chan{width:120px}
+.deco-row .stall{width:200px}
+@media (max-width:620px){.deco-row .chan,.deco-row .stall{display:none}.deco-row .str{width:100%}}
+.shopgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:10px}
+.cos{background:var(--hw-surface-2);border:1px solid var(--hw-line);border-radius:12px;padding:10px 8px 8px;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}
+.cos img{width:64px;height:64px;image-rendering:pixelated}
+.cos span{font-size:12.5px;line-height:1.25;font-weight:600;min-height:2.5em;display:flex;align-items:center}
+.price{display:inline-flex;align-items:center;gap:4px;font-family:var(--display);font-weight:800;color:var(--hw-orange);font-size:15px}
+.price img{width:18px;height:18px}
+.npc{display:flex;gap:16px;align-items:center}
+.track{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
+.day{background:var(--hw-surface-2);border:1px solid var(--hw-line);border-radius:10px;padding:8px 4px;text-align:center;font-size:12px;font-weight:800;color:var(--hw-muted);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:4px;min-height:96px}
+.day img{width:26px;height:26px;image-rendering:pixelated}
+.day.seven{border-color:var(--hw-purple);background:linear-gradient(to top,rgba(168,115,239,.28),var(--hw-surface-2));color:#fff}
+.weeks{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px}
+.week{background:var(--hw-surface-2);border:1px solid var(--hw-line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.week .pets{display:flex;align-items:flex-end;gap:6px;min-height:112px;justify-content:center;flex-wrap:wrap}
+@media (max-width:1100px){.week .pets .spr[style*="--s:2"]{--s:1.5;image-rendering:auto}}
+.week h4{margin:0;font-family:var(--display);font-size:18px}
+.week h4 small{display:block;font-family:var(--body);font-size:12.5px;color:var(--hw-muted);font-weight:600}
+
+/* ---------- realms ---------- */
+.realm{border-radius:22px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);position:relative;isolation:isolate}
+.realm + .realm{margin-top:20px}
+.realm.indigo{background:var(--in-bg);color:var(--in-fg)}
+.realm.violet{background:var(--vi-bg);color:var(--vi-fg)}
+.realm.indigo::before,.realm.violet::before{content:"";position:absolute;inset:0;z-index:-1}
+.realm.indigo::before{background:radial-gradient(500px 300px at 90% 100%,rgba(142,147,243,.32),transparent 70%),repeating-linear-gradient(100deg,transparent 0 28px,rgba(142,147,243,.05) 28px 29px)}
+.realm.violet::before{background:radial-gradient(520px 320px at 90% 100%,rgba(176,124,224,.36),transparent 70%),radial-gradient(2px 2px at 20% 30%,rgba(255,255,255,.6),transparent),radial-gradient(2px 2px at 70% 20%,rgba(255,255,255,.5),transparent),radial-gradient(1.5px 1.5px at 40% 60%,rgba(255,255,255,.5),transparent)}
+.realm .txt{padding:30px 30px 28px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.realm .title-art{height:32px;width:auto;max-width:100%;align-self:flex-start}
+.realm .lv{display:inline-flex;gap:8px;align-items:center;font-weight:800;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.realm.indigo .lv{color:var(--indigo)}.realm.violet .lv{color:var(--violet)}
+.realm .muted{color:var(--in-muted)}
+.realm.violet .muted{color:var(--vi-muted)}
+.realm ul li::marker{color:inherit;opacity:.5}
+.realm .items{display:flex;flex-wrap:wrap;gap:8px}
+.realm .item{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:5px 10px 5px 6px;font-size:13.5px;font-weight:600}
+.realm .item img{width:24px;height:24px;object-fit:contain;image-rendering:pixelated}
+.realm .bosses{display:flex;flex-direction:column;justify-content:flex-end;padding:24px 18px 0;gap:12px;min-width:0}
+.realm .floor{display:flex;align-items:flex-end;justify-content:center;gap:14px;flex-wrap:nowrap;border-bottom:2px solid rgba(255,255,255,.12);padding-bottom:0}
+.boss{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0}
+.boss .plate{height:22px;width:auto;max-width:100%}
+.boss .role{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800;opacity:.7}
+.statues{display:flex;align-items:flex-end;gap:2px}
+.statues img{width:96px;height:auto}
+@media (max-width:820px){.realm{grid-template-columns:minmax(0,1fr)}.realm .bosses{padding-top:0}}
+.spr.margin{--s:2}
+@media (max-width:480px){.realm .txt{padding:22px 18px}.boss .spr.shrink{--s:.75}.boss .spr.margin{--s:1.5}}
+.both{margin-top:18px;display:flex;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+
+/* ---------- classes ---------- */
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.tab{appearance:none;border:1px solid var(--line);background:var(--surface);color:var(--fg);font:800 15px/1 var(--body);padding:10px 16px 10px 12px;border-radius:12px;cursor:pointer;display:inline-flex;align-items:center;gap:9px}
+.tab .sw{width:14px;height:14px;border-radius:4px;background:var(--c,var(--muted))}
+.tab[aria-selected="true"]{border-color:var(--c,var(--accent));box-shadow:inset 0 -3px 0 var(--c,var(--accent));background:var(--surface)}
+.tab:hover{background:var(--surface-2)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:8px 22px 18px;border-top:4px solid var(--c,var(--accent))}
+.panel-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px;padding:16px 0 6px}
+.panel-head h3{font-size:30px}
+.panel-head p{color:var(--muted)}
+.chg{display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.chg:first-of-type{border-top:0}
+.chg .body{display:flex;flex-direction:column;gap:4px;min-width:0}
+.chg .t{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.chg .t h4{margin:0;font-family:var(--display);font-size:19px;font-weight:800;line-height:1.2}
+.chg p{color:var(--fg)}
+.chg ul{margin-top:4px}
+.marks{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:8px;margin-top:6px}
+.mark{border-radius:10px;padding:8px 10px;font-size:14px;background:var(--surface-2);border:1px solid var(--line)}
+.mark b{display:flex;align-items:center;gap:6px}
+.mark img{width:20px;height:20px;image-rendering:pixelated}
+
+/* ---------- tables ---------- */
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:11px 14px;border-bottom:1px solid var(--line)}
+tr:last-child td{border-bottom:0}
+th{font-size:11.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:800;background:var(--surface-2)}
+td.r{white-space:nowrap;font-weight:800}
+td.r span{display:inline-flex;align-items:center;gap:8px}
+.sets table{min-width:640px}
+.sets td{border-left:0}
+.sets tr td:first-child{box-shadow:inset 4px 0 0 var(--c)}
+
+/* echoes and duels */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.split > *{min-width:0}
+@media (max-width:860px){.split{grid-template-columns:minmax(0,1fr)}}
+.ladder{display:flex;flex-direction:column;gap:12px}
+.rung{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:start}
+.rung .n{font-family:var(--display);font-weight:800;font-size:15px;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent)}
+.watch{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;margin-top:6px}
+.wr{border-radius:10px;padding:10px 6px;text-align:center;background:var(--surface-2);border:1px solid var(--line);display:flex;flex-direction:column;gap:2px;font-size:12.5px}
+.wr b{font-family:var(--display);font-size:16px;line-height:1.1}
+.wr .g{color:var(--muted);font-variant-numeric:tabular-nums}
+.wr:nth-child(1){border-top:3px solid #9aa6b8}.wr:nth-child(2){border-top:3px solid #6fb3d9}.wr:nth-child(3){border-top:3px solid #6e7ff0}.wr:nth-child(4){border-top:3px solid #b07ce0}.wr:nth-child(5){border-top:3px solid #e8b545}
+@media (max-width:520px){.watch{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.pay{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.pay div{background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:2px;font-size:13px;color:var(--muted)}
+.pay div b{font-family:var(--display);font-size:22px;color:var(--fg);line-height:1.1}
+@media (max-width:440px){.pay{grid-template-columns:minmax(0,1fr)}}
+
+/* forge */
+.slots{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+@media (max-width:620px){.slots{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.slot{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:1px}
+.slot small{font-size:11px;letter-spacing:.11em;text-transform:uppercase;font-weight:800;color:var(--muted)}
+.slot b{font-size:14.5px;line-height:1.3}
+.tiers{display:flex;border-radius:10px;overflow:hidden;margin-top:4px}
+.tiers span{flex:1;padding:7px 6px;text-align:center;font-family:var(--display);font-weight:800;font-size:15px;color:#2a1208}
+.tiers span:nth-child(1){background:#f4f1ea}.tiers span:nth-child(2){background:#ffc98b}.tiers span:nth-child(3){background:#ff8a4c}.tiers span:nth-child(4){background:#e2382d;color:#fff}
+.elixirs{display:flex;gap:10px;flex-wrap:wrap}
+.elx{display:flex;gap:10px;align-items:center;background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:8px 12px 8px 8px;flex:1 1 220px}
+.elx img{width:32px;height:32px;image-rendering:pixelated}
+.elx b{display:block;font-family:var(--display);font-size:18px;line-height:1.1}
+.elx span{font-size:13.5px;color:var(--muted)}
+
+.list-cols{columns:2 340px;column-gap:32px}
+.list-cols li{break-inside:avoid;margin-bottom:8px}
+.list-cols ul{display:block}
+
+.known{background:var(--warn-bg);color:var(--warn-fg);border-radius:16px;padding:20px 22px;display:flex;flex-direction:column;gap:8px}
+.known h3{font-size:22px}
+.known ul{color:var(--fg)}
+footer{background:var(--storm);color:var(--storm-muted);padding-block:34px 44px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
+footer b{font-family:var(--display);font-size:22px;color:var(--storm-fg)}
+
+@media (max-width:860px){
+  .mast .wrap{grid-template-columns:minmax(0,1fr);padding-top:40px}
+  .mast .copy{padding-bottom:8px}
+  .stage{justify-content:flex-start}
+  .hw-top{grid-template-columns:minmax(0,1fr)}
+  .hw .moon{width:64px;height:64px;top:22px;opacity:.75}
+}
+@media (max-width:480px){
+  section.band{padding-block:44px}
+  .card,.panel{padding-left:16px;padding-right:16px}
+  .login{padding:18px}
+  .mast .stage .spr{--s:.7}
+  .mast .stage .spr.margin{--s:1.5}
+}
+</style>
+</head>
+<body>
+
+<header class="mast" id="top">
+  <canvas id="rain" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="copy">
+      <div class="eyebrow">A Terrible Day For Rain · October update</div>
+      <h1><span class="paint">Final realms</span> have been released</h1>
+      <p class="lede"><b>Indigo</b> and <b>Violet</b> open, the level cap rises to <b>120</b>, the Magician is rebuilt, and <b>Hollow Night</b> is here.</p>
+      <div class="stats">
+        <div class="stat"><b>Lv 120</b><span>new level cap</span></div>
+        <div class="stat"><b>2</b><span>new realms</span></div>
+        <div class="stat"><b>4</b><span>new bosses</span></div>
+        <div class="stat"><b>12</b><span>candy costumes</span></div>
+      </div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="spr px margin" style="--w:106;--h:101;--n:24;background-image:url(img/s/margin.png)"></div>
+      <div class="spr" style="--w:248;--h:242;--n:8;background-image:url(img/s/author.png)"></div>
+    </div>
+  </div>
+  <div class="wrap"><div class="spectrum" aria-hidden="true"><i style="background:var(--red)"></i><i style="background:var(--orange)"></i><i style="background:var(--yellow)"></i><i style="background:var(--green)"></i><i style="background:var(--blue)"></i><i style="background:var(--indigo)"></i><i style="background:var(--violet)"></i></div></div>
+</header>
+
+<div class="rail">
+  <div class="wrap">
+    <div class="navscroll"><nav aria-label="Categories">
+      <a href="#hollow-night" class="hw"><img src="img/i/candy.png" alt="" width="18" height="18" class="pix">Hollow Night</a>
+      <a href="#login"><span class="dot" style="background:var(--accent)"></span>On login</a>
+      <a href="#realms"><span class="dot" style="background:var(--violet)"></span>New realms</a>
+      <a href="#classes"><span class="dot" style="background:var(--warrior)"></span>Classes</a>
+      <a href="#echoes"><span class="dot" style="background:var(--blue)"></span>Echoes &amp; Duels</a>
+      <a href="#systems"><span class="dot" style="background:var(--green)"></span>New systems</a>
+      <a href="#forge"><span class="dot" style="background:var(--orange)"></span>Items &amp; Forge</a>
+      <a href="#world"><span class="dot" style="background:var(--yellow)"></span>World</a>
+      <a href="#interface"><span class="dot" style="background:var(--indigo)"></span>Interface</a>
+      <a href="#fixes"><span class="dot" style="background:var(--red)"></span>Fixes</a>
+    </nav></div>
+    <div class="lang" role="group" aria-label="Language" data-noi18n>
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="ko" lang="ko" aria-pressed="false">한국어</button>
+      <button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="false">简体中文</button>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- ================= HOLLOW NIGHT ================= -->
+<section class="band hw" id="hollow-night">
+  <div class="moon" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hw-top">
+      <div class="sec-head" style="margin-bottom:0">
+        <div class="eyebrow">Limited-time event</div>
+        <h2>Hollow Night</h2>
+        <p>Until November 5 the rain smells of candle wax. Every map is dressed up, four strange guests have moved into the Portal Room, and the Jack-o'-Lanterns are out. Collect Hollow Candy and trade it for costumes.</p>
+      </div>
+      <div class="when" id="when">
+        <div class="chip live"><b>On now · ends</b><span data-utc="2026-11-05T08:00:00Z" data-noi18n>Nov 5, 08:00 UTC</span></div>
+        <div class="chip" id="countdown" hidden data-noi18n><b>Time left</b><span></span></div>
+      </div>
+    </div>
+
+    <figure class="shot">
+      <img src="img/den.jpg" alt="The new Den: a haunted tree hung with jack-o'-lanterns over the rabbits' cave, with Trick and Treat at the front" width="1498" height="953" loading="lazy">
+      <figcaption><b>The new Den.</b> The rabbits' cave under its haunted tree, with Trick and Treat set up at the front.</figcaption>
+    </figure>
+
+    <div class="hw-grid">
+      <article class="card elite span4">
+        <div class="portrait"><div class="spr" style="--w:109;--h:101;--n:12;--s:1.3;background-image:url(img/s/elite.png)" role="img" aria-label="The Hollow Jack-o'-Lantern"></div></div>
+        <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+          <div><span class="tag new">New elite</span></div>
+          <h3>The Hollow Jack-o'-Lantern</h3>
+          <p>While you fight through the realms, a grinning pumpkin in a witch's hat may come drifting in with a sack of candy. Expect one about every 20 minutes. A banner tells you when it arrives, and if nobody beats it within 5 minutes it floats away.</p>
+          <div class="facts">
+            <span class="fact"><b>3×</b>tougher than the monsters around it</span>
+            <span class="fact"><b>3×</b>the EXP</span>
+            <span class="fact"><b>10</b>Hollow Candy every time, for every player who shares the kill</span>
+          </div>
+          <div class="wings">
+            <img src="img/i/reaperwings.png" alt="Reaper's Wings">
+            <p class="small"><b>Reaper's Wings</b> · a 1 in 100 drop. You can't buy these: the only way to get them is to beat a Hollow Jack-o'-Lantern.</p>
+          </div>
+          <p class="small muted">It only appears in the realms' rooms, never in the Den, hideouts, boss arenas or Echoes.</p>
+        </div>
+      </article>
+
+      <article class="card span2">
+        <div class="k"><span class="ico"><img src="img/i/candy.png" alt=""></span><h3>Hollow Candy</h3></div>
+        <p>Every monster you defeat has a <b>3%</b> chance to drop one, in the story and in Echoes. Everyone who shares the kill gets their own chance.</p>
+        <p class="muted small">Spend it at Trick and Treat's candy shop in the Den.</p>
+      </article>
+
+      <article class="card span6">
+        <div><span class="tag new">New quests</span></div>
+        <h3>Four guests in the Portal Room</h3>
+        <p>Hollow Night has brought some odd visitors, and each has a three-part quest line for you. Every part pays Hollow Candy and EXP, <b>240 candy</b> across all four lines. <b>Finish a guest's whole line and they give you their own cosmetic</b>, one per character, delivered to your Cash tab. The guests leave when Hollow Night ends.</p>
+        <div class="guests">
+          <div class="guest"><div class="stage-sm"><div class="spr px" style="--w:74;--h:85;--n:2;--s:1;background-image:url(img/s/drip.png)" role="img" aria-label="Count Drip"></div></div><b>Count Drip</b><span>A vampire who can't stand blood and lives on pumpkin juice.</span>
+            <div class="prize"><img src="img/i/qp_9449753877044a66ae27668b63b829b4.png" alt=""><div><small>Reward</small>Dracula's Wings</div></div></div>
+          <div class="guest"><div class="stage-sm"><div class="spr px" style="--w:69;--h:91;--n:9;--s:1;background-image:url(img/s/hazel.png)" role="img" aria-label="Hazel"></div></div><b>Hazel</b><span>A little witch set on carving the scariest lantern.</span>
+            <div class="prize"><img src="img/i/qp_9365e29a2501420e97991ae086c3f11d.png" alt=""><div><small>Reward</small>Hazel's Lantern</div></div></div>
+          <div class="guest"><div class="stage-sm"><div class="spr px" style="--w:129;--h:101;--n:6;--s:1;background-image:url(img/s/bella.png)" role="img" aria-label="Madame Belladonna"></div></div><b>Madame Belladonna</b><span>Brewing the Hollow Night draught on her broom.</span>
+            <div class="prize"><img src="img/i/qp_3c61078b4d484e309540caba4e9745ed.png" alt=""><div><small>Reward</small>Belladonna's Rose Hat</div></div></div>
+          <div class="guest"><div class="stage-sm"><div class="spr px" style="--w:75;--h:86;--n:14;--s:1;background-image:url(img/s/mildred.png)" role="img" aria-label="Mildred"></div></div><b>Mildred</b><span>The ghost maid hosting the party.</span>
+            <div class="prize"><img src="img/i/qp_7854e89996bd47e7b3907c83db52f45d.png" alt=""><div><small>Reward</small>Mildred's Lace Cap</div></div></div>
+        </div>
+        <p class="small">While a gathering part is open, monsters drop what the guest needs: <b>Pumpkin Pulp</b>, <b>Candle Stubs</b>, <b>Bat Wings</b> and <b>Cobweb Lace</b>. The Hollow Jack-o'-Lantern always carries the <b>Lantern Glow</b> Belladonna asks for. Other parts send you hunting, or across the room on errands between the guests.</p>
+      </article>
+
+      <article class="card span6">
+        <div class="npc">
+          <div class="spr px" style="--w:85;--h:92;--n:4;--s:1;background-image:url(img/s/trickntreat.png)" role="img" aria-label="Trick and Treat"></div>
+          <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+            <div><span class="tag new">New in the Den</span></div>
+            <h3>Trick and Treat's candy shop</h3>
+            <p>Two moon bunnies in witch hats have set up shop in the Den. Trade your Hollow Candy for any of 12 Halloween costumes, and try each one on in their mirror first. Their shop also takes you straight to the Hollow Night shelf in the Cash Shop.</p>
+          </div>
+        </div>
+        <div class="shopgrid" aria-label="Candy shop costumes">
+          <div class="cos"><img src="img/i/cs_cb7fce32e93b4af1960c76392181f414.png" alt=""><span>Dracula Mask</span><span class="price"><img src="img/i/candy.png" alt="">60</span></div>
+          <div class="cos"><img src="img/i/cs_6673dfbb4b6d442b891d819d9ad0e315.png" alt=""><span>Werewolf Mask</span><span class="price"><img src="img/i/candy.png" alt="">60</span></div>
+          <div class="cos"><img src="img/i/cs_aaacb8ef41bd47fb8dc64bae1083589f.png" alt=""><span>Skull Mask</span><span class="price"><img src="img/i/candy.png" alt="">60</span></div>
+          <div class="cos"><img src="img/i/cs_7d5391bac750481abd23b5d430b06301.png" alt=""><span>Frankenstein Mask</span><span class="price"><img src="img/i/candy.png" alt="">60</span></div>
+          <div class="cos"><img src="img/i/cs_67af46a86571474195798d73d59edf21.png" alt=""><span>Mummy Mask</span><span class="price"><img src="img/i/candy.png" alt="">60</span></div>
+          <div class="cos"><img src="img/i/cs_fe826bcd350c4a968e7c7385caf6da1a.png" alt=""><span>Festival Hat</span><span class="price"><img src="img/i/candy.png" alt="">60</span></div>
+          <div class="cos"><img src="img/i/cs_ac8204cb732049ae806290b101d245db.png" alt=""><span>Pumpkin Basket</span><span class="price"><img src="img/i/candy.png" alt="">90</span></div>
+          <div class="cos"><img src="img/i/cs_9bbca91dc12844cba6fe8437b6b20c4f.png" alt=""><span>Leopard Umbrella</span><span class="price"><img src="img/i/candy.png" alt="">90</span></div>
+          <div class="cos"><img src="img/i/cs_787ab1076f1b4b6fa123eb98c303d346.png" alt=""><span>Festival Lights</span><span class="price"><img src="img/i/candy.png" alt="">90</span></div>
+          <div class="cos"><img src="img/i/cs_c676fc0da5aa404388a07e6ae658e57e.png" alt=""><span>Pumpkin Outfit</span><span class="price"><img src="img/i/candy.png" alt="">120</span></div>
+          <div class="cos"><img src="img/i/cs_7fe219b5187d42c2aef17c339c940327.png" alt=""><span>Festival Costume (M)</span><span class="price"><img src="img/i/candy.png" alt="">120</span></div>
+          <div class="cos"><img src="img/i/cs_9a2d9ab3d4724c399c4c97d514a0e971.png" alt=""><span>Festival Costume (F)</span><span class="price"><img src="img/i/candy.png" alt="">120</span></div>
+        </div>
+      </article>
+
+      <article class="card span3">
+        <h3>Pitter and Patter's Hollow Night gifts</h3>
+        <p>Visit the twins every day of the event for a 7-day run of Hollow Night gifts: candy, a Tincture Set, Salvage and a Supply Crate.</p>
+        <div class="track" aria-label="Seven-day gift track">
+          <div class="day"><img src="img/i/candy.png" alt="">Day 1</div>
+          <div class="day"><img src="img/i/candy.png" alt="">Day 2</div>
+          <div class="day"><img src="img/i/candy.png" alt="">Day 3</div>
+          <div class="day"><img src="img/i/candy.png" alt="">Day 4</div>
+          <div class="day"><img src="img/i/candy.png" alt="">Day 5</div>
+          <div class="day"><img src="img/i/candy.png" alt="">Day 6</div>
+          <div class="day seven"><div class="spr px" style="--w:37;--h:52;--n:4;--s:1;background-image:url(img/s/pyuri.png)" role="img" aria-label="Pyuri"></div>Day 7</div>
+        </div>
+        <p>On day 7 they hand you <b>Pyuri</b>, a stitched bunny pet. You get Pyuri once per account; after that, day 7 gives extra candy instead.</p>
+        <p class="muted small">The twins' usual daily gifts come back after the event, right where you left off.</p>
+      </article>
+
+      <article class="card span3">
+        <h3>The Hollow Night shelf</h3>
+        <p>A new Cash Shop shelf in two weekly drops, each with three pets.</p>
+        <div class="weeks">
+          <div class="week">
+            <h4>Week 1 <small>until Oct 29 · pumpkins and witches</small></h4>
+            <div class="pets">
+              <div class="spr px" style="--w:47;--h:54;--n:6;--s:2;background-image:url(img/s/pumpkinjack.png)" role="img" aria-label="Pumpkin Jack"></div>
+              <div class="spr px" style="--w:47;--h:54;--n:6;--s:2;background-image:url(img/s/pumpkino.png)" role="img" aria-label="Pumpkin O"></div>
+              <div class="spr px" style="--w:47;--h:54;--n:6;--s:2;background-image:url(img/s/pumpkinlantern.png)" role="img" aria-label="Pumpkin Lantern"></div>
+            </div>
+            <p class="small muted">Pumpkin Jack, Pumpkin O and Pumpkin Lantern</p>
+          </div>
+          <div class="week">
+            <h4>Week 2 <small>until Nov 5 · ghosts and the dead</small></h4>
+            <div class="pets">
+              <div class="spr px" style="--w:22;--h:24;--n:4;--s:3;background-image:url(img/s/papa.png)" role="img" aria-label="Papa Ghostie"></div>
+              <div class="spr px" style="--w:22;--h:24;--n:4;--s:3;background-image:url(img/s/nono.png)" role="img" aria-label="Nono Ghostie"></div>
+              <div class="spr px" style="--w:22;--h:24;--n:4;--s:3;background-image:url(img/s/bobo.png)" role="img" aria-label="Bobo Ghostie"></div>
+            </div>
+            <p class="small muted">Papa, Nono and Bobo Ghostie</p>
+          </div>
+        </div>
+        <p class="small"><b>Pet bundles:</b> each week's three pets come as one bundle for 960, 20% off. A pet you already have comes as a Pet Coupon instead. Pick the bundle and the shop's mirror shows your three pets with the haunted house rising behind you.</p>
+      </article>
+
+      <article class="card span3">
+        <div class="k"><div class="spr" style="--w:178;--h:146;--n:1;--s:.75;background-image:url(img/s/house.png)" role="img" aria-label="The haunted house"></div></div>
+        <h3>A haunted house</h3>
+        <p>Bring out three Hollow Night pets (any of the six shop pets or Pyuri) and stand still for 5 seconds: a haunted house rises behind you, and it fades when you move. It stays after Hollow Night ends, because the pets are yours for good.</p>
+        <p class="muted small">Other players see it too, unless they've hidden other players' pets in Options.</p>
+      </article>
+
+      <article class="card span3">
+        <div class="k"><div class="spr" style="--w:125;--h:108;--n:7;--s:1;background-image:url(img/s/pop.png)" role="img" aria-label="A jack-o'-lantern pop"></div></div>
+        <h3>Jack-o'-lantern pops</h3>
+        <p>While Hollow Night runs, monsters burst into a grinning pumpkin when they fall, and again when they come back.</p>
+      </article>
+
+      <article class="card span6 deco">
+        <h3>Every map, dressed for Hollow Night</h3>
+        <p>While the event runs, every map gets MapleStory's Halloween dressing: strings of jack-o'-lanterns on pumpkin-headed poles, lantern trees, candy stalls, pumpkin piles, spider webs and jack-o'-lantern chandeliers. It all packs itself away when Hollow Night ends.</p>
+        <div class="deco-row" aria-hidden="true">
+          <img src="img/s/stringer.png" alt="" class="str">
+          <img src="img/s/chandelier.png" alt="" class="chan">
+          <img src="img/s/stall.png" alt="" class="stall">
+        </div>
+      </article>
+
+      <article class="card span6" style="flex-direction:row;flex-wrap:wrap;gap:10px 18px;align-items:center">
+        <span class="tag new">Good to know</span>
+        <p style="flex:1 1 420px">From now on, <b>new cosmetics belong to the character who gets them</b>. Everything you already own stays shared across your account, and pets are still shared too. Pet Coupons don't work on the Halloween pets. You can now wear cosmetic <b>gloves</b>.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOGIN ================= -->
+<section class="band" id="login">
+  <div class="wrap">
+    <div class="login">
+      <div class="sec-head" style="margin-bottom:0">
+        <div class="eyebrow">Read this first</div>
+        <h2>What changes on your character when you log in</h2>
+      </div>
+      <div class="grid">
+        <div class="lc"><span class="ico"><img src="img/i/hpelixir.png" alt=""></span><p><b>Potions</b>Your old HP and MP potions become the new HP Elixir and MP Elixir at the same Meso value (at least one per stack). Pet auto-potion slots and your potion quick slot switch over too.</p></div>
+        <div class="lc"><span class="ico"><img src="img/i/pigment.png" alt=""></span><p><b>Skill refunds</b>Pigment you spent on 1st- and 2nd-job skills comes back once, because they're free now. 1st-job main attacks max at 5 points with the same max damage, and the extra SP is returned.</p></div>
+        <div class="lc"><span class="ico"><img src="img/i/tempeststar.png" alt=""></span><p><b>Thief</b>Learned Triple Throw at the 3rd job but don't have the 4th? It becomes Tempest Star at the same level, on the same key. 4th-job Thieves get 150 Pigment back for the Grappling Hook.</p></div>
+        <div class="lc"><span class="ico"><img src="img/i/arrowrain.png" alt=""></span><p><b>Bowman</b>Critical Shot is retired. Its Pigment and SP are refunded.</p></div>
+        <div class="lc"><span class="ico"><img src="img/i/stance.png" alt=""></span><p><b>3rd- and 4th-job skills</b>They now arrive one pick every few levels. If you already have more than the new pace allows, you keep them; you just can't add more until your level catches up.</p></div>
+        <div class="lc"><span class="ico"><img src="img/i/guard.png" alt=""></span><p><b>Forge</b>Points you forged into armour now power that slot's new bonus instead of flat stats. Weapons are unchanged. Gear that's already past the new limits keeps every point; it just can't be forged any further.</p></div>
+        <div class="lc"><span class="ico glyph" style="background:conic-gradient(var(--red),var(--orange),var(--yellow),var(--green),var(--blue),var(--indigo),var(--violet),var(--red));border:0"></span><p><b>Realm sets</b>Gear you already own counts toward the set of the realm its level comes from.</p></div>
+        <div class="lc"><span class="ico"><img src="img/i/groundsmash.png" alt=""></span><p><b>2nd job</b>Past Tux's Lv20 reward but missing your 2nd job? You get it at login, with its free area skill.</p></div>
+        <div class="lc"><span class="ico glyph">E</span><p><b>Echoes</b>Echoes now open at Lv120. Echo gear you already own works like normal gear of its level: forge it with Pigment, and it counts toward its level's realm set. Shards owed for story bosses you've beaten are paid at login, and a 3rd-job quest waiting on an Echo step completes.</p></div>
+        <div class="lc"><span class="ico glyph">%</span><p><b>Room progress</b>Your progress in every room carries over, and rooms you've restored stay restored.</p></div>
+        <div class="lc"><span class="ico glyph">✓</span><p><b>Starter clothes</b>Can be dropped, dismantled and sold again.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REALMS ================= -->
+<section class="band" id="realms">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">New story</div>
+      <h2>Two new realms</h2>
+      <p>The story continues into the sixth and seventh realms, the last two colours of the rainbow. Tux opens each one once you've restored the realm before it.</p>
+    </div>
+
+    <article class="realm indigo">
+      <div class="txt">
+        <span class="lv"><span class="dot" style="background:var(--indigo)"></span>Realm 6 · Lv 91–105</span>
+        <img class="title-art" src="img/rp_name_indigo.png" alt="The Long Lamps"><span class="art-text title-text" data-ko="기나긴 등불" data-zh="长明灯" hidden></span>
+        <p class="muted">Indigo. Walk Memory Lane, the Hall, the Road of Regrets and the Road to Oblivion.</p>
+        <ul>
+          <li>The <b>Chief Memory Guardian</b> guards the Hall. <b>The Margin</b> hides behind the statues Thought and Memory: break both together, or one calls the other back.</li>
+          <li><b>The Record</b>, Indigo's reward, is an account-wide card for every Lv30+ character you own. Each class's card adds Max HP (Warrior), Max MP (Magician), Accuracy (Bowman) or Avoid (Thief), and it grows as that character levels. Open it with <kbd>]</kbd>.</li>
+          <li>Indigo story gear at Lv93, 97 and 103.</li>
+        </ul>
+        <div class="items">
+          <span class="item"><img src="img/i/indigotincture.png" alt="">Indigo Tincture: skills come back 10% sooner (Deep: 20%)</span>
+          <span class="item"><img src="img/i/archivekey.png" alt="">Archive Key</span>
+        </div>
+      </div>
+      <div class="bosses">
+        <div class="floor">
+          <div class="boss">
+            <div class="spr shrink" style="--w:141;--h:208;--n:12;background-image:url(img/s/chief.png)" role="img" aria-label="The Chief Memory Guardian"></div>
+          </div>
+          <div class="boss">
+            <div class="spr px margin" style="--w:106;--h:101;--n:24;background-image:url(img/s/margin.png)" role="img" aria-label="The Margin"></div>
+          </div>
+        </div>
+        <div class="floor" style="border:0;gap:18px;flex-wrap:wrap;padding-bottom:20px">
+          <div class="boss"><span class="role">Mini boss</span><img class="plate" src="img/rp_bh_name_i1m.png" alt="Chief Memory Guardian"><span class="art-text plate-text" data-ko="추억의 수호대장" data-zh="追忆的守护队长" hidden></span></div>
+          <div class="boss"><span class="role">Realm boss</span><img class="plate" src="img/rp_bh_name_i1.png" alt="The Margin"><span class="art-text plate-text" data-ko="여백" data-zh="页边" hidden></span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="realm violet">
+      <div class="txt">
+        <span class="lv"><span class="dot" style="background:var(--violet)"></span>Realm 7 · Lv 106–120</span>
+        <img class="title-art" src="img/rp_name_violet.png" alt="The Painted Town"><span class="art-text title-text" data-ko="그려진 마을" data-zh="彩绘小镇" hidden></span>
+        <p class="muted">Violet. Main Street, the clockmaker's shop, the nightly Ceremony, and Patience.</p>
+        <ul>
+          <li><b>The Sweeper</b> walks on after the Ceremony in the Bright Ballroom. <b>The Author</b> is the story's finale.</li>
+          <li>Your starter umbrella is now <b>A Borrowed Umbrella</b>. It stays locked in your bag until the Painted Town asks for it back.</li>
+          <li>Violet story gear at Lv108, 112 and 118.</li>
+        </ul>
+        <div class="items">
+          <span class="item"><img src="img/i/violettincture.png" alt="">Violet Tincture: +10% critical rate (Deep: +20%)</span>
+          <span class="item"><img src="img/i/windingkey.png" alt="">Winding Key</span>
+        </div>
+      </div>
+      <div class="bosses">
+        <div class="floor">
+          <div class="boss"><div class="spr shrink" style="--w:185;--h:210;--n:6;background-image:url(img/s/sweeper.png)" role="img" aria-label="The Sweeper"></div></div>
+          <div class="boss"><div class="spr shrink" style="--w:248;--h:242;--n:8;background-image:url(img/s/author.png)" role="img" aria-label="The Author"></div></div>
+        </div>
+        <div class="floor" style="border:0;gap:18px;flex-wrap:wrap;padding-bottom:20px">
+          <div class="boss"><span class="role">Mini boss</span><img class="plate" src="img/rp_bh_name_v1m.png" alt="The Sweeper"><span class="art-text plate-text" data-ko="청소부" data-zh="清扫者" hidden></span></div>
+          <div class="boss"><span class="role">Finale</span><img class="plate" src="img/rp_bh_name_v1.png" alt="The Author"><span class="art-text plate-text" data-ko="저자" data-zh="执笔者" hidden></span></div>
+        </div>
+      </div>
+    </article>
+
+    <div class="both">
+      <span class="ico glyph">120</span>
+      <p>The level cap is <b>105</b> after Blue's boss and <b>120</b> after the Margin. Tux now opens the next realm up to 5 levels before the old cap, so beating a boss early never leaves you stuck.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CLASSES ================= -->
+<section class="band" id="classes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Balance and new skills</div>
+      <h2>Class changes</h2>
+      <p>Pick your class to see what changed. "All classes" covers everyone.</p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Class">
+      <button class="tab" role="tab" id="tab-all" aria-controls="p-all" aria-selected="true" style="--c:var(--accent)"><span class="sw"></span>All classes</button>
+      <button class="tab" role="tab" id="tab-warrior" aria-controls="p-warrior" aria-selected="false" tabindex="-1" style="--c:var(--warrior)"><span class="sw"></span>Warrior</button>
+      <button class="tab" role="tab" id="tab-thief" aria-controls="p-thief" aria-selected="false" tabindex="-1" style="--c:var(--thief)"><span class="sw"></span>Thief</button>
+      <button class="tab" role="tab" id="tab-magician" aria-controls="p-magician" aria-selected="false" tabindex="-1" style="--c:var(--magician)"><span class="sw"></span>Magician</button>
+      <button class="tab" role="tab" id="tab-bowman" aria-controls="p-bowman" aria-selected="false" tabindex="-1" style="--c:var(--bowman)"><span class="sw"></span>Bowman</button>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-all" aria-labelledby="tab-all" style="--c:var(--accent)">
+      <div class="panel-head"><h3>All classes</h3><p>Skill pace, movement and Combat Power.</p></div>
+      <div class="chg"><span class="ico"><img src="img/i/pigment.png" alt=""></span><div class="body"><div class="t"><h4>1st- and 2nd-job skills are free</h4><span class="tag new">New</span></div><p>They're learned as you level. Pigment for skills starts at the 3rd job.</p></div></div>
+      <div class="chg"><span class="ico glyph">2</span><div class="body"><div class="t"><h4>The 2nd job arrives with Tux's Lv20 reward</h4><span class="tag upd">Changed</span></div><p>Its area skill is learned for free: Ground Smash, Gale Star, Chain Lightning or Arrow Bomb. The rest unlock from Lv26.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/stance.png" alt=""></span><div class="body"><div class="t"><h4>3rd- and 4th-job skills arrive as you level</h4><span class="tag upd">Changed</span></div><p>You unlock a new 3rd-job skill at Lv60, 63, 66, 69 and 72, and a new 4th-job skill at Lv90, 95, 100 and so on. How high you can raise a skill grows with you too: up to Lv10 by Lv75 (4th job: by Lv105).</p></div></div>
+      <div class="chg"><span class="ico glyph">↕</span><div class="body"><div class="t"><h4>Ropes and ladders climb 2× faster</h4><span class="tag buff">Buff</span></div><p>Speed buffs can push that to 2.4×.</p></div></div>
+      <div class="chg"><span class="ico glyph">→</span><div class="body"><div class="t"><h4>No knockback mid-move</h4><span class="tag buff">Buff</span></div><p>Ordinary monster hits during a movement skill still deal damage but no longer shove or stagger you. Boss hits still knock you back.</p></div></div>
+      <div class="chg"><span class="ico glyph">CP</span><div class="body"><div class="t"><h4>Combat Power now includes your skills</h4><span class="tag upd">Changed</span></div><p>So expect your number to change. Avoid no longer counts toward it.</p></div></div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-warrior" aria-labelledby="tab-warrior" style="--c:var(--warrior)" hidden>
+      <div class="panel-head"><h3>Warrior</h3><p>Charge in, clear the pile, leap out.</p></div>
+      <div class="chg"><span class="ico"><img src="img/i/heroicleap.png" alt=""></span><div class="body"><div class="t"><h4>Heroic Leap resets</h4><span class="tag new">New</span></div><p>Kill a foe that <b>Lance Charge</b> hit within the last 4 seconds and Heroic Leap and Dash are ready again, once per charge.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/thirdstrike.png" alt=""></span><div class="body"><div class="t"><h4>Third Strike</h4><span class="tag buff">Buff</span></div><p>With the 4th job, its extra hits grow 18% per level: 220% at Lv10, was 100%.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/rage.png" alt=""></span><div class="body"><div class="t"><h4>Rage</h4><span class="tag upd">Changed</span></div><p>Now adds 4% + 0.4% per level of your attack (12% at max) instead of a flat amount. It's a bit weaker early and stronger late.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/groundsmash.png" alt=""></span><div class="body"><div class="t"><h4>Ground Smash at the 2nd job</h4><span class="tag new">Free</span></div><p>Your 2nd job's area skill comes learned with Tux's Lv20 reward.</p></div></div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-thief" aria-labelledby="tab-thief" style="--c:var(--thief)" hidden>
+      <div class="panel-head"><h3>Thief</h3><p>A new star at the 3rd job; Triple Throw moves up.</p></div>
+      <div class="chg"><span class="ico"><img src="img/i/tempeststar.png" alt=""></span><div class="body"><div class="t"><h4>Tempest Star</h4><span class="tag new">New 3rd-job attack</span></div><p>A big star that hits for 4 lines and pierces 6 foes. At max it matches the old Gale Star. Learning it takes Gale Star's key.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/galestar.png" alt=""></span><div class="body"><div class="t"><h4>Gale Star</h4><span class="tag nerf">Nerf</span></div><p>Pierces 3 foes, not 6, and hits about 10% softer at max: 260% a line at Lv20, was 289%.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/triplethrow.png" alt=""></span><div class="body"><div class="t"><h4>Triple Throw moves to the 4th job</h4><span class="tag upd">Changed</span></div><p>Now 300 Pigment. It takes the attack key when learned, and its fan is tighter so all three stars land at range.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/grapplinghook.png" alt=""></span><div class="body"><div class="t"><h4>Grappling Hook moves to the 3rd job</h4><span class="tag upd">Changed</span></div><p>Now 150 Pigment.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/shadowpartner.png" alt=""></span><div class="body"><div class="t"><h4>Shadow Partner</h4><span class="tag nerf">Nerf</span></div><p>Copies deal 35% at Lv10 (was 50%), and only 30% of that on bosses.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/flashjump.png" alt=""></span><div class="body"><div class="t"><h4>Flash Jump and Shadow Step</h4><span class="tag buff">Buff</span></div><p>Both now work out of an attack, and you can attack mid-blink.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/galestar.png" alt=""></span><div class="body"><div class="t"><h4>Gale Star at the 2nd job</h4><span class="tag new">Free</span></div><p>Your 2nd job's area skill comes learned with Tux's Lv20 reward.</p></div></div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-magician" aria-labelledby="tab-magician" style="--c:var(--magician)" hidden>
+      <div class="panel-head"><h3>Magician</h3><p>Reworked: the rifts open where you land, every eruption is ranged, and the 4th job gets three new skills.</p></div>
+      <div class="chg"><span class="ico"><img src="img/i/rift.png" alt=""></span><div class="body"><div class="t"><h4>Rifts open where you land</h4><span class="tag upd">Reworked</span></div><p>Teleport tears a rift at your landing spot. It erupts at nearby foes right away, then keeps one echo for a second eruption. You get one rift per recharge, about 1.6 s and faster as Rift levels up. A Teleport during the recharge is just movement.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/stance.png" alt=""></span><div class="body"><div class="t"><h4>Every eruption is ranged</h4><span class="tag upd">Reworked</span></div>
+        <div class="marks">
+          <div class="mark"><b><span class="dot" style="background:#ff7a3c"></span>Fire</b>The flamethrower turret: three heavy flames, aimed at bosses first, then at Scorched foes (+20%).</div>
+          <div class="mark"><b><span class="dot" style="background:#7bd64a"></span>Poison</b>A homing venom orb that blooms over a pack.</div>
+          <div class="mark"><b><span class="dot" style="background:#9b6bff"></span>Dark</b>A demon spear, then a void that pulls the foes on its floor together and strikes twice.</div>
+        </div></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/chainfire.png" alt=""></span><div class="body"><div class="t"><h4>Elemental Chain (was Rift Lightning)</h4><span class="tag upd">Reworked</span></div><p>Draws each element's own bolt and marks what it hits. Its icon shows your current element. It still spends a rift's echo, turns round for a foe behind you, and casts in 0.55 s (was 0.6).</p>
+        <div class="marks">
+          <div class="mark"><b><img src="img/i/chainfire.png" alt="">Scorch</b>A burn.</div>
+          <div class="mark"><b><img src="img/i/chainpoison.png" alt="">Venom</b>Stacks to 5, spreads when its foe dies, and combusts under fire.</div>
+          <div class="mark"><b><img src="img/i/chaindark.png" alt="">Hex</b>+15% damage from your rifts and Elemental Chain.</div>
+        </div></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/teleport.png" alt=""></span><div class="body"><div class="t"><h4>Cast on the move and Blink Cast</h4><span class="tag new">New</span></div><p>Hold left or right and you walk while Elemental Chain plays out. An Elemental Chain right after a rift-opening Teleport casts 25% faster. Teleport now cancels a cast's recovery.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/riftrecall.png" alt=""></span><div class="body"><div class="t"><h4>Rift Recall</h4><span class="tag upd">Changed</span></div><p>Takes you back to where your last Teleport began (within 10 s). If that Teleport's rift still holds its echo, it erupts as you go.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/cataclysm.png" alt=""></span><div class="body"><div class="t"><h4>Elemental Cataclysm</h4><span class="tag new">New 4th job</span></div><p>Replaces Convergence at the same level. Blasts up to 10 foes around you with all three marks and erupts every open rift. Then you're <b>Attuned</b> for 5 s: every eruption fires in all three elements. 30 s cooldown.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/stance.png" alt=""></span><div class="body"><div class="t"><h4>Elemental Shift</h4><span class="tag new">New 4th-job passive</span></div><p>Switch stance just after a Teleport and its rift erupts again in the new element, once per element.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/limitless.png" alt="" id="limitless-ico"></span><div class="body"><div class="t"><h4>Limitless</h4><span class="tag new">New 4th-job toggle</span></div><p>Your stance picks itself: fire when a boss is in sight, otherwise whichever element hits the most foes. Press Stance to hold your own pick for 6 s. It's on by default, and its key turns it off. Its icon follows your stance.</p></div></div>
+      <div class="chg"><span class="ico glyph">M</span><div class="body"><div class="t"><h4>Meditation</h4><span class="tag upd">Changed</span></div><p>Now adds 4% + 0.4% per level of your attack (12% at max) instead of a flat amount.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/chainlightning.png" alt=""></span><div class="body"><div class="t"><h4>Chain Lightning at the 2nd job</h4><span class="tag new">Free</span></div><p>Your 2nd job's area skill comes learned with Tux's Lv20 reward.</p></div></div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-bowman" aria-labelledby="tab-bowman" style="--c:var(--bowman)" hidden>
+      <div class="panel-head"><h3>Bowman</h3><p>Arrow Rain joins the rotation.</p></div>
+      <div class="chg"><span class="ico"><img src="img/i/arrowrain.png" alt=""></span><div class="body"><div class="t"><h4>Arrow Rain is a rotation skill</h4><span class="tag upd">Reworked</span></div><p>8 s cooldown (was 30) and 8350% a line at Lv10 (was 960%). Each trap now refunds 0.5 s (was 2 s).</p></div></div>
+      <div class="chg"><span class="ico glyph">S</span><div class="body"><div class="t"><h4>Soul Arrow</h4><span class="tag upd">Changed</span></div><p>Now adds 4% + 0.4% per level of your attack (12% at max) instead of a flat amount.</p></div></div>
+      <div class="chg"><span class="ico glyph">×</span><div class="body"><div class="t"><h4>Critical Shot retired</h4><span class="tag nerf">Removed</span></div><p>Its Pigment and SP are refunded at login.</p></div></div>
+      <div class="chg"><span class="ico"><img src="img/i/arrowbomb.png" alt=""></span><div class="body"><div class="t"><h4>Arrow Bomb at the 2nd job</h4><span class="tag new">Free</span></div><p>Your 2nd job's area skill comes learned with Tux's Lv20 reward.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ECHOES & DUELS ================= -->
+<section class="band" id="echoes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Endgame</div>
+      <h2>Echoes, rebuilt, and Echo Duels</h2>
+      <p>Echoes now open at <b>Lv 120</b>, once you've finished the whole story. Until then the Echo list shows as a preview.</p>
+    </div>
+    <div class="split">
+      <article class="card">
+        <h3>One endless ladder</h3>
+        <div class="ladder">
+          <div class="rung"><span class="n">1</span><p>Echo 1, 2, 3 and on, with no top. Each number uses one realm's floors (Red, Green, Yellow or Orange). It's the same for everyone and changes every Tuesday (UTC). Clearing in half par opens the next two numbers.</p></div>
+          <div class="rung"><span class="n">≈</span><p><b>The rain rises.</b> Past par the water climbs on your run line, and at twice par the Echo floods and the run ends. Par is now set by the Echo number, and it's much shorter early on.</p></div>
+          <div class="rung"><span class="n">☂</span><p><b>Echo Umbrella</b> (20,000 Meso at Winchester once you have access). When you'd die in a run you're asked "Open your umbrella?" for 8 s, with No as the default. Yes stands you up at 50% HP. You can use one per run. A <b>Dry clear</b> without one pays +25% Echo Dust and ranks higher.</p></div>
+          <div class="rung"><span class="n">★</span><p><b>Rewards.</b> Your best clear each week leaves a cache of Echo Dust, shards and a gear piece. Your first clear each day pays +50% Dust. Bring friends: each extra party member adds +10% Dust and a chance at a second gear piece.</p></div>
+          <div class="rung"><span class="n">◆</span><p><b>Gear and amulet.</b> Echo gear drops for Lv120, gets stronger with the Echo number and its grade, and is named for where it dropped ("Red Echo 8"). The amulet attunes itself when you have the shards. Each story boss pays one tier of shards once, and tiers now go past 20.</p></div>
+        </div>
+        <p class="small muted">Also new: leaderboards at the level cap with a class filter (a new season starts now), a keep-going card (Next / Again / Portal Room), entering from anywhere safe, a Forfeit button, and an upgrade verdict on the result card. Affixes are renamed Thunderhead, Oilskin, Cloudburst, Squall, Overcast and Gust.</p>
+      </article>
+
+      <article class="card">
+        <div><span class="tag new">New PvP</span></div>
+        <h3>Echo Duels</h3>
+        <p>Race another player up a rising Echo, each in your own copy of the same floors. The water climbs behind you both, and if you flood or die you're out. The last one standing wins. You lose nothing but the duel.</p>
+        <p>Queue for a match (it follows you while you play) or challenge a friend, a party member or anyone nearby. Open the Duel tab with <kbd>'</kbd>. Players are matched by amulet tier, and Tinctures and umbrellas aren't allowed. All duels open at Lv120; ranked also needs the amulet.</p>
+        <div class="pay">
+          <div><b>30</b>Pigment + a Forge Guard for a ranked win</div>
+          <div><b>15</b>Pigment for a casual win</div>
+          <div><b>5</b>Pigment for a finished loss</div>
+        </div>
+        <p class="small muted">Your first 5 paid duels each day pay. A rematch with the same player pays once a day. Quitting or disconnecting pays nothing.</p>
+        <h3 style="font-size:19px;margin-top:6px">Climb the Watch</h3>
+        <p class="small">The first time each season you reach a rank, you get a Forge bundle (Guards + Slot Restores):</p>
+        <div class="watch">
+          <div class="wr"><b>Envoy</b><span class="g">2 + 0</span></div>
+          <div class="wr"><b>Warden</b><span class="g">3 + 1</span></div>
+          <div class="wr"><b>Keeper</b><span class="g">5 + 2</span></div>
+          <div class="wr"><b>Steward</b><span class="g">8 + 3</span></div>
+          <div class="wr"><b>Arbiter</b><span class="g">10 + 5</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SYSTEMS ================= -->
+<section class="band" id="systems">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">New systems</div>
+      <h2>Realm sets and more</h2>
+      <p>Every realm leaves something on you. Gear from a realm belongs to that realm's set: wear 3 pieces to wake its <b>vice</b>, and 5 to settle it into its <b>virtue</b>. Mix sets however you like, such as 3 of one and 3 of another. Until you're wearing 3 of a realm's set, every drop from that realm belongs to it; after that, only some do. Auto-equip still picks the stronger piece first.</p>
+    </div>
+    <div class="tablebox sets">
+      <table>
+        <thead><tr><th>Realm</th><th>3 pieces · the vice</th><th>5 pieces · the virtue</th></tr></thead>
+        <tbody>
+          <tr style="--c:var(--red)"><td class="r"><span><i class="dot" style="background:var(--red)"></i>Red</span></td><td><b>Fury:</b> up to +15% damage as your HP falls</td><td><b>Passion:</b> the full +15% at any HP</td></tr>
+          <tr style="--c:var(--green)"><td class="r"><span><i class="dot" style="background:var(--green)"></i>Green</span></td><td><b>Envy:</b> +12% damage to elites and bosses</td><td><b>Compassion:</b> kills heal you 6% (nearby party 3%), at most 8% a second</td></tr>
+          <tr style="--c:var(--yellow)"><td class="r"><span><i class="dot" style="background:var(--yellow)"></i>Yellow</span></td><td><b>Fear:</b> below half HP, 25% less damage taken and +15% speed for 4 s, once every 20 s</td><td><b>Joy:</b> +15% damage above 70% HP</td></tr>
+          <tr style="--c:var(--orange)"><td class="r"><span><i class="dot" style="background:var(--orange)"></i>Orange</span></td><td><b>Vanity:</b> +2% damage per Unique-or-better piece worn (max +10%)</td><td><b>Enthusiasm:</b> +4% per piece (max +16%)</td></tr>
+          <tr style="--c:var(--blue)"><td class="r"><span><i class="dot" style="background:var(--blue)"></i>Blue</span></td><td><b>Sorrow:</b> 12% less damage taken</td><td><b>Serenity:</b> 10% less damage taken for 3 s after a potion</td></tr>
+          <tr style="--c:var(--indigo)"><td class="r"><span><i class="dot" style="background:var(--indigo)"></i>Indigo</span></td><td><b>Obsession:</b> +3% damage per hit in a row on one target (max +12%)</td><td><b>Wisdom:</b> max +15%, and the streak carries to the next target</td></tr>
+          <tr style="--c:var(--violet)"><td class="r"><span><i class="dot" style="background:var(--violet)"></i>Violet</span></td><td><b>Delusion:</b> +20% critical damage</td><td><b>Creativity:</b> 20% of hits repeat as a phantom hit for half damage</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="grid" style="margin-top:16px">
+      <article class="card"><div class="k"><span class="ico glyph">S</span><h3>Settling</h3></div><p>Love a piece but want a different set on it? Settle it at the Forge with 10 of a realm's monster items, 1 of its shards and some Pigment. Or use a single <b>Tear</b> (Tear of Fury, Tear of Envy and so on): monsters drop their realm's Tear about 1 in 400, and bosses 1 in 20. Your monster items finally have a use, and auto-equip never swaps out a Settled piece.</p></article>
+      <article class="card"><div class="k"><span class="ico glyph">↺</span><h3>Old realms grow with you</h3></div><p>Go back to a realm you've already restored and its monsters rise to meet you, just 5 levels below you. They give EXP, Meso and gear worth your time, and their name tags show the level they're fighting at. That also means a high-level friend can play alongside a new player without taking every kill.</p></article>
+      <article class="card"><div class="k"><span class="ico glyph">?</span><h3>Monster card</h3></div><p>Hover over a monster (tap it on phone) to see its level, realm, drop and drop rate, its Tear and its set.</p></article>
+      <article class="card"><div class="k"><span class="ico glyph">⇄</span><h3>Link skills</h3></div><p>A character who reaches the 3rd job lends a bonus to your other characters. See the new LINKS tab in Stats.</p>
+        <div class="marks"><div class="mark"><b><span class="dot" style="background:var(--warrior)"></span>Warrior</b>+5% Max HP</div><div class="mark"><b><span class="dot" style="background:var(--thief)"></span>Thief</b>+3% critical rate</div><div class="mark"><b><span class="dot" style="background:var(--magician)"></span>Magician</b>MP regen</div><div class="mark"><b><span class="dot" style="background:var(--bowman)"></span>Bowman</b>+5% Accuracy</div></div></article>
+      <article class="card"><div class="k"><span class="ico glyph">+4</span><h3>Bigger bags</h3></div><p>Buy +4 slots for a bag tab with Meso, for your whole account. The first costs 100,000 and each one after costs 1.5× more, up to 64 slots a tab.</p></article>
+      <article class="card"><div class="k"><span class="ico glyph">⌖</span><h3>World Map, Channels, Social</h3></div><p>The <b>World Map</b> <kbd>[</kbd> takes you straight to any room you've restored, a hall or a hideout. <b>Channels</b> are open <kbd>;</kbd>. A new <b>Social</b> corner button holds Echoes, Friends, Party, Channels, Duels and chat (Off / Near others / Always). Options keeps the settings.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ITEMS & FORGE ================= -->
+<section class="band" id="forge">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Economy</div>
+      <h2>Items, Forge and potions</h2>
+    </div>
+    <div class="split">
+      <article class="card">
+        <h3>One HP Elixir, one MP Elixir</h3>
+        <p>They replace Winchester's potion ladder. The price rises with your level, from 100 to 800 Meso.</p>
+        <div class="elixirs">
+          <div class="elx"><img src="img/i/hpelixir.png" alt=""><div><b>HP Elixir</b><span>Heals 65% of max HP. Your Cape's Forge bonus (plus a Hallmark potion line) adds up to +35% more.</span></div></div>
+          <div class="elx"><img src="img/i/mpelixir.png" alt=""><div><b>MP Elixir</b><span>Restores all your MP.</span></div></div>
+        </div>
+        <h3 style="margin-top:8px">Loot</h3>
+        <ul>
+          <li>Every room chest now drops a piece of gear, and chest loot always reaches your bag.</li>
+          <li>Yellow drops about 3.5× more gear, and Orange drops more Pigment.</li>
+          <li>Story bosses pay 45 Pigment in their daily chest.</li>
+          <li><b>Rain-forged drops:</b> gear can drop with +1 to +3 Forge points that use no slot.</li>
+          <li>Forge Guards and Restores now drop: rarely from monsters from Green on, more often from elites, from Echo clears, and from each story boss's chest once a day per character.</li>
+          <li>Ground drops vanish after 3 minutes (keys, Rain-forged and Unique+ gear after 10), at most 120 per map.</li>
+          <li>Winchester no longer sells the Wash of Clear Rain. Ones you own still work, and Reset AP is in the Stats window.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <div class="k"><span class="ico"><img src="img/i/guard.png" alt=""></span><h3>The Forge, redesigned</h3></div>
+        <p>Each slot now does one job:</p>
+        <div class="slots">
+          <div class="slot"><small>Weapon</small><b>Attack</b></div>
+          <div class="slot"><small>Gloves</small><b>Attack</b></div>
+          <div class="slot"><small>Overall</small><b>Main stat</b></div>
+          <div class="slot"><small>Hat</small><b>Boss &amp; elite damage</b></div>
+          <div class="slot"><small>Earring</small><b>Damage vs 3+ foes</b></div>
+          <div class="slot"><small>Pants</small><b>Less damage taken</b></div>
+          <div class="slot"><small>Cape</small><b>Potion healing</b></div>
+          <div class="slot"><small>Shoes</small><b>Move speed</b></div>
+        </div>
+        <ul>
+          <li><b>Hard strikes:</b> a 30% chance for +4 points (was 10% for +3).</li>
+          <li>Story gear has fewer slots (3 on weapons and overalls, 2 on other pieces) and stops at 8 forged points. Echo gear keeps its slots and stops at 16.</li>
+          <li>Dismantling a forged piece returns half the Pigment spent forging it.</li>
+          <li>A Forge Slot Restore only reheats a socket that a missed strike spent.</li>
+        </ul>
+        <p><b>Hallmark</b> (Echo gear only): at 8+ forged points, wake one bonus line, reroll it with Echo Dust, and temper it up the tiers.</p>
+        <div class="tiers" aria-label="Hallmark tiers"><span>Spark</span><span>Flame</span><span>Blaze</span><span>Inferno</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORLD ================= -->
+<section class="band" id="world">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Maps and monsters</div>
+      <h2>The world</h2>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="k"><span class="ico glyph">♛</span><h3>Tougher bosses after Yellow</h3></div><p>The White Monkey Chief, Ravana and the Holdfast have about twice the HP. They were falling in about 25 seconds; now they put up a real fight.</p></article>
+      <article class="card"><div class="k"><span class="ico glyph" style="color:var(--blue)">!</span><h3>Late realms are dangerous again</h3></div><p>Your armour now holds up less well against higher-level monsters, so from Blue onward they hit harder. Echo floors are unchanged.</p></article>
+      <article class="card"><div class="k"><span class="ico glyph">⧗</span><h3>Fuller rooms</h3></div><p>More monsters everywhere, spread evenly across each room's platforms, and every room takes a few satisfying minutes to restore.</p></article>
+      <article class="card"><div class="k"><span class="ico glyph" style="color:var(--red)">»</span><h3>A faster start</h3></div><p>The training ground's storm takes 50 kills, you reach Lv20 on the kill that clears it, and Tux sends you straight to Red. New characters start with stat and skill auto-assign on; untick it any time.</p></article>
+      <article class="card" style="border-top:4px solid var(--orange)"><div class="k"><h3>Orange</h3></div><ul><li>About a third more monsters.</li><li>Updrafts in every room, so you can reach every platform. The temple's stray platforms are gone.</li><li>Rooms glow amber from the start behind a grey haze that lifts as you fight, and the rain stops once a room is restored.</li></ul></article>
+      <article class="card" style="border-top:4px solid var(--blue)"><div class="k"><h3>Blue</h3></div><ul><li>Every Blue room is relit as an aqua night, glowing from its own diver lamps.</li><li>You can grab its ropes and ladders straight from the floor.</li><li>In Blue, Indigo and Violet the lights are in colour from your first kill, and every monster's glow now matches its colour.</li></ul></article>
+      <article class="card"><div class="k"><span class="ico glyph" style="color:var(--orange)">↑</span><h3>Zakum's Last Stand</h3></div><p>The story fight now shows a live arrow to the safe side of the wall.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INTERFACE ================= -->
+<section class="band" id="interface">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Quality of life</div>
+      <h2>Interface</h2>
+    </div>
+    <div class="split">
+      <article class="card">
+        <h3>Windows and controls</h3>
+        <ul>
+          <li>Skill icons pop when they come off cooldown, shake red when a cast is refused, and glow briefly when cast.</li>
+          <li>The Forge window is redesigned. The Hallmark column only shows on Echo gear.</li>
+          <li>"Sell downgrades", "Sell Etc items" and "Dismantle downgrades" each open one list with a tick per item.</li>
+          <li>Throw Away asks first and lets you choose how many. Toasts last longer (3.5 s).</li>
+          <li>The Stats window gets FORGE and LINKS tabs.</li>
+          <li>Set pieces show a thin line in their realm's colour in the bag and equipment.</li>
+          <li>Loot on the ground glows by grade, and a keycap over the nearest drop shows how to pick it up.</li>
+          <li>You can see other players' skill effects and pets (Options &gt; Other players: Full / Light / Off), and you can take up to 3 pets out.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>New keys</h3>
+        <div class="marks">
+          <div class="mark"><b><kbd>[</kbd> World Map</b></div>
+          <div class="mark"><b><kbd>\</kbd> Echoes</b></div>
+          <div class="mark"><b><kbd>'</kbd> Duels</b></div>
+          <div class="mark"><b><kbd>]</kbd> The Record</b></div>
+          <div class="mark"><b><kbd>;</kbd> Channels</b></div>
+        </div>
+        <p class="small muted">Key Bindings now lists every system key.</p>
+        <h3 style="margin-top:8px">On phones</h3>
+        <ul>
+          <li>Combat Power shows on phones, with an ECHO row in the Den, the Portal Room and Echoes.</li>
+          <li>Tapping a bag item opens one compact card.</li>
+          <li>Edit HUD allows up to 10 skill buttons.</li>
+          <li>Flash Jump, Double Jump and Shadow Step jump for you on one tap.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FIXES ================= -->
+<section class="band" id="fixes">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Fixed</div>
+      <h2>Bug fixes</h2>
+    </div>
+    <div class="card list-cols">
+      <ul>
+        <li>Going to Character Select while dead no longer makes your next character load dead.</li>
+        <li>The Den and other maps no longer turn orange after Orange rooms or the Orange Echo.</li>
+        <li>Character Select's cave shows again after you return from the game.</li>
+        <li>The Husky pet no longer looks like it's crying.</li>
+        <li>Monsters knocked off a floor's edge no longer fall forever and block the room.</li>
+        <li>A boss's daily Legendary chest no longer gives gear above your level, and the Lv20 reward weapon now equips itself.</li>
+        <li>Phone: Flash Jump, Double Jump and mid-air Teleport use air charges like on PC, and you can read Edit HUD's "can't add that" messages.</li>
+        <li>The Wraith's Drowning Grasp now shows where it will land.</li>
+        <li>Iron Body no longer counts twice in Combat Power and Defense.</li>
+        <li>Selling in the shop is faster, the shop fits iPad screens, and phones and iPads run faster.</li>
+        <li>Ropes and ladders in Red, Green, Yellow and Orange (and their Echo floors) reach the floor, so pressing up at the foot grabs them.</li>
+        <li>Orange Echo ropes work. Echo floors have no padlocks, and Green's have fewer elites.</li>
+        <li>Korean and Chinese: tutorial arrows find translated keys, and phone players are told to tap instead of press.</li>
+      </ul>
+    </div>
+    <div class="known" style="margin-top:16px">
+      <h3>Known issues</h3>
+      <ul>
+        <li>Channels are new. Tell us if switching misbehaves.</li>
+        <li>If you switch the language from Korean to Chinese in game, the title art stays Korean until you restart.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>See you in the rain.</b>
+    <span>A Terrible Day For Rain · October update</span>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script>
+(function(){
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* rain over the masthead */
+  var cv = document.getElementById('rain');
+  if (cv && cv.getContext) {
+    var ctx = cv.getContext('2d'), drops = [], W = 0, H = 0, dpr = Math.min(2, window.devicePixelRatio || 1), running = true, raf = 0;
+    function size(){ var r = cv.getBoundingClientRect(); W = r.width; H = r.height; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+      var want = Math.round(W * H / 5200); drops = [];
+      for (var i = 0; i < want; i++) drops.push({x: Math.random() * (W + 200) - 100, y: Math.random() * H, l: 10 + Math.random() * 22, v: 7 + Math.random() * 9, a: .08 + Math.random() * .22});
+      draw(); }
+    function draw(){ ctx.clearRect(0,0,W,H); ctx.lineWidth = 1;
+      for (var i = 0; i < drops.length; i++) { var d = drops[i]; ctx.strokeStyle = 'rgba(190,205,255,' + d.a + ')'; ctx.beginPath(); ctx.moveTo(d.x, d.y); ctx.lineTo(d.x - d.l * .22, d.y + d.l); ctx.stroke(); } }
+    function step(){ for (var i = 0; i < drops.length; i++) { var d = drops[i]; d.y += d.v; d.x -= d.v * .22; if (d.y > H) { d.y = -d.l; d.x = Math.random() * (W + 200) - 50; } } draw(); if (running) raf = requestAnimationFrame(step); }
+    size(); window.addEventListener('resize', size);
+    if (!reduce) {
+      if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ var v = es[0].isIntersecting; if (v && !running) { running = true; raf = requestAnimationFrame(step); } else if (!v) { running = false; cancelAnimationFrame(raf); } }).observe(cv);
+      raf = requestAnimationFrame(step);
+    } else { running = false; }
+  }
+
+  /* Hollow Night: local times + countdown */
+  var end = Date.parse('2026-11-05T08:00:00Z');
+  var lang = 'en';
+  var LOC = {
+    en: { loc: undefined, left: 'Time left', ended: 'has ended', hn: 'Hollow Night', d: 'd ', h: 'h ', m: 'm' },
+    ko: { loc: 'ko-KR', left: '남은 시간', ended: '종료됨', hn: '할로우 나이트', d: '일 ', h: '시간 ', m: '분' },
+    zh: { loc: 'zh-CN', left: '剩余时间', ended: '已结束', hn: '万圣幽夜', d: '天', h: '小时', m: '分钟' }
+  };
+  function fmtDates(){ document.querySelectorAll('[data-utc]').forEach(function(el){
+    try { el.textContent = new Date(el.getAttribute('data-utc')).toLocaleString(LOC[lang].loc, {month:'short', day:'numeric', hour:'numeric', minute:'2-digit', timeZoneName:'short'}); } catch(e) {}
+  }); }
+  var cd = document.getElementById('countdown');
+  function span(ms){ var L = LOC[lang], d = Math.floor(ms / 864e5), h = Math.floor(ms % 864e5 / 36e5), m = Math.floor(ms % 36e5 / 6e4); return (d > 0 ? d + L.d + h + L.h : h + L.h + m + L.m).trim(); }
+  function tick(){ if (!cd) return; var now = Date.now(), lab = cd.querySelector('b'), val = cd.querySelector('span'), L = LOC[lang];
+    if (now < end) { lab.textContent = L.left; val.textContent = span(end - now); }
+    else { lab.textContent = L.hn; val.textContent = L.ended; }
+    cd.hidden = false; }
+  fmtDates(); tick(); setInterval(tick, 30000);
+
+  /* class tabs */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  function select(t, focus){ tabs.forEach(function(x){ var on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; document.getElementById(x.getAttribute('aria-controls')).hidden = !on; }); if (focus) t.focus(); }
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ select(t); });
+    t.addEventListener('keydown', function(e){ var j = e.key === 'ArrowRight' ? i + 1 : e.key === 'ArrowLeft' ? i - 1 : e.key === 'Home' ? 0 : e.key === 'End' ? tabs.length - 1 : -1; if (j < 0) return; e.preventDefault(); select(tabs[(j + tabs.length) % tabs.length], true); });
+  });
+  var h = (location.hash || '').slice(1), deep = document.getElementById('tab-' + h);
+  if (deep) { select(deep); var sec = document.getElementById('classes'); if (sec) sec.scrollIntoView(); }
+
+  /* Limitless icon follows the stance */
+  var li = document.getElementById('limitless-ico'), lis = ['img/i/limitless.png','img/i/limitlesspoison.png','img/i/limitlessdark.png'], k = 0;
+  if (li && !reduce) setInterval(function(){ k = (k + 1) % 3; li.src = lis[k]; }, 1600);
+
+  /* rail: mark the section in view */
+  var links = Array.prototype.slice.call(document.querySelectorAll('.rail a'));
+  var map = {}; links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { links.forEach(function(a){ a.removeAttribute('aria-current'); }); var a = map[e.target.id]; if (a) { a.setAttribute('aria-current', 'true'); try { a.scrollIntoView({block:'nearest', inline:'nearest'}); } catch(x) {} } } }); }, {rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(map).forEach(function(id){ var s = document.getElementById(id); if (s) io.observe(s); });
+  }
+
+  /* language: English as authored, Korean, Simplified Chinese (i18n.js, keyed by each text unit's English HTML) */
+  var DICT = window.ATDFR_I18N || {};
+  var SEL = 'title,h1,h2,h3,h4,p,li,figcaption,th,td,button.tab,.rail a,.eyebrow,.stat span,.stat b,.chip b,.chip span,.tag,.slot small,.slot b,.guest > b,.guest > span,.prize div,.cos > span:not(.price),.day,.mark,.wr b,.pay div,.fact,.item,.lv,.role,.elx div,.tiers span,.k h3,.week h4,footer b,footer span';
+  function norm(s){ return s.replace(/\s+/g, ' ').trim(); }
+  var units = (function(){
+    var all = Array.prototype.slice.call(document.querySelectorAll(SEL)), set = new Set(all);
+    return all.filter(function(e){ if (e.closest('[data-noi18n]')) return false; var a = e.parentElement; while (a) { if (set.has(a)) return false; a = a.parentElement; } return true; })
+      .map(function(e){ return { el: e, en: e.innerHTML, key: norm(e.innerHTML) }; });
+  })();
+  var FONTS = {
+    ko: 'https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;700;800&display=swap',
+    zh: 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap'
+  };
+  function loadFont(l){ var href = FONTS[l]; if (!href || document.querySelector('link[data-font="' + l + '"]')) return;
+    var k = document.createElement('link'); k.rel = 'stylesheet'; k.href = href; k.setAttribute('data-font', l); document.head.appendChild(k); }
+  var langButtons = Array.prototype.slice.call(document.querySelectorAll('.lang button'));
+  function setLang(l, save){
+    if (!LOC[l]) l = 'en';
+    lang = l;
+    var root = document.documentElement;
+    root.setAttribute('data-lang', l);
+    root.lang = l === 'zh' ? 'zh-Hans' : l;
+    loadFont(l);
+    units.forEach(function(u){ var t = DICT[u.key]; var html = (l === 'en' || !t || !t[l]) ? u.en : t[l]; if (u.el.innerHTML !== html) u.el.innerHTML = html; });
+    document.querySelectorAll('.art-text').forEach(function(s){ var img = s.previousElementSibling, t = s.getAttribute('data-' + l);
+      if (l !== 'en' && t) { s.textContent = t; s.hidden = false; if (img) img.hidden = true; } else { s.hidden = true; if (img) img.hidden = false; } });
+    langButtons.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-lang') === l ? 'true' : 'false'); });
+    fmtDates(); tick();
+    if (save) { try { localStorage.setItem('atdfr-lang', l); } catch(e) {} }
+  }
+  langButtons.forEach(function(b){ b.addEventListener('click', function(){ setLang(b.getAttribute('data-lang'), true); }); });
+  var want = null, hashLang = (location.hash || '').slice(1).toLowerCase();
+  if (hashLang === 'ko' || hashLang === 'zh' || hashLang === 'en') want = hashLang;
+  if (!want) { try { var q = new URLSearchParams(location.search).get('lang'); if (q && LOC[q]) want = q; } catch(e) {} }
+  if (!want) { try { want = localStorage.getItem('atdfr-lang'); } catch(e) {} }
+  if (!want) { var nl = (navigator.language || '').toLowerCase(); want = nl.indexOf('ko') === 0 ? 'ko' : nl.indexOf('zh') === 0 ? 'zh' : 'en'; }
+  if (want !== 'en') setLang(want, false);
+})();
+</script>
+
+</body>
+</html>
