@@ -1559,5 +1559,165 @@ window.ATDFR_I18N = {
 "See you in the rain.": {
 "ko": "빗속에서 만나요.",
 "zh": "雨中再见。"
+},
+"<span class=\"tag new\">Latest</span> Hotfix · October 23": {
+"ko": "<span class='tag new'>최신</span> 핫픽스 · 10월 23일",
+"zh": "<span class='tag new'>最新</span> 热修复 · 10月23日"
+},
+"October 23 hotfix": {
+"ko": "10월 23일 핫픽스",
+"zh": "10月23日热修复"
+},
+"A smaller patch on top of the October update: a way to tell us how it's going, fixes from your reports, and a round of polish. The full October update notes are still below.": {
+"ko": "10월 업데이트 위에 얹는 작은 패치입니다. 플레이 소감을 전할 방법, 여러분의 제보로 고친 문제, 그리고 여러 다듬기가 담겨 있습니다. 10월 업데이트 전체 내용은 아래에 그대로 있습니다.",
+"zh": "这是在十月更新基础上的一次小补丁：新增了告诉我们游玩感受的方式，修复了大家报告的问题，并做了一轮打磨。完整的十月更新说明仍在下方。"
+},
+"Tell us how it's going": {
+"ko": "플레이 소감을 들려주세요",
+"zh": "告诉我们你的感受"
+},
+"<b>Feedback window.</b> Options → <b>Feedback</b> (on phones, MENU → Feedback) now has four tabs: <b>Bug</b>, <b>Idea</b>, <b>Something I liked</b> and <b>You said, we did</b>, which lists every change we've made because of your reports.": {
+"ko": "<b>피드백 창.</b> 옵션 → <b>피드백</b>(휴대폰은 MENU → 피드백)에 이제 탭이 네 개 있습니다: <b>버그</b>, <b>아이디어</b>, <b>좋았던 점</b>, 그리고 여러분의 제보로 바꾼 모든 내용을 모은 <b>반영된 의견</b>.",
+"zh": "<b>反馈窗口。</b>选项 → <b>反馈</b>（手机上为 MENU → 反馈）现在有四个标签页：<b>错误</b>、<b>建议</b>、<b>喜欢的地方</b>，以及列出所有根据大家报告所做改动的<b>采纳的意见</b>。"
+},
+"<b>Quick check-ins.</b> After a few big moments (your first restored room, your 2nd job, your first story boss, a rough patch, your first Echo run) a small card may ask \"How was that?\". Tap a face, pick a few words if you like, or close it.": {
+"ko": "<b>짧은 소감 묻기.</b> 몇몇 중요한 순간(처음 복원한 방, 2차 전직, 첫 스토리 보스, 힘든 고비, 첫 에코 도전) 뒤에 작은 카드가 \"어땠나요?\"라고 물을 수 있습니다. 표정을 하나 누르고, 원하면 단어 몇 개를 고르거나, 그냥 닫으세요.",
+"zh": "<b>快速问候。</b>在几个重要时刻之后（第一次恢复房间、二转、第一个剧情首领、陷入困境、第一次回响挑战），可能会弹出一张小卡片问你“感觉怎么样？”。点一个表情，愿意的话选几个词，或者直接关闭。"
+},
+"A check-in never appears in a fight, a boss, an Echo run or a conversation, and it asks each question only once.": {
+"ko": "전투, 보스전, 에코 도전, 대화 중에는 절대 나타나지 않으며, 각 질문은 한 번만 묻습니다.",
+"zh": "战斗中、首领战、回响挑战或对话时绝不会出现，每个问题也只问一次。"
+},
+"<b>What happens to it.</b> Your answers are anonymous. We read every one, and they are shared with the MapleStory Worlds Global Creator Challenge judges.": {
+"ko": "<b>답변은 이렇게 쓰입니다.</b> 답변은 익명입니다. 저희가 하나하나 모두 읽으며, 메이플스토리 월드 글로벌 크리에이터 챌린지 심사위원과 공유됩니다.",
+"zh": "<b>你的回答会怎样使用。</b>回答是匿名的。我们会逐条阅读，并与MapleStory Worlds全球创作者挑战赛的评委共享。"
+},
+"You said, we did": {
+"ko": "반영된 의견",
+"zh": "采纳的意见"
+},
+"Weapon skins now stay on after you log in. <span class=\"muted\">(Report #823N2)</span>": {
+"ko": "이제 접속한 뒤에도 무기 스킨이 유지됩니다. <span class='muted'>(제보 #823N2)</span>",
+"zh": "登录后武器外观现在会保持。<span class='muted'>（报告 #823N2）</span>"
+},
+"Spare realm keys are removed once every door in their realm is open. <span class=\"muted\">(Report #M5M5P)</span>": {
+"ko": "렐름의 모든 문을 열고 나면 남은 그 렐름의 열쇠는 사라집니다. <span class='muted'>(제보 #M5M5P)</span>",
+"zh": "领域内所有门都打开后，该领域多余的钥匙会被移除。<span class='muted'>（报告 #M5M5P）</span>"
+},
+"Talk now picks the NPC you are facing when two stand together. <span class=\"muted\">(Report #BMWA6)</span>": {
+"ko": "NPC 둘이 나란히 서 있으면 이제 대화는 바라보고 있는 NPC를 고릅니다. <span class='muted'>(제보 #BMWA6)</span>",
+"zh": "两个NPC站在一起时，对话现在会选择你面朝的那一个。<span class='muted'>（报告 #BMWA6）</span>"
+},
+"The Equipment window's mannequin shows costume swaps straight away.": {
+"ko": "장비 창의 마네킹이 코스튬을 바꾸면 바로 반영합니다.",
+"zh": "装备窗口的人偶会立即显示更换的时装。"
+},
+"The bag's Meso updates as soon as you buy a bag slot.": {
+"ko": "가방 칸을 사면 가방의 메소가 바로 갱신됩니다.",
+"zh": "购买背包栏位后，背包中的金币会立即更新。"
+},
+"Thank you to everyone who sent a report. Keep them coming.": {
+"ko": "제보를 보내 주신 모든 분께 감사드립니다. 앞으로도 계속 보내 주세요.",
+"zh": "感谢每一位提交报告的玩家。请继续告诉我们。"
+},
+"While Hollow Night runs, every room's gold elite now brings a <b>Hollow Jack-o'-Lantern</b> a few seconds later, in every realm except Red. The random ones still turn up too.": {
+"ko": "할로우 나이트 기간에는 이제 방마다 황금 엘리트가 나타나면 몇 초 뒤 <b>할로우 잭오랜턴</b>도 함께 옵니다(빨강 렐름 제외). 무작위로 나타나는 잭오랜턴도 그대로 나옵니다.",
+"zh": "万圣幽夜期间，每个房间出现金色精英后，几秒钟内还会来一只<b>幽夜南瓜灯</b>（红色领域除外）。随机出现的南瓜灯依旧会出现。"
+},
+"The Den's Halloween decorations leave when the event ends on November 5. Two of its standing braziers now keep it warm.": {
+"ko": "굴의 할로윈 장식은 11월 5일 이벤트가 끝나면 사라집니다. 이제 굴에 서 있는 화로 두 개가 따뜻한 빛을 지켜 줍니다.",
+"zh": "兔窝的万圣节装饰会在11月5日活动结束时撤下。如今由两座立式火盆为兔窝保持温暖。"
+},
+"Changes": {
+"ko": "변경",
+"zh": "改动"
+},
+"Polish": {
+"ko": "다듬기",
+"zh": "打磨"
+},
+"<b>Watch the colour come back.</b> In most realms, clearing a room now sends a restore wave across it, with a moment of full colour before it settles.": {
+"ko": "<b>색이 돌아오는 순간.</b> 대부분의 렐름에서 방을 클리어하면 이제 복원의 물결이 방을 훑고 지나가며, 잠시 온전한 색을 보여 준 뒤 자리를 잡습니다.",
+"zh": "<b>看着色彩归来。</b>在大多数领域中，清空房间时现在会有一道恢复波扫过整个房间，短暂呈现完整色彩后再渐渐稳定。"
+},
+"<b>Tap to pick up.</b> Tap, click or drag over drops to pick them up. Tapping a drop in front of an NPC no longer opens the NPC.": {
+"ko": "<b>탭해서 줍기.</b> 떨어진 아이템을 탭하거나 클릭하거나 드래그해서 주울 수 있습니다. NPC 앞에 떨어진 아이템을 탭해도 더 이상 NPC가 열리지 않습니다.",
+"zh": "<b>点击拾取。</b>点击、单击或拖过掉落物即可拾取。点击NPC前方的掉落物不会再打开NPC。"
+},
+"<b>Phone skill buttons.</b> New skills get a button by themselves, and a skill that replaces another takes over its button. Buttons you removed stay removed.": {
+"ko": "<b>휴대폰 스킬 버튼.</b> 새 스킬은 알아서 버튼을 얻고, 다른 스킬을 대체하는 스킬은 그 버튼을 이어받습니다. 직접 지운 버튼은 지운 채로 남습니다.",
+"zh": "<b>手机技能按钮。</b>新技能会自动获得按钮，替换其他技能的技能会接管原来的按钮。你移除的按钮会保持移除。"
+},
+"<b>Safe tutorials.</b> Nothing can hit you while a tutorial screen is up.": {
+"ko": "<b>안전한 튜토리얼.</b> 튜토리얼 화면이 떠 있는 동안에는 아무것도 당신을 공격할 수 없습니다.",
+"zh": "<b>安心教程。</b>教程画面显示期间，任何东西都无法伤到你。"
+},
+"<b>The storm drill</b> now tells you what it pays: your 2nd job, its area skill and the Red door.": {
+"ko": "<b>폭풍 훈련</b>이 이제 보상을 알려 줍니다: 2차 전직, 그 광역 스킬, 그리고 빨강 문.",
+"zh": "<b>风暴训练</b>现在会告诉你奖励是什么：二转、其范围技能，以及红色之门。"
+},
+"<b>Wick's Echo scene</b> now plays when Echoes actually open (Lv120, story done). If you've already seen it, it won't replay.": {
+"ko": "<b>윅의 에코 장면</b>이 이제 에코가 실제로 열릴 때(Lv120, 스토리 완료) 나옵니다. 이미 본 장면은 다시 나오지 않습니다.",
+"zh": "<b>威克的回响场景</b>现在会在回响真正开启时（Lv120、剧情完成）播放。已经看过的不会重播。"
+},
+"<b>Boss title cards</b> now name the boss's vice.": {
+"ko": "<b>보스 타이틀 카드</b>에 이제 보스의 악덕이 표시됩니다.",
+"zh": "<b>首领标题卡</b>现在会写出首领的恶习。"
+},
+"<b>The Forge</b> shows each piece's realm-set mark, and Settling updates the Forge and your Equipment window straight away.": {
+"ko": "<b>대장간</b>에 장비마다 렐름 세트 표시가 나오며, 깃들이기를 하면 대장간과 장비 창이 바로 갱신됩니다.",
+"zh": "<b>锻造</b>界面会显示每件装备的领域套装标记，寄情后锻造界面和装备窗口会立即更新。"
+},
+"<b>Comfort options.</b> Boss screen shakes follow Screen Shake, and boss and HUD flashes follow Reduce Flashing.": {
+"ko": "<b>편의 옵션.</b> 보스의 화면 흔들림은 화면 흔들림 설정을, 보스와 HUD의 번쩍임은 번쩍임 줄이기 설정을 따릅니다.",
+"zh": "<b>舒适选项。</b>首领造成的画面震动遵循“屏幕震动”设置，首领和HUD的闪光遵循“减少闪烁”设置。"
+},
+"<b>Korean and Chinese.</b> Blue, Indigo and Violet's realm and boss names are lettered in your language.": {
+"ko": "<b>한국어와 중국어.</b> 파랑, 남색, 보라 렐름과 보스 이름이 이제 여러분의 언어로 표기됩니다.",
+"zh": "<b>韩语和中文。</b>蓝、靛、紫领域及其首领的名字现在以你的语言书写。"
+},
+"<b>Smoother play.</b> Fixed a stutter every couple of seconds, which was worse in Korean and Chinese. Phones use much less memory, and the first load finishes loading the art before you step in.": {
+"ko": "<b>더 부드러운 플레이.</b> 몇 초마다 생기던 끊김(한국어와 중국어에서 더 심했음)을 고쳤습니다. 휴대폰의 메모리 사용량이 크게 줄었고, 첫 로딩은 그림을 다 불러온 뒤에 들어갑니다.",
+"zh": "<b>更流畅。</b>修复了每隔几秒出现一次的卡顿（韩语和中文下更严重）。手机内存占用大幅减少，首次加载会先载入美术资源再让你进入。"
+},
+"The Quest Log has a note for Violet.": {
+"ko": "퀘스트 목록에 보라 렐름 안내가 추가되었습니다.",
+"zh": "任务日志中新增了紫色领域的说明。"
+},
+"Fixes": {
+"ko": "수정",
+"zh": "修复"
+},
+"Indigo's boss door offers the re-fight again instead of an empty conversation.": {
+"ko": "남색 렐름의 보스 문이 빈 대화 대신 다시 재도전을 제안합니다.",
+"zh": "靛色领域的首领之门不再是空白对话，重新提供再次挑战。"
+},
+"The storm drill's clear card says THE TRAINING GROUND again.": {
+"ko": "폭풍 훈련의 클리어 카드에 다시 '훈련장'이 표시됩니다.",
+"zh": "风暴训练的通关卡片重新显示“训练场”。"
+},
+"Wick's verses play in story order: Blue, Indigo, Violet.": {
+"ko": "윅의 시구가 스토리 순서대로 나옵니다: 파랑, 남색, 보라.",
+"zh": "威克的诗句按剧情顺序播放：蓝、靛、紫。"
+},
+"Final Attack: Bow's description no longer says its arrows chain.": {
+"ko": "파이널 어택: 활의 설명에서 화살이 연쇄된다는 문구를 지웠습니다.",
+"zh": "终极攻击：弓的说明不再写箭矢会连锁。"
+},
+"The realm-set notice names both the virtue and the vice for sets whose 5-piece bonus adds to the 3-piece one.": {
+"ko": "5부위 효과가 3부위 효과에 더해지는 세트는 이제 렐름 세트 알림에 미덕과 악덕이 함께 표시됩니다.",
+"zh": "对于5件效果叠加在3件效果之上的套装，领域套装提示现在会同时写出美德与恶习。"
+},
+"October update · full notes": {
+"ko": "10월 업데이트 · 전체 내용",
+"zh": "十月更新 · 完整说明"
+},
+"<a href=\"#hotfix\"><span class=\"tag\">New</span> October 23 hotfix →</a>": {
+"ko": "<a href='#hotfix'><span class='tag'>신규</span> 10월 23일 핫픽스 →</a>",
+"zh": "<a href='#hotfix'><span class='tag'>新</span> 10月23日热修复 →</a>"
+},
+"<span class=\"dot\" style=\"background:var(--accent)\"></span>Hotfix · Oct 23": {
+"ko": "<span class='dot' style='background:var(--accent)'></span>핫픽스 · 10/23",
+"zh": "<span class='dot' style='background:var(--accent)'></span>热修复 · 10/23"
 }
 };

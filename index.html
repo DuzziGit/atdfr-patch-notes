@@ -356,6 +356,23 @@ footer b{font-family:var(--display);font-size:22px;color:var(--storm-fg)}
   .mast .stage .spr{--s:.7}
   .mast .stage .spr.margin{--s:1.5}
 }
+
+/* ---------- October 23 hotfix ---------- */
+section.hotfix{background:var(--accent-soft)}
+.hotfix .sec-head .eyebrow{display:flex;align-items:center;gap:10px;color:var(--accent)}
+.hf-grid{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.hf-grid > *{min-width:0}
+.hf-wide{grid-column:span 2}
+@media (max-width:760px){.hf-grid{grid-template-columns:minmax(0,1fr)}.hf-wide{grid-column:auto}}
+.hotfix .card .t{display:flex;gap:8px}
+.hf-cols{display:block;columns:2 320px;column-gap:32px}
+.hf-cols li{break-inside:avoid;margin-bottom:9px}
+.hf-hw{border-color:#e9b27a;background:linear-gradient(160deg,var(--surface) 55%,color-mix(in srgb,var(--hw-orange) 14%,var(--surface)))}
+.hf-note a{display:inline-flex;align-items:center;gap:8px;color:var(--storm-fg);text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:6px 14px;font-weight:800;font-size:15px}
+.hf-note a:hover{background:rgba(255,255,255,.14)}
+.hf-note .tag{background:var(--hw-green);color:#10220a}
+.divider{background:var(--storm);color:var(--storm-muted);padding-block:16px}
+.divider .eyebrow{color:var(--storm-muted)}
 </style>
 </head>
 <body>
@@ -373,6 +390,7 @@ footer b{font-family:var(--display);font-size:22px;color:var(--storm-fg)}
         <div class="stat"><b>4</b><span>new bosses</span></div>
         <div class="stat"><b>12</b><span>candy costumes</span></div>
       </div>
+      <p class="hf-note"><a href="#hotfix"><span class="tag">New</span> October 23 hotfix →</a></p>
     </div>
     <div class="stage" aria-hidden="true">
       <div class="spr px margin" style="--w:106;--h:101;--n:24;background-image:url(img/s/margin.png)"></div>
@@ -385,6 +403,7 @@ footer b{font-family:var(--display);font-size:22px;color:var(--storm-fg)}
 <div class="rail">
   <div class="wrap">
     <div class="navscroll"><nav aria-label="Categories">
+      <a href="#hotfix"><span class="dot" style="background:var(--accent)"></span>Hotfix · Oct 23</a>
       <a href="#hollow-night" class="hw"><img src="img/i/candy.png" alt="" width="18" height="18" class="pix">Hollow Night</a>
       <a href="#login"><span class="dot" style="background:var(--accent)"></span>On login</a>
       <a href="#realms"><span class="dot" style="background:var(--violet)"></span>New realms</a>
@@ -405,6 +424,82 @@ footer b{font-family:var(--display);font-size:22px;color:var(--storm-fg)}
 </div>
 
 <main>
+
+<!-- ================= HOTFIX · OCT 23 ================= -->
+<section class="band hotfix" id="hotfix">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow"><span class="tag new">Latest</span> Hotfix · October 23</div>
+      <h2>October 23 hotfix</h2>
+      <p>A smaller patch on top of the October update: a way to tell us how it's going, fixes from your reports, and a round of polish. The full October update notes are still below.</p>
+    </div>
+    <div class="hf-grid">
+      <article class="card hf-wide">
+        <div class="t"><span class="tag new">New</span></div>
+        <div class="k"><span class="ico glyph">?!</span><h3>Tell us how it's going</h3></div>
+        <ul>
+          <li><b>Feedback window.</b> Options → <b>Feedback</b> (on phones, MENU → Feedback) now has four tabs: <b>Bug</b>, <b>Idea</b>, <b>Something I liked</b> and <b>You said, we did</b>, which lists every change we've made because of your reports.</li>
+          <li><b>Quick check-ins.</b> After a few big moments (your first restored room, your 2nd job, your first story boss, a rough patch, your first Echo run) a small card may ask "How was that?". Tap a face, pick a few words if you like, or close it.</li>
+          <li>A check-in never appears in a fight, a boss, an Echo run or a conversation, and it asks each question only once.</li>
+          <li><b>What happens to it.</b> Your answers are anonymous. We read every one, and they are shared with the MapleStory Worlds Global Creator Challenge judges.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="k"><span class="ico glyph">♥</span><h3>You said, we did</h3></div>
+        <ul>
+          <li>Weapon skins now stay on after you log in. <span class="muted">(Report #823N2)</span></li>
+          <li>Spare realm keys are removed once every door in their realm is open. <span class="muted">(Report #M5M5P)</span></li>
+          <li>Talk now picks the NPC you are facing when two stand together. <span class="muted">(Report #BMWA6)</span></li>
+          <li>The Equipment window's mannequin shows costume swaps straight away.</li>
+          <li>The bag's Meso updates as soon as you buy a bag slot.</li>
+        </ul>
+        <p class="small muted">Thank you to everyone who sent a report. Keep them coming.</p>
+      </article>
+
+      <article class="card hf-hw">
+        <div class="k"><span class="ico"><img src="img/i/candy.png" alt=""></span><h3>Hollow Night</h3></div>
+        <ul>
+          <li>While Hollow Night runs, every room's gold elite now brings a <b>Hollow Jack-o'-Lantern</b> a few seconds later, in every realm except Red. The random ones still turn up too.</li>
+          <li>The Den's Halloween decorations leave when the event ends on November 5. Two of its standing braziers now keep it warm.</li>
+        </ul>
+      </article>
+
+      <article class="card hf-wide">
+        <div class="t"><span class="tag upd">Changes</span></div>
+        <div class="k"><span class="ico glyph">✦</span><h3>Polish</h3></div>
+        <ul class="hf-cols">
+          <li><b>Watch the colour come back.</b> In most realms, clearing a room now sends a restore wave across it, with a moment of full colour before it settles.</li>
+          <li><b>Tap to pick up.</b> Tap, click or drag over drops to pick them up. Tapping a drop in front of an NPC no longer opens the NPC.</li>
+          <li><b>Phone skill buttons.</b> New skills get a button by themselves, and a skill that replaces another takes over its button. Buttons you removed stay removed.</li>
+          <li><b>Safe tutorials.</b> Nothing can hit you while a tutorial screen is up.</li>
+          <li><b>The storm drill</b> now tells you what it pays: your 2nd job, its area skill and the Red door.</li>
+          <li><b>Wick's Echo scene</b> now plays when Echoes actually open (Lv120, story done). If you've already seen it, it won't replay.</li>
+          <li><b>Boss title cards</b> now name the boss's vice.</li>
+          <li><b>The Forge</b> shows each piece's realm-set mark, and Settling updates the Forge and your Equipment window straight away.</li>
+          <li><b>Comfort options.</b> Boss screen shakes follow Screen Shake, and boss and HUD flashes follow Reduce Flashing.</li>
+          <li><b>Korean and Chinese.</b> Blue, Indigo and Violet's realm and boss names are lettered in your language.</li>
+          <li><b>Smoother play.</b> Fixed a stutter every couple of seconds, which was worse in Korean and Chinese. Phones use much less memory, and the first load finishes loading the art before you step in.</li>
+          <li>The Quest Log has a note for Violet.</li>
+        </ul>
+      </article>
+
+      <article class="card hf-wide">
+        <div class="k"><span class="ico glyph">✓</span><h3>Fixes</h3></div>
+        <ul class="hf-cols">
+          <li>Indigo's boss door offers the re-fight again instead of an empty conversation.</li>
+          <li>The storm drill's clear card says THE TRAINING GROUND again.</li>
+          <li>Wick's verses play in story order: Blue, Indigo, Violet.</li>
+          <li>Final Attack: Bow's description no longer says its arrows chain.</li>
+          <li>The realm-set notice names both the virtue and the vice for sets whose 5-piece bonus adds to the 3-piece one.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OCTOBER UPDATE (full notes) ================= -->
+<div class="divider" id="october-update"><div class="wrap"><div class="eyebrow">October update · full notes</div></div></div>
 
 <!-- ================= HOLLOW NIGHT ================= -->
 <section class="band hw" id="hollow-night">
