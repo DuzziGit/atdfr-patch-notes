@@ -1943,5 +1943,25 @@ window.ATDFR_I18N = {
 "<a href=\"shop.html\"><img src=\"img/i/bluebeanie.png\" alt=\"\" width=\"22\" height=\"22\" class=\"pix\">Browse the Cash Shop →</a>": {
 "ko": "<a href='shop.html'><img src='img/i/bluebeanie.png' alt='' width='22' height='22' class='pix'>캐시샵 둘러보기 →</a>",
 "zh": "<a href='shop.html'><img src='img/i/bluebeanie.png' alt='' width='22' height='22' class='pix'>浏览商城 →</a>"
+},
+"A brand-new Cash Shop full of classic MapleStory clothes, your own MSW look on your characters, a free pet to try at 2nd job, and room for up to 8 characters. The earlier notes are still below.": {
+"ko": "메이플스토리 클래식 의상으로 가득한 새 캐시샵, 캐릭터에 입히는 나만의 MSW 외형, 2차 전직 때 체험하는 무료 펫, 그리고 최대 8명까지 늘어난 캐릭터 슬롯. 이전 패치 내용은 아래에 그대로 있습니다.",
+"zh": "全新的商城，满是冒险岛经典时装；角色可以使用你自己的MSW外观；二转时还能免费试用宠物；角色栏位最多可增至8个。之前的更新说明仍在下方。"
+},
+"More character slots": {
+"ko": "캐릭터 슬롯 추가",
+"zh": "更多角色栏位"
+},
+"Make up to <b>8 characters</b>. Buy slots 5 to 8 on Character Select, at the gold <b>Buy a slot</b> podium on the last page.": {
+"ko": "캐릭터를 최대 <b>8명</b>까지 만들 수 있습니다. 캐릭터 선택 화면 마지막 페이지의 금색 <b>슬롯 구매</b> 단상에서 5~8번 슬롯을 살 수 있습니다.",
+"zh": "最多可创建<b>8个角色</b>。在选择角色画面最后一页的金色<b>购买栏位</b>台座上购买第5~8个栏位。"
+},
+"Pay with <b>Echo Dust</b> from whichever character you choose: <b>1,000</b> for the 5th slot, then <b>1,500</b>, <b>2,000</b> and <b>2,500</b>.": {
+"ko": "원하는 캐릭터의 <b>에코 가루</b>로 결제합니다: 5번째 슬롯은 <b>1,000</b>, 그다음은 <b>1,500</b>, <b>2,000</b>, <b>2,500</b>입니다.",
+"zh": "可用你选择的任意角色的<b>回响之尘</b>支付：第5个栏位<b>1,000</b>，之后依次为<b>1,500</b>、<b>2,000</b>和<b>2,500</b>。"
+},
+"Slots belong to your whole account. Character Select now has pages: use the <b>‹ ›</b> arrows or <kbd>Page Up</kbd> / <kbd>Page Down</kbd>.": {
+"ko": "슬롯은 계정 전체에 적용됩니다. 캐릭터 선택 화면에 페이지가 생겼습니다: <b>‹ ›</b> 화살표나 <kbd>Page Up</kbd> / <kbd>Page Down</kbd>으로 넘기세요.",
+"zh": "栏位对整个账号有效。选择角色画面现在有分页：使用<b>‹ ›</b>箭头或<kbd>Page Up</kbd> / <kbd>Page Down</kbd>翻页。"
 }
 };
