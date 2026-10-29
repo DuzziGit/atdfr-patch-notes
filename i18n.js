@@ -1719,5 +1719,109 @@ window.ATDFR_I18N = {
 "<span class=\"dot\" style=\"background:var(--accent)\"></span>Hotfix · Oct 23": {
 "ko": "<span class='dot' style='background:var(--accent)'></span>핫픽스 · 10/23",
 "zh": "<span class='dot' style='background:var(--accent)'></span>热修复 · 10/23"
+},
+"<span class=\"tag new\">Latest</span> Update · October 29": {
+"ko": "<span class='tag new'>최신</span> 업데이트 · 10월 29일",
+"zh": "<span class='tag new'>最新</span> 更新 · 10月29日"
+},
+"October 29 update": {
+"ko": "10월 29일 업데이트",
+"zh": "10月29日更新"
+},
+"A brand-new Cash Shop full of classic MapleStory clothes, your own MSW look on your characters, and a free pet to try at 2nd job. The earlier notes are still below.": {
+"ko": "메이플스토리 클래식 의상으로 가득한 새 캐시샵, 캐릭터에 입히는 나만의 MSW 외형, 2차 전직 때 체험하는 무료 펫. 이전 패치 내용은 아래에 그대로 있습니다.",
+"zh": "全新的商城，满是冒险岛经典时装；角色可以使用你自己的MSW外观；二转时还能免费试用宠物。之前的更新说明仍在下方。"
+},
+"The new Cash Shop": {
+"ko": "새로워진 캐시샵",
+"zh": "全新的商城"
+},
+"Your MSW look": {
+"ko": "MSW 외형",
+"zh": "MSW外观"
+},
+"A free pet at 2nd job": {
+"ko": "2차 전직 무료 펫 체험",
+"zh": "二转免费试用宠物"
+},
+"Gear looks": {
+"ko": "장비 외형",
+"zh": "装备外观"
+},
+"<span class=\"dot\" style=\"background:var(--accent)\"></span>Update · Oct 29": {
+"ko": "<span class='dot' style='background:var(--accent)'></span>업데이트 · 10/29",
+"zh": "<span class='dot' style='background:var(--accent)'></span>更新 · 10/29"
+},
+"<a href=\"#oct29\"><span class=\"tag\">New</span> October 29 update →</a>": {
+"ko": "<a href='#oct29'><span class='tag'>신규</span> 10월 29일 업데이트 →</a>",
+"zh": "<a href='#oct29'><span class='tag'>新</span> 10月29日更新 →</a>"
+},
+"Hotfix · October 23": {
+"ko": "핫픽스 · 10월 23일",
+"zh": "热修复 · 10月23日"
+},
+"<b>The 2009 Cash Shop, always open.</b> Over 1,000 classic pieces from MapleStory's 2009 Cash Shop are always on sale, sorted into <b>Hats, Overalls, Tops, Bottoms, Shoes, Gloves, Capes, Face, Eyes</b> and <b>Earrings</b>. <b>Gloves</b> is a new section.": {
+"ko": "<b>언제나 열려 있는 2009년 캐시샵.</b> 메이플스토리 2009년 캐시샵의 클래식 아이템 1,000여 종을 언제든 살 수 있습니다. <b>모자, 한벌옷, 상의, 하의, 신발, 장갑, 망토, 얼굴장식, 눈장식</b>, <b>귀고리</b>로 나뉘어 있으며, <b>장갑</b>은 새로 생긴 분류입니다.",
+"zh": "<b>2009年的商城，随时开放。</b>冒险岛2009年商城的1000多件经典时装一直在售，分为<b>帽子、套服、上衣、下装、鞋子、手套、披风、脸饰、眼饰</b>和<b>耳环</b>。<b>手套</b>是新增的分类。"
+},
+"<b>Today's Release.</b> Every day the <b>Today</b> stall sells one premium release from later years of MapleStory (Royal Style labels and Premium Surprise Style Boxes). Every piece is sold on its own, never in a box. The stall changes at 00:00 UTC, and each release comes back when the stall comes round again.": {
+"ko": "<b>오늘의 출시.</b> 매일 <b>오늘</b> 판매대에서 메이플스토리 후기의 프리미엄 출시작(로얄스타일 라벨, 프리미엄 서프라이즈 스타일 박스) 하나를 판매합니다. 상자 없이 모든 아이템을 하나씩 따로 살 수 있습니다. 판매대는 UTC 00:00에 바뀌며, 한 바퀴가 돌면 같은 출시작이 다시 돌아옵니다.",
+"zh": "<b>今日上新。</b><b>今天</b>货架每天出售冒险岛后期的一期高级上新（皇家风格系列、高级惊喜时尚箱）。每件单独出售，不用开箱。货架在UTC 00:00更换，轮转一圈后每期都会再次上架。"
+},
+"<b>Deal of the Day.</b> The headline piece of today's release is <b>30% off</b>, in both its boy and girl versions when it has them.": {
+"ko": "<b>오늘의 특가.</b> 오늘 출시작의 대표 아이템을 <b>30% 할인</b>합니다. 남녀 버전이 있으면 둘 다 할인됩니다.",
+"zh": "<b>今日特惠。</b>今日上新的主打单品<b>立减30%</b>，有男女两款时两款都打折。"
+},
+"<b>Pet of the Day.</b> One pet a day that isn't otherwise on sale.": {
+"ko": "<b>오늘의 펫.</b> 평소에는 판매하지 않는 펫을 하루에 하나씩 판매합니다.",
+"zh": "<b>今日宠物。</b>每天出售一只平时买不到的宠物。"
+},
+"<b>Transparent items</b> for every slot, the weapon included. Hide a hat to show off your hair, or hide anything else you'd rather not see.": {
+"ko": "무기를 포함한 모든 부위의 <b>투명 아이템</b>. 모자를 숨겨 헤어를 보여 주거나, 보고 싶지 않은 부위를 숨겨 보세요.",
+"zh": "包括武器在内，每个部位都有<b>透明道具</b>。隐藏帽子来展示发型，或隐藏任何你不想看到的部位。"
+},
+"<b>Underwear</b> is in Bottoms.": {
+"ko": "하의에 <b>속옷</b>이 추가되었습니다.",
+"zh": "下装中新增了<b>内衣</b>。"
+},
+"<b>Hair, faces and skin</b> have left the shop, because your MSW look covers them now (see below). Anything you already own stays yours.": {
+"ko": "이제 MSW 외형이 대신하므로(아래 참고) <b>헤어, 얼굴, 피부</b>는 상점에서 빠졌습니다. 이미 가진 아이템은 그대로 남습니다.",
+"zh": "<b>发型、脸型和肤色</b>已从商城下架，因为现在可以使用你的MSW外观（见下文）。已经拥有的物品不会消失。"
+},
+"<b>Who owns what:</b> new clothes belong to the character who buys them. Pets are still shared by every character on your account.": {
+"ko": "<b>소유 방식:</b> 새 의상은 구매한 캐릭터의 것입니다. 펫은 지금처럼 계정의 모든 캐릭터가 함께 씁니다.",
+"zh": "<b>归属：</b>新时装归购买的角色所有。宠物仍由账号内所有角色共享。"
+},
+"Names and descriptions are in Korean and Chinese too.": {
+"ko": "이름과 설명이 한국어와 중국어로도 제공됩니다.",
+"zh": "名称和说明也提供韩语和中文版本。"
+},
+"Your characters can now wear your <b>MapleStory Worlds avatar's hair, face and skin</b>. Turn it on or off for each character in <b>Options → MSW look</b>.": {
+"ko": "이제 캐릭터가 <b>메이플스토리 월드 아바타의 헤어, 얼굴, 피부</b>를 쓸 수 있습니다. 캐릭터마다 <b>옵션 → MSW 외형</b>에서 켜고 끌 수 있습니다.",
+"zh": "角色现在可以使用你的<b>冒险岛世界形象的发型、脸型和肤色</b>。可在<b>选项 → MSW外观</b>中为每个角色开启或关闭。"
+},
+"<b>Lock look</b> keeps a character's look when you change your MSW avatar, so each character can look different: lock one, change your avatar, then lock the next. <b>Update</b> copies your current MSW look again.": {
+"ko": "<b>외형 고정</b>을 하면 MSW 아바타를 바꿔도 캐릭터의 외형이 유지되므로, 캐릭터마다 다른 모습을 할 수 있습니다. 한 캐릭터를 고정하고, 아바타를 바꾼 뒤, 다음 캐릭터를 고정하세요. <b>갱신</b>을 누르면 현재 MSW 외형을 다시 가져옵니다.",
+"zh": "<b>锁定外观</b>后，即使更换MSW形象，角色外观也不会变，所以每个角色都可以有不同的样子：锁定一个角色，更换形象，再锁定下一个。<b>更新</b>会重新复制你当前的MSW外观。"
+},
+"New characters can start with it: pick <b>My MSW look</b> when you create one. Existing characters start with it on.": {
+"ko": "새 캐릭터도 처음부터 쓸 수 있습니다. 캐릭터를 만들 때 <b>내 MSW 외형</b>을 고르세요. 기존 캐릭터는 켜진 상태로 시작합니다.",
+"zh": "新角色也可以从一开始就使用：创建角色时选择<b>我的MSW外观</b>。已有角色默认开启。"
+},
+"When your <b>2nd job</b> opens, you get a <b>Snail</b> pet and a <b>Buff Module</b> to try for <b>1.5 hours of play</b>. The time only counts down while you're playing. A short tour shows you how to bring the pet out and use the module.": {
+"ko": "<b>2차 전직</b>이 열리면 <b>달팽이</b> 펫과 <b>버프 모듈</b>을 <b>1시간 30분의 플레이 시간</b> 동안 무료로 체험할 수 있습니다. 시간은 플레이하는 동안에만 줄어듭니다. 짧은 안내가 펫을 꺼내고 모듈을 쓰는 법을 알려 드립니다.",
+"zh": "<b>二转</b>开放时，你会获得<b>蜗牛</b>宠物和<b>增益模块</b>，可免费试用<b>1.5小时的游戏时间</b>。时间只在游戏中倒计时。简短的引导会教你召唤宠物和使用模块。"
+},
+"Already past your 2nd job? You'll get the trial the next time you log in.": {
+"ko": "이미 2차 전직을 하셨나요? 다음 접속 때 체험이 지급됩니다.",
+"zh": "已经二转了？下次登录时就会获得试用。"
+},
+"When the trial ends, the free copies go away. Anything you've bought stays.": {
+"ko": "체험이 끝나면 무료로 받은 것만 사라지고, 구매한 아이템은 그대로 남습니다.",
+"zh": "试用结束后，只会收回免费获得的物品，你购买的物品会保留。"
+},
+"<b>41 pieces of gear now look the way they should</b>, matching their MapleStory item. The starter Leather Sandals were dress shoes and the Metal Koif was a blue headband, among others. New characters' starter outfit on Character Select matches too.": {
+"ko": "<b>장비 41종의 외형이 바로잡혀</b> 원래 메이플스토리 아이템과 같아졌습니다. 예를 들어 초보자용 가죽 샌들은 구두로, 메탈 코이프는 파란 머리띠로 보였습니다. 캐릭터 선택 화면의 새 캐릭터 기본 의상도 맞췄습니다.",
+"zh": "<b>41件装备的外观已修正</b>，与冒险岛原版物品一致。例如新手的皮凉鞋原本显示成皮鞋，金属头巾原本是蓝色发带。选择角色画面中新角色的初始服装也已同步。"
 }
 };
