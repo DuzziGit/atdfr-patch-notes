@@ -1823,5 +1823,125 @@ window.ATDFR_I18N = {
 "<b>41 pieces of gear now look the way they should</b>, matching their MapleStory item. The starter Leather Sandals were dress shoes and the Metal Koif was a blue headband, among others. New characters' starter outfit on Character Select matches too.": {
 "ko": "<b>장비 41종의 외형이 바로잡혀</b> 원래 메이플스토리 아이템과 같아졌습니다. 예를 들어 초보자용 가죽 샌들은 구두로, 메탈 코이프는 파란 머리띠로 보였습니다. 캐릭터 선택 화면의 새 캐릭터 기본 의상도 맞췄습니다.",
 "zh": "<b>41件装备的外观已修正</b>，与冒险岛原版物品一致。例如新手的皮凉鞋原本显示成皮鞋，金属头巾原本是蓝色发带。选择角色画面中新角色的初始服装也已同步。"
+},
+"Update · October 24": {
+"ko": "업데이트 · 10월 24일",
+"zh": "更新 · 10月24日"
+},
+"October 24 update": {
+"ko": "10월 24일 업데이트",
+"zh": "10月24日更新"
+},
+"A new chat, faces, party help and a punchier feel to combat.": {
+"ko": "새 채팅, 표정, 파티 편의 기능, 그리고 더 시원해진 전투 손맛.",
+"zh": "全新的聊天、表情、组队便利功能，以及更有冲击力的战斗手感。"
+},
+"New chat": {
+"ko": "새 채팅",
+"zh": "全新聊天"
+},
+"Faces": {
+"ko": "표정",
+"zh": "表情"
+},
+"Party": {
+"ko": "파티",
+"zh": "队伍"
+},
+"Feel": {
+"ko": "손맛",
+"zh": "手感"
+},
+"<span class=\"dot\" style=\"background:var(--accent)\"></span>Update · Oct 24": {
+"ko": "<span class='dot' style='background:var(--accent)'></span>업데이트 · 10/24",
+"zh": "<span class='dot' style='background:var(--accent)'></span>更新 · 10/24"
+},
+"The old chat box is gone. The new one sits out of the way at the bottom of the screen and shows your <b>character</b> name.": {
+"ko": "예전 채팅창 대신, 화면 아래쪽에 방해되지 않게 자리한 새 채팅창이 생겼고 <b>캐릭터</b> 이름이 표시됩니다.",
+"zh": "旧的聊天框已经移除。新的聊天框位于屏幕底部，不会挡路，并显示你的<b>角色</b>名称。"
+},
+"<b>Open it</b> with <kbd>Enter</kbd>, or click or tap the chat button. <kbd>Enter</kbd> sends and closes; <kbd>Esc</kbd> closes. <kbd>Page Up</kbd> makes it taller.": {
+"ko": "<kbd>Enter</kbd>를 누르거나 채팅 버튼을 클릭·터치해 <b>엽니다</b>. <kbd>Enter</kbd>는 보내고 닫으며, <kbd>Esc</kbd>는 닫습니다. <kbd>Page Up</kbd>으로 창을 키울 수 있습니다.",
+"zh": "按<kbd>Enter</kbd>，或点击聊天按钮即可<b>打开</b>。<kbd>Enter</kbd>发送并关闭，<kbd>Esc</kbd>关闭。<kbd>Page Up</kbd>可以把聊天框拉高。"
+},
+"<b>Tabs:</b> <b>All</b> (everyone in the game, on every channel), <b>Map</b>, <b>Party</b>, <b>Friends</b> and <b>Whispers</b>.": {
+"ko": "<b>탭:</b> <b>전체</b>(모든 채널의 모든 플레이어), <b>맵</b>, <b>파티</b>, <b>친구</b>, <b>귓속말</b>.",
+"zh": "<b>分页：</b><b>全部</b>（所有频道的所有玩家）、<b>地图</b>、<b>队伍</b>、<b>好友</b>和<b>密语</b>。"
+},
+"<b>Whisper anyone</b>, not only friends. Click a name, type <kbd>/w Name</kbd>, or press <kbd>R</kbd> to reply to your last whisper.": {
+"ko": "친구가 아니어도 <b>누구에게나 귓속말</b>을 보낼 수 있습니다. 이름을 클릭하거나, <kbd>/w 이름</kbd>을 입력하거나, <kbd>R</kbd>을 눌러 마지막 귓속말에 답하세요.",
+"zh": "不只是好友，<b>可以给任何人发悄悄话</b>。点击名字、输入<kbd>/w 名字</kbd>，或按<kbd>R</kbd>回复最近的悄悄话。"
+},
+"<b>Shortcuts:</b> <kbd>/a</kbd> All, <kbd>/m</kbd> Map, <kbd>/p</kbd> Party, <kbd>/f</kbd> Friends.": {
+"ko": "<b>단축 명령:</b> <kbd>/a</kbd> 전체, <kbd>/m</kbd> 맵, <kbd>/p</kbd> 파티, <kbd>/f</kbd> 친구.",
+"zh": "<b>快捷指令：</b><kbd>/a</kbd> 全部、<kbd>/m</kbd> 地图、<kbd>/p</kbd> 队伍、<kbd>/f</kbd> 好友。"
+},
+"<b>Speech bubbles</b> appear over players on your map, as in MapleStory.": {
+"ko": "메이플스토리처럼 같은 맵의 플레이어 머리 위에 <b>말풍선</b>이 뜹니다.",
+"zh": "和冒险岛一样，同地图玩家的头顶会出现<b>聊天气泡</b>。"
+},
+"<b>Click a name</b> to Whisper, Add friend, Invite to party, Inspect or Mute.": {
+"ko": "<b>이름을 클릭</b>하면 귓속말, 친구 추가, 파티 초대, 살펴보기, 차단을 할 수 있습니다.",
+"zh": "<b>点击名字</b>即可发悄悄话、添加好友、邀请组队、查看或屏蔽。"
+},
+"<b>Options → Chat:</b> choose what shows while chat is closed (new lines, only party/friends/whispers, or nothing), turn speech bubbles on or off, and manage your muted players.": {
+"ko": "<b>옵션 → 채팅:</b> 채팅창이 닫혀 있을 때 보일 내용(새 메시지, 파티·친구·귓속말만, 또는 표시 안 함)을 고르고, 말풍선을 켜고 끄고, 차단한 플레이어를 관리할 수 있습니다.",
+"zh": "<b>选项 → 聊天：</b>选择聊天框关闭时显示的内容（新消息、只显示队伍/好友/密语，或不显示），开关聊天气泡，以及管理已屏蔽的玩家。"
+},
+"Press <kbd>F1</kbd> to <kbd>F7</kbd> to make a face: Hit, Smile, Troubled, Cry, Angry, Bewildered, Stunned. Everyone nearby sees it.": {
+"ko": "<kbd>F1</kbd>~<kbd>F7</kbd>을 눌러 표정을 지을 수 있습니다: 아파함, 미소, 곤란, 울음, 화남, 당황, 기절. 주변 모두가 볼 수 있습니다.",
+"zh": "按<kbd>F1</kbd>到<kbd>F7</kbd>做出表情：受伤、微笑、苦恼、哭泣、生气、困惑、眩晕。附近的所有人都能看到。"
+},
+"<b>Haste</b> from a Thief now speeds up party members on the same map.": {
+"ko": "도적의 <b>헤이스트</b>가 이제 같은 맵의 파티원에게도 적용됩니다.",
+"zh": "飞侠的<b>轻功</b>现在也会让同一地图的队友加速。"
+},
+"<b>One key, one door.</b> Opening a door with a key opens it for every party member in the room, with an arrow pointing the way.": {
+"ko": "<b>열쇠 하나로 모두 함께.</b> 열쇠로 문을 열면 방에 있는 모든 파티원에게 문이 열리고, 길을 알려 주는 화살표가 표시됩니다.",
+"zh": "<b>一把钥匙，一起通过。</b>用钥匙开门后，房间里的所有队友都能通过，并会有箭头指路。"
+},
+"<b>Story bosses:</b> entering a boss door brings along partners standing at that door, as long as they've opened it themselves.": {
+"ko": "<b>스토리 보스:</b> 보스 문에 들어가면 그 문 앞에 서 있는 파티원도 함께 들어갑니다. 단, 각자 그 문을 연 적이 있어야 합니다.",
+"zh": "<b>剧情首领：</b>进入首领之门时，站在门前的队友会一起进入，前提是他们自己也已开启过这扇门。"
+},
+"<b>Move</b> next to a partner's name takes you to them, anywhere you could walk to.": {
+"ko": "파티원 이름 옆의 <b>이동</b>을 누르면 걸어갈 수 있는 곳이라면 어디든 그 파티원에게 갑니다.",
+"zh": "点击队友名字旁的<b>移动</b>即可前往他们身边，只要是你能走到的地方都可以。"
+},
+"<b>Faster respawns</b> when several players hunt the same map, and a cleared map's monsters now come back together.": {
+"ko": "여러 명이 같은 맵에서 사냥하면 <b>몬스터가 더 빨리 다시 나타나고</b>, 정리한 맵의 몬스터는 이제 한꺼번에 돌아옵니다.",
+"zh": "多名玩家在同一地图狩猎时<b>怪物重生更快</b>，清空的地图上的怪物现在会一起回来。"
+},
+"<b>Flash Jump</b> reworked: it launches the moment you press it, with a smoother arc, and the burst comes from your heels.": {
+"ko": "<b>플래시 점프</b> 개편: 누르는 순간 뛰어오르고, 더 부드러운 곡선을 그리며, 발뒤꿈치에서 이펙트가 터집니다.",
+"zh": "<b>二段跳</b>重做：按下瞬间起跳，弧线更顺滑，特效从脚跟迸发。"
+},
+"<b>Combat sounds and hits:</b> louder bosses, hit flashes that match the hit, monsters that turn to face you, and a cleaner sound mix.": {
+"ko": "<b>전투 사운드와 타격감:</b> 더 웅장해진 보스, 타격에 맞는 피격 섬광, 플레이어를 돌아보는 몬스터, 더 깔끔한 사운드 믹스.",
+"zh": "<b>战斗音效与打击感：</b>首领音效更有气势，受击闪光与打击相匹配，怪物会转身面向你，整体混音更干净。"
+},
+"<b>Boss bar</b> fills in as the fight begins and drains away after the kill.": {
+"ko": "<b>보스 체력바</b>가 전투가 시작되면 차오르고, 처치 후에는 줄어들며 사라집니다.",
+"zh": "<b>首领血条</b>会在战斗开始时填满，击败后逐渐消失。"
+},
+"<b>Area names</b> paint in with a brush stroke.": {
+"ko": "<b>지역 이름</b>이 붓질처럼 그려지며 나타납니다.",
+"zh": "<b>区域名称</b>会以笔刷绘制的方式出现。"
+},
+"<b>Shorter trips</b> when going back and forth between the Den, the Portal Room and places you've just visited.": {
+"ko": "굴, 포탈의 방, 방금 다녀온 곳 사이를 오갈 때 <b>이동 시간이 짧아졌습니다</b>.",
+"zh": "在兔窝、传送门大厅和刚去过的地方之间往返时，<b>移动更快</b>。"
+},
+"<b>Big hits are easier to read.</b> Damage of 100,000 or more now shows short: <b>105K</b> instead of 104,985, then <b>1.23M</b>, <b>45.7B</b>. Turn it off in <b>Options → Short numbers</b> to see every digit again.": {
+"ko": "<b>큰 데미지를 읽기 쉬워졌습니다.</b> 100,000 이상의 데미지는 이제 104,985 대신 <b>105K</b>, 그다음 <b>1.23M</b>, <b>45.7B</b>처럼 짧게 표시됩니다. 모든 자릿수를 다시 보려면 <b>옵션 → 데미지 축약 표시</b>를 끄세요.",
+"zh": "<b>大额伤害更易读。</b>100,000及以上的伤害现在会缩写显示：用<b>105K</b>代替104,985，然后是<b>1.23M</b>、<b>45.7B</b>。在<b>选项 → 伤害数字缩写</b>中关闭即可重新显示完整数字。"
+},
+"<img src=\"img/i/bluebeanie.png\" alt=\"\" width=\"18\" height=\"18\" class=\"pix\">Browse the Cash Shop": {
+"ko": "<img src='img/i/bluebeanie.png' alt='' width='18' height='18' class='pix'>캐시샵 둘러보기",
+"zh": "<img src='img/i/bluebeanie.png' alt='' width='18' height='18' class='pix'>浏览商城"
+},
+"<a href=\"shop.html\"><img src=\"img/i/bluebeanie.png\" alt=\"\" width=\"22\" height=\"22\" class=\"pix\">Browse the Cash Shop →</a>": {
+"ko": "<a href='shop.html'><img src='img/i/bluebeanie.png' alt='' width='22' height='22' class='pix'>캐시샵 둘러보기 →</a>",
+"zh": "<a href='shop.html'><img src='img/i/bluebeanie.png' alt='' width='22' height='22' class='pix'>浏览商城 →</a>"
 }
 };

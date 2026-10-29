@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Browse the A Terrible Day For Rain Cash Shop: today's premium release, the Deal of the Day, the Pet of the Day and every classic piece on sale.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="A Terrible Day For Rain: Cash Shop">
+<meta property="og:description" content="Today's premium release, the Deal of the Day, the Pet of the Day and every classic piece on sale.">
+<meta property="og:url" content="https://duzzigit.github.io/atdfr-patch-notes/shop.html">
+<meta property="og:image" content="https://duzzigit.github.io/atdfr-patch-notes/img/thumbnail-yellow-960x540.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/i/bluebeanie.png">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,-apple-system,"Segoe UI",sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>ATDFR Cash Shop</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: the patch notes' storm masthead, a sticky shelf rail like the in-game chips, then the shelf:
+   today's release with its countdown and the week ahead, or a grid of item tiles. */
+:root{
+  --bg:#edf1f6; --surface:#ffffff; --surface-2:#f5f7fb; --fg:#172030; --muted:#5a6578; --line:#d7dee8;
+  --accent:#3f63d8; --accent-soft:#e3e9fb; --focus:#3f63d8;
+  --new:#167a4c; --new-bg:#ddf3e8; --boy:#1f62c4; --boy-bg:#e0ebfb; --girl:#b8336a; --girl-bg:#fbe3ee;
+  --deal:#b3322a; --deal-bg:#fbe4e2; --coin:#9a6a00; --story:#6b5a12; --story-bg:#f6efcf;
+  --storm:#111827; --storm-fg:#eef2fa; --storm-muted:#a5b0c5;
+  --red:#d6453a; --green:#3f9a4f; --yellow:#d8a816; --orange:#e5772a; --blue:#2f8fd1; --indigo:#8e93f3; --violet:#b07ce0;
+  --display:"Baloo 2","Trebuchet MS",system-ui,sans-serif;
+  --body:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e131b; --surface:#161d29; --surface-2:#1b2331; --fg:#e5eaf3; --muted:#9ba6b9; --line:#273145;
+  --accent:#9fb3ff; --accent-soft:#1f2a47; --focus:#9fb3ff;
+  --new:#6fdba5; --new-bg:#15342a; --boy:#8fb8ff; --boy-bg:#1a2b48; --girl:#ff9cc6; --girl-bg:#3a1d2c;
+  --deal:#ff8f86; --deal-bg:#3a1d21; --coin:#f0c45a; --story:#f0d36a; --story-bg:#33300f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e131b; --surface:#161d29; --surface-2:#1b2331; --fg:#e5eaf3; --muted:#9ba6b9; --line:#273145;
+  --accent:#9fb3ff; --accent-soft:#1f2a47; --focus:#9fb3ff;
+  --new:#6fdba5; --new-bg:#15342a; --boy:#8fb8ff; --boy-bg:#1a2b48; --girl:#ff9cc6; --girl-bg:#3a1d2c;
+  --deal:#ff8f86; --deal-bg:#3a1d21; --coin:#f0c45a; --story:#f0d36a; --story-bg:#33300f; color-scheme:dark}
+:root[data-lang="ko"]{--display:"Jua","Baloo 2",system-ui,sans-serif;--body:"Noto Sans KR","Nunito",system-ui,sans-serif}
+:root[data-lang="zh"]{--display:"Noto Sans SC","Baloo 2",system-ui,sans-serif;--body:"Noto Sans SC","Nunito",system-ui,sans-serif}
+:root[data-lang="ko"] body{word-break:keep-all}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--storm)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.05;margin:0;text-wrap:balance}
+:root[data-lang="ko"] h1,:root[data-lang="ko"] h2,:root[data-lang="ko"] h3{font-weight:400}
+p{margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:6px}
+.eyebrow{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800}
+:root[data-lang="ko"] .eyebrow,:root[data-lang="zh"] .eyebrow{letter-spacing:.04em}
+
+/* masthead */
+.mast{background:var(--storm);color:var(--storm-fg);padding-block:36px 30px;position:relative;overflow:hidden}
+.mast .wrap{display:flex;flex-direction:column;gap:12px}
+.mast .eyebrow{color:var(--storm-muted)}
+.mast h1{font-size:clamp(36px,6.5vw,62px);color:#fff;text-shadow:0 3px 0 #0a0f1a}
+.mast .lede{color:var(--storm-muted);font-size:clamp(16px,2vw,18px);max-width:62ch}
+.mast .back{color:var(--storm-fg);font-weight:800;text-decoration:none;font-size:14px;align-self:flex-start;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:5px 12px}
+.mast .back:hover{background:rgba(255,255,255,.14)}
+.spectrum{display:flex;gap:6px;height:8px;margin-top:20px}
+.spectrum i{flex:1;border-radius:6px}
+
+/* rail */
+.rail{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.rail .wrap{display:flex;align-items:center;gap:10px}
+.navscroll{flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.navscroll::-webkit-scrollbar{display:none}
+.chips{display:flex;gap:6px;padding-block:10px;width:max-content}
+.chip{appearance:none;font:800 14px/1 var(--body);color:var(--fg);background:transparent;border:1px solid transparent;padding:7px 12px;border-radius:999px;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:7px}
+.chip:hover{background:var(--surface)}
+.chip[aria-pressed="true"]{background:var(--accent);color:#fff}
+:root[data-theme="dark"] .chip[aria-pressed="true"]{color:#0e131b}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .chip[aria-pressed="true"]{color:#0e131b}}
+.chip .n{font-variant-numeric:tabular-nums;opacity:.7;font-size:12.5px}
+.lang{display:flex;flex:none;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px}
+.lang button{appearance:none;border:0;background:transparent;color:var(--muted);font:800 13px/1 var(--body);padding:6px 10px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.lang button[aria-pressed="true"]{background:var(--accent);color:#fff}
+:root[data-theme="dark"] .lang button[aria-pressed="true"]{color:#0e131b}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .lang button[aria-pressed="true"]{color:#0e131b}}
+@media (max-width:520px){.lang button{padding:6px 7px;font-size:12px}}
+
+/* tools */
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-block:18px 6px}
+.tools input{flex:1 1 220px;min-width:0;font:600 15px var(--body);color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.seg{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:3px;gap:2px}
+.seg button{appearance:none;border:0;background:transparent;color:var(--muted);font:800 14px/1 var(--body);padding:8px 12px;border-radius:9px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--fg)}
+.count{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+
+/* shelf head */
+main{padding-block:10px 64px}
+.head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-block:12px 16px}
+.head h2{font-size:clamp(28px,4vw,38px)}
+.head .clock{font-weight:800;color:var(--muted);font-size:15px;font-variant-numeric:tabular-nums}
+.release{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin-bottom:16px;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
+.release b{font-family:var(--display);font-weight:800;font-size:20px}
+.release span{color:var(--muted);font-size:14.5px}
+
+/* items */
+.grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.item{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 10px 12px;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;min-width:0}
+.item.is-deal{border-color:var(--deal);box-shadow:0 0 0 1px var(--deal)}
+.item .pic{width:76px;height:76px;border-radius:14px;background:var(--surface-2);display:grid;place-items:center}
+.item img{width:64px;height:64px;object-fit:contain;image-rendering:pixelated}
+.item .nm{font-weight:800;font-size:14.5px;line-height:1.25;overflow-wrap:anywhere}
+.item .cap{color:var(--muted);font-size:12.5px;font-weight:600}
+.item .pr{font-weight:800;color:var(--coin);font-size:14px;font-variant-numeric:tabular-nums}
+.item .pr s{color:var(--muted);font-weight:600;margin-right:4px}
+.item .when{font-size:12.5px;font-weight:800;color:var(--accent)}
+.tags{position:absolute;top:8px;left:8px;right:8px;display:flex;justify-content:space-between;gap:4px;pointer-events:none}
+.tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:5px;line-height:1.5;white-space:nowrap}
+.tag.boy{background:var(--boy-bg);color:var(--boy)}
+.tag.girl{background:var(--girl-bg);color:var(--girl)}
+.tag.deal{background:var(--deal-bg);color:var(--deal);margin-left:auto}
+.tag.story{background:var(--story-bg);color:var(--story);margin-left:auto}
+.empty{color:var(--muted);padding:30px 0}
+
+/* coming up */
+.coming{margin-top:34px;display:flex;flex-direction:column;gap:10px}
+.coming h3{font-size:24px;margin-bottom:4px}
+.day{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;display:grid;grid-template-columns:120px minmax(0,1fr);gap:4px 16px;align-items:center}
+.day .d{font-weight:800;font-variant-numeric:tabular-nums}
+.day .t{font-weight:800}
+.day .strip{grid-column:2;display:flex;flex-wrap:wrap;gap:4px}
+.day .strip img{width:36px;height:36px;object-fit:contain;image-rendering:pixelated;background:var(--surface-2);border-radius:8px}
+@media (max-width:560px){.day{grid-template-columns:minmax(0,1fr)}.day .strip{grid-column:1}}
+.note{color:var(--muted);font-size:14px;margin-top:28px;max-width:70ch}
+footer{border-top:1px solid var(--line);padding-block:22px;color:var(--muted);font-size:14px}
+.chip:focus-visible,.seg button:focus-visible,.lang button:focus-visible,.tools input:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+</style>
+</head>
+<body>
+<header class="mast">
+  <div class="wrap">
+    <a class="back" href="./" id="back">← Patch notes</a>
+    <div class="eyebrow" id="eyebrow">A Terrible Day For Rain · Cash Shop</div>
+    <h1 id="h1">Browse the Cash Shop</h1>
+    <p class="lede" id="lede">Everything on sale right now, today's premium release and what's coming up next.</p>
+    <div class="spectrum" aria-hidden="true"><i style="background:var(--red)"></i><i style="background:var(--orange)"></i><i style="background:var(--yellow)"></i><i style="background:var(--green)"></i><i style="background:var(--blue)"></i><i style="background:var(--indigo)"></i><i style="background:var(--violet)"></i></div>
+  </div>
+</header>
+
+<div class="rail">
+  <div class="wrap">
+    <div class="navscroll"><div class="chips" id="chips" role="group" aria-label="Shelves"></div></div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="ko" lang="ko" aria-pressed="false">한국어</button>
+      <button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="false">简体中文</button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="tools">
+    <input id="q" type="search" autocomplete="off" aria-label="Search the shop" placeholder="Search the shop">
+    <div class="seg" id="gender" role="group" aria-label="Show"><button type="button" data-g="" aria-pressed="true">All</button><button type="button" data-g="M" aria-pressed="false">Boy</button><button type="button" data-g="F" aria-pressed="false">Girl</button></div>
+    <span class="count" id="count"></span>
+  </div>
+  <main id="main"><p class="empty" id="loading">Loading the shop…</p></main>
+  <p class="note" id="note"></p>
+</div>
+<footer><div class="wrap" id="foot"></div></footer>
+
+<script>
+(function(){
+  var DAY = 86400000, EPOCH = 719162; // whole days from 0001-01-01 to 1970-01-01: the game counts from 0001-01-01
+  var L = { en: 0, ko: 1, zh: 2 };
+  var S = {
+    en: { back: '← Patch notes', eyebrow: 'A Terrible Day For Rain · Cash Shop', h1: 'Browse the Cash Shop',
+      lede: "Everything on sale right now, today's premium release and what's coming up next. The daily stall, the deal and the pet change at 00:00 UTC.",
+      search: 'Search the shop', all: 'All', boy: 'Boy', girl: 'Girl', boyTag: 'Boy', girlTag: 'Girl', deal: 'Deal', story: 'Story',
+      items: function(n){ return n + (n === 1 ? ' item' : ' items'); }, found: function(n){ return n + ' found'; },
+      changes: function(h, m){ return 'Changes in ' + h + 'h ' + m + 'm'; }, release: "Today's release", coming: 'Coming up',
+      today: 'Today', tomorrow: 'Tomorrow', until: function(d){ return 'Until ' + d; }, onSale: function(d){ return 'On sale ' + d; },
+      nothing: 'Nothing matches.', loading: 'Loading the shop…', wc: 'WC',
+      note: 'Prices are in World Coin. New clothes belong to the character who buys them; pets are shared by every character on your account. Story set pieces unlock as you restore the realms.',
+      foot: 'Built from the game\'s own shop data. Release names are the MapleStory premium releases each set first came out in.' },
+    ko: { back: '← 패치 노트', eyebrow: 'A Terrible Day For Rain · 캐시샵', h1: '캐시샵 둘러보기',
+      lede: '지금 판매 중인 모든 아이템과 오늘의 프리미엄 출시작, 그리고 앞으로 나올 아이템을 확인하세요. 오늘의 판매대, 특가, 펫은 UTC 00:00에 바뀝니다.',
+      search: '상점 검색', all: '전체', boy: '남', girl: '여', boyTag: '남', girlTag: '여', deal: '특가', story: '스토리',
+      items: function(n){ return n + '개'; }, found: function(n){ return n + '개 찾음'; },
+      changes: function(h, m){ return h + '시간 ' + m + '분 후 바뀜'; }, release: '오늘의 출시작', coming: '다음 판매',
+      today: '오늘', tomorrow: '내일', until: function(d){ return d + '까지'; }, onSale: function(d){ return d + ' 판매'; },
+      nothing: '일치하는 아이템이 없습니다.', loading: '상점을 불러오는 중…', wc: 'WC',
+      note: '가격은 월드 코인 기준입니다. 새 의상은 구매한 캐릭터의 것이고, 펫은 계정의 모든 캐릭터가 함께 씁니다. 스토리 세트 아이템은 렐름을 복원하면 열립니다.',
+      foot: '게임의 실제 상점 데이터로 만들었습니다. 출시작 이름은 각 세트가 처음 나온 메이플스토리 프리미엄 출시작입니다.' },
+    zh: { back: '← 更新说明', eyebrow: 'A Terrible Day For Rain · 商城', h1: '浏览商城',
+      lede: '查看现在在售的所有物品、今日的高级上新，以及接下来的上架内容。每日货架、特惠和宠物在UTC 00:00更换。',
+      search: '搜索商城', all: '全部', boy: '男', girl: '女', boyTag: '男', girlTag: '女', deal: '特惠', story: '剧情',
+      items: function(n){ return n + '件'; }, found: function(n){ return '找到' + n + '件'; },
+      changes: function(h, m){ return h + '小时' + m + '分后更换'; }, release: '今日上新', coming: '即将上架',
+      today: '今天', tomorrow: '明天', until: function(d){ return '截至' + d; }, onSale: function(d){ return d + '上架'; },
+      nothing: '没有符合条件的物品。', loading: '正在载入商城…', wc: 'WC',
+      note: '价格以世界币计。新时装归购买的角色所有；宠物由账号内所有角色共享。故事套装物品会在恢复领域后解锁。',
+      foot: '根据游戏的实际商城数据生成。上新名称是每套时装首次推出时的冒险岛高级上新。' }
+  };
+  var CAP = {
+    cap: ['Hat', '모자', '帽子'], coat: ['Top', '상의', '上衣'], longcoat: ['Overall', '한벌옷', '套服'], pants: ['Bottom', '하의', '下装'],
+    shoes: ['Shoes', '신발', '鞋子'], glove: ['Gloves', '장갑', '手套'], cape: ['Cape', '망토', '披风'],
+    faceaccessory: ['Face accessory', '얼굴장식', '脸饰'], eyeaccessory: ['Eye accessory', '눈장식', '眼饰'], earaccessory: ['Earrings', '귀고리', '耳环'],
+    umbrella: ['Held item', '손에 드는 아이템', '手持道具'], warriorweapon: ['Warrior weapon', '전사 무기', '战士武器'], thiefweapon: ['Thief weapon', '도적 무기', '飞侠武器'],
+    mageskin: ['Wand skin', '완드 스킨', '法杖皮肤'], bowskin: ['Bow skin', '활 스킨', '弓皮肤'], crossbowskin: ['Crossbow skin', '석궁 스킨', '弩皮肤'],
+    anyweapon: ['Weapon skin', '무기 스킨', '武器皮肤'], pet: ['Pet', '펫', '宠物'], petgear: ['Pet gear', '펫 장비', '宠物装备'],
+    setbundle: ['Full set', '풀세트', '全套'], storypass: ['Story Pass', '스토리 패스', '故事通行证'], package: ['Package', '패키지', '礼包'],
+    petbundle: ['Pet bundle', '펫 꾸러미', '宠物组合包'], skinbox: ['Skin box', '스킨 상자', '皮肤箱'], forge: ['Forge', '포지', '锻造']
+  };
+  var FONTS = { ko: 'https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;700;800&display=swap',
+    zh: 'https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap' };
+  var DAILY = { today: 1, deal: 1, petday: 1 };
+  var D = null, byId = {}, lang = 'en', shelf = '', q = '', g = '';
+  var $ = function(id){ return document.getElementById(id); };
+  var esc = function(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  var t = function(arr){ return (arr && (arr[L[lang]] || arr[0])) || ''; };
+  var fmt = function(n){ return Number(n).toLocaleString('en-US'); };
+  var dayNow = function(){ return Math.floor(Date.now() / DAY) + EPOCH; };
+  var dateOf = function(d){ return new Date((d - EPOCH) * DAY); };
+  var dayLabel = function(d){
+    var diff = d - dayNow();
+    if (diff === 0) return S[lang].today;
+    if (diff === 1) return S[lang].tomorrow;
+    return new Intl.DateTimeFormat(lang === 'zh' ? 'zh-CN' : lang, { timeZone: 'UTC', month: 'short', day: 'numeric', weekday: 'short' }).format(dateOf(d));
+  };
+  var shortDate = function(ms){ return new Intl.DateTimeFormat(lang === 'zh' ? 'zh-CN' : lang, { timeZone: 'UTC', month: 'short', day: 'numeric' }).format(new Date(ms)); };
+  // The game's rules: a dated row sells inside its window (both ends included); a daily row
+  // when Rotation == whole UTC days since 0001-01-01 % RotationCycle.
+  var inWindow = function(it, ms){ return !((it.a && ms < it.a) || (it.b && ms > it.b)); };
+  var onDay = function(it, d){ return it.r < 0 || (it.u === 'day' && it.y > 0 && it.r === d % it.y); };
+  var onSaleNow = function(it){ return inWindow(it, Date.now()) && onDay(it, dayNow()); };
+  var nextDay = function(it){ var d = dayNow(); return d + ((it.r - (d % it.y)) + it.y) % it.y; };
+  var fits = function(it){ return !g || !it.g || it.g === g; };
+
+  function card(it, opts){
+    var base = it.d ? byId[it.d] : null;
+    var tags = '';
+    if (it.g === 'M') tags += '<span class="tag boy">' + S[lang].boyTag + '</span>';
+    if (it.g === 'F') tags += '<span class="tag girl">' + S[lang].girlTag + '</span>';
+    if (it.d) tags += '<span class="tag deal">' + S[lang].deal + '</span>';
+    else if (it.m) tags += '<span class="tag story">' + S[lang].story + '</span>';
+    var price = base && base.p > it.p ? '<s>' + fmt(base.p) + '</s>' + fmt(it.p) + ' ' + S[lang].wc : fmt(it.p) + ' ' + S[lang].wc;
+    var when = '';
+    if (opts && opts.when) when = '<span class="when">' + esc(opts.when) + '</span>';
+    else if (it.b && it.s === 'halloween') when = '<span class="when">' + esc(S[lang].until(shortDate(it.b))) + '</span>';
+    return '<div class="item' + (it.d ? ' is-deal' : '') + '"><span class="tags">' + tags + '</span><span class="pic"><img src="img/shop/' + esc(it.k) + '" alt="" loading="lazy" width="64" height="64"></span>' +
+      '<span class="nm">' + esc(t(it.n)) + '</span><span class="cap">' + esc(t(CAP[it.c]) || '') + '</span><span class="pr">' + price + '</span>' + when + '</div>';
+  }
+  function shelfItems(key){
+    return D.items.filter(function(it){ return it.s === key && onSaleNow(it); }).sort(function(a, b){ return a.o - b.o; });
+  }
+  function chips(){
+    $('chips').innerHTML = D.shelves.map(function(s){
+      var n = shelfItems(s.key).length;
+      if (n === 0) return '';
+      return '<button type="button" class="chip" data-s="' + s.key + '" aria-pressed="' + (s.key === shelf) + '">' + esc(t(s.chip)) + '<span class="n">' + n + '</span></button>';
+    }).join('');
+  }
+  function clock(){
+    var now = Date.now(), left = DAY - (now % DAY);
+    var h = Math.floor(left / 3600000), m = Math.floor((left % 3600000) / 60000);
+    return S[lang].changes(h, m);
+  }
+  function comingUp(key){
+    var d0 = dayNow(), rows = [];
+    var pool = D.items.filter(function(it){ return it.s === key; });
+    for (var k = 1; k <= 7; k++) {
+      var d = d0 + k;
+      var list = pool.filter(function(it){ return onDay(it, d) && fits(it); }).sort(function(a, b){ return a.o - b.o; });
+      if (!list.length) continue;
+      var title = key === 'today' ? t(D.releases[list[0].rl]) : list.map(function(it){ return t(it.n); }).filter(function(v, i, a){ return a.indexOf(v) === i; }).join(' · ');
+      rows.push('<div class="day"><span class="d">' + esc(dayLabel(d)) + '</span><span class="t">' + esc(title) + '</span><span class="strip">' +
+        list.map(function(it){ return '<img src="img/shop/' + esc(it.k) + '" alt="' + esc(t(it.n)) + '" title="' + esc(t(it.n)) + '" loading="lazy">'; }).join('') + '</span></div>');
+    }
+    return rows.length ? '<section class="coming"><h3>' + S[lang].coming + '</h3>' + rows.join('') + '</section>' : '';
+  }
+  function paint(){
+    document.querySelectorAll('.chip').forEach(function(c){ c.setAttribute('aria-pressed', String(c.getAttribute('data-s') === shelf && !q)); });
+    var main = $('main'), html = '';
+    if (q) {
+      var ql = q.toLowerCase();
+      var hits = D.items.filter(function(it){ return fits(it) && it.n.some(function(n){ return n && n.toLowerCase().indexOf(ql) !== -1; }) && inWindow(it, Date.now()); });
+      var seen = {}, list = [];
+      hits.sort(function(a, b){ return (onSaleNow(b) ? 1 : 0) - (onSaleNow(a) ? 1 : 0) || a.o - b.o; }).forEach(function(it){
+        if (it.d) return; // a deal twin shows under its own day
+        var key = it.n[0] + '|' + it.c + '|' + it.g;
+        if (seen[key]) return;
+        seen[key] = 1;
+        var when = it.u === 'day' && !onSaleNow(it) ? S[lang].onSale(dayLabel(nextDay(it))) : (it.u === 'day' ? S[lang].today : '');
+        list.push(card(it, { when: when }));
+      });
+      $('count').textContent = S[lang].found(list.length);
+      html = list.length ? '<div class="grid">' + list.join('') + '</div>' : '<p class="empty">' + S[lang].nothing + '</p>';
+    } else {
+      var info = D.shelves.filter(function(s){ return s.key === shelf; })[0];
+      var items = shelfItems(shelf).filter(fits);
+      $('count').textContent = S[lang].items(items.length);
+      html = '<div class="head"><h2>' + esc(t(info.title)) + '</h2>' + (DAILY[shelf] ? '<span class="clock">' + esc(clock()) + '</span>' : '') + '</div>';
+      if (shelf === 'today' && items.length) html += '<div class="release"><span>' + S[lang].release + '</span><b>' + esc(t(D.releases[items[0].rl])) + '</b></div>';
+      html += items.length ? '<div class="grid">' + items.map(function(it){ return card(it); }).join('') + '</div>' : '<p class="empty">' + S[lang].nothing + '</p>';
+      if (DAILY[shelf]) html += comingUp(shelf);
+    }
+    main.innerHTML = html;
+  }
+  function texts(){
+    var s = S[lang];
+    $('back').textContent = s.back; $('eyebrow').textContent = s.eyebrow; $('h1').textContent = s.h1; $('lede').textContent = s.lede;
+    $('q').placeholder = s.search; $('q').setAttribute('aria-label', s.search); $('note').textContent = s.note; $('foot').textContent = s.foot;
+    var gb = document.querySelectorAll('#gender button'); gb[0].textContent = s.all; gb[1].textContent = s.boy; gb[2].textContent = s.girl;
+    document.title = lang === 'en' ? 'ATDFR Cash Shop' : s.eyebrow;
+  }
+  function setLang(l, save){
+    lang = S[l] ? l : 'en';
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : lang;
+    if (FONTS[lang] && !document.querySelector('link[data-font="' + lang + '"]')) {
+      var k = document.createElement('link'); k.rel = 'stylesheet'; k.href = FONTS[lang]; k.setAttribute('data-font', lang); document.head.appendChild(k);
+    }
+    document.querySelectorAll('.lang button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang)); });
+    texts();
+    if (D) { chips(); paint(); }
+    if (save) { try { localStorage.setItem('atdfr-lang', lang); } catch (e) {} }
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){ b.addEventListener('click', function(){ setLang(b.getAttribute('data-lang'), true); }); });
+  $('chips').addEventListener('click', function(e){ var c = e.target.closest('.chip'); if (!c) return; shelf = c.getAttribute('data-s'); q = ''; $('q').value = ''; paint(); });
+  $('gender').addEventListener('click', function(e){ var b = e.target.closest('button'); if (!b) return; g = b.getAttribute('data-g');
+    document.querySelectorAll('#gender button').forEach(function(x){ x.setAttribute('aria-pressed', String(x === b)); }); paint(); });
+  var timer; $('q').addEventListener('input', function(e){ clearTimeout(timer); timer = setTimeout(function(){ q = e.target.value.trim(); paint(); }, 150); });
+
+  var want = null, h = (location.hash || '').slice(1).toLowerCase();
+  if (h === 'ko' || h === 'zh' || h === 'en') want = h;
+  if (!want) { try { want = localStorage.getItem('atdfr-lang'); } catch (e) {} }
+  if (!want) { var nl = (navigator.language || '').toLowerCase(); want = nl.indexOf('ko') === 0 ? 'ko' : nl.indexOf('zh') === 0 ? 'zh' : 'en'; }
+  setLang(want, false);
+
+  fetch('shop-data.json').then(function(r){ return r.json(); }).then(function(d){
+    D = d;
+    d.items.forEach(function(it){ byId[it.i] = it; });
+    var first = d.shelves.filter(function(s){ return s.key === 'today'; })[0] || d.shelves[0];
+    shelf = first.key;
+    chips(); paint();
+    setInterval(function(){ if (!q && DAILY[shelf]) { var c = document.querySelector('.head .clock'); if (c) c.textContent = clock(); } }, 30000);
+  }).catch(function(){ $('main').innerHTML = '<p class="empty">The shop data could not be loaded.</p>'; });
+})();
+</script>
+</body>
+</html>
