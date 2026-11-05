@@ -1963,5 +1963,213 @@ window.ATDFR_I18N = {
 "Slots belong to your whole account. Character Select now has pages: use the <b>‹ ›</b> arrows or <kbd>Page Up</kbd> / <kbd>Page Down</kbd>.": {
 "ko": "슬롯은 계정 전체에 적용됩니다. 캐릭터 선택 화면에 페이지가 생겼습니다: <b>‹ ›</b> 화살표나 <kbd>Page Up</kbd> / <kbd>Page Down</kbd>으로 넘기세요.",
 "zh": "栏位对整个账号有效。选择角色画面现在有分页：使用<b>‹ ›</b>箭头或<kbd>Page Up</kbd> / <kbd>Page Down</kbd>翻页。"
+},
+"<span class=\"dot\" style=\"background:var(--accent)\"></span>Update · Nov 5": {
+"ko": "<span class='dot' style='background:var(--accent)'></span>업데이트 · 11/5",
+"zh": "<span class='dot' style='background:var(--accent)'></span>更新 · 11/5"
+},
+"<a href=\"#nov5\"><span class=\"tag\">New</span> November 5 update →</a>": {
+"ko": "<a href='#nov5'><span class='tag'>신규</span> 11월 5일 업데이트 →</a>",
+"zh": "<a href='#nov5'><span class='tag'>新</span> 11月5日更新 →</a>"
+},
+"<span class=\"tag new\">Latest</span> Update · November 5": {
+"ko": "<span class='tag new'>최신</span> 업데이트 · 11월 5일",
+"zh": "<span class='tag new'>最新</span> 更新 · 11月5日"
+},
+"Update · October 29": {
+"ko": "업데이트 · 10월 29일",
+"zh": "更新 · 10月29日"
+},
+"November 5 update": {
+"ko": "11월 5일 업데이트",
+"zh": "11月5日更新"
+},
+"Monsters fight back, a door straight into the next realm after every realm boss, a new White Monkey Chief fight, and the MCF2026 World Coin mission. The earlier notes are still below.": {
+"ko": "몬스터가 반격하고, 영역 보스를 쓰러뜨릴 때마다 다음 영역으로 바로 가는 문이 열리며, 흰털 대장원숭이와의 새로운 전투와 MCF2026 월드 코인 미션이 찾아옵니다. 이전 패치 내용은 아래에 그대로 있습니다.",
+"zh": "怪物开始反击，每个国度首领战后都有一扇直通下一个国度的门，还有与白毛猴王的全新战斗，以及MCF2026世界币任务。之前的更新说明仍在下方。"
+},
+"MCF2026 event: Defeat 20 monsters": {
+"ko": "MCF2026 이벤트: 몬스터 20마리 처치하기",
+"zh": "MCF2026活动：击败 20 只怪物"
+},
+"From <b>Nov 5, 11:00 to Nov 25, 10:59 (KST)</b>, defeat <b>20 monsters</b> anywhere in the world and claim <b>50 World Coins</b> from the <b>Event</b> menu on the MapleStory Worlds platform.": {
+"ko": "<b>11월 5일 11:00부터 11월 25일 10:59까지(KST)</b> 게임 속 어디에서든 <b>몬스터 20마리</b>를 처치하고, 메이플스토리 월드 플랫폼의 <b>이벤트</b> 메뉴에서 <b>월드 코인 50개</b>를 받으세요.",
+"zh": "<b>11月5日 11:00至11月25日 10:59（KST）</b>期间，在游戏中任意地点<b>击败20只怪物</b>，即可在MapleStory Worlds平台的<b>活动</b>菜单中领取<b>50世界币</b>。"
+},
+"Every monster counts, in story rooms and in Echoes, and so do kills your party makes on the same map. A note pops up at 5, 10, 15 and 20.": {
+"ko": "스토리 방이든 에코든 모든 몬스터가 집계되며, 같은 맵에서 파티원이 처치한 몬스터도 포함됩니다. 5, 10, 15, 20마리째에 알림이 뜹니다.",
+"zh": "无论在故事房间还是回响中，每只怪物都算数，同一地图上队友的击杀也算。达到5、10、15和20只时会弹出提示。"
+},
+"Once per account. Only identity-verified accounts can claim.": {
+"ko": "계정당 한 번입니다. 본인 인증을 마친 계정만 받을 수 있습니다.",
+"zh": "每个账号限一次。只有完成实名认证的账号才能领取。"
+},
+"Monsters fight back": {
+"ko": "몬스터의 반격",
+"zh": "怪物反击"
+},
+"From the <b>Green</b> realm on, the monsters in story rooms come for you.": {
+"ko": "<b>초록</b> 영역부터는 스토리 방의 몬스터가 당신을 노리고 다가옵니다.",
+"zh": "从<b>绿色</b>国度开始，故事房间里的怪物会主动朝你扑来。"
+},
+"<b>They notice you.</b> A monster that sees you on its floor runs at you, a little faster than you walk. Up to 4 at once. White speed lines trail a monster while it chases.": {
+"ko": "<b>당신을 알아챕니다.</b> 같은 발판에서 당신을 본 몬스터는 당신이 걷는 속도보다 조금 빠르게 달려옵니다. 한 번에 최대 4마리입니다. 추격하는 동안 몬스터 뒤로 하얀 속도선이 그려집니다.",
+"zh": "<b>它们会发现你。</b>在同一层看到你的怪物会朝你冲来，速度比你走路稍快。最多同时4只。追击时，怪物身后会拖出白色速度线。"
+},
+"<b>They swing more often</b>, about every 1.5 seconds, and their swings land more often.": {
+"ko": "<b>더 자주 공격합니다.</b> 약 1.5초마다 휘두르고, 더 자주 맞힙니다.",
+"zh": "<b>攻击更频繁</b>，大约每1.5秒一次，而且更容易命中。"
+},
+"<b>They're tougher:</b> twice the HP. Elites too.": {
+"ko": "<b>더 튼튼합니다:</b> HP가 두 배입니다. 엘리트도 마찬가지입니다.",
+"zh": "<b>更耐打：</b>HP翻倍。精英也一样。"
+},
+"<b>Natural regen stops in the rain.</b> HP and MP Recovery pause in rooms that are still raining. Restored rooms, campfires, potions and tinctures heal as before.": {
+"ko": "<b>비 속에서는 자연 회복이 멈춥니다.</b> 아직 비가 오는 방에서는 HP 회복과 MP 회복이 멈춥니다. 복원된 방, 모닥불, 물약, 팅크는 예전처럼 회복시켜 줍니다.",
+"zh": "<b>雨中不会自然恢复。</b>在仍在下雨的房间里，HP恢复和MP恢复会暂停。已恢复的房间、篝火、药水和酊剂照常回复。"
+},
+"<b>Not changed:</b> Red, the training ground, hubs, boss fights and Echoes.": {
+"ko": "<b>바뀌지 않은 곳:</b> 빨강 영역, 훈련장, 중심지, 보스전, 에코.",
+"zh": "<b>不变的地方：</b>红色国度、训练场、中枢地图、首领战和回响。"
+},
+"Onward doors and the Keepers": {
+"ko": "다음 영역 문과 파수꾼",
+"zh": "下一国度之门与守望者"
+},
+"<b>After each realm boss, an Onward door</b> opens in the room after the fight, next to the Keeper. Press <kbd>Up</kbd>, then <kbd>Up</kbd> again to confirm, and you go straight to the next realm. Tux's work order is handed in at the door, so there's no walk back to the Den. If the Keeper has something for you, the door waits until you've taken it.": {
+"ko": "<b>영역 보스를 쓰러뜨릴 때마다 다음 영역 문</b>이 전투 다음 방의 파수꾼 옆에 열립니다. <kbd>↑</kbd>를 누르고 한 번 더 <kbd>↑</kbd>를 눌러 확인하면 곧바로 다음 영역으로 갑니다. 턱스의 의뢰는 문에서 완료되므로 토끼굴까지 걸어 돌아갈 필요가 없습니다. 파수꾼이 건넬 것이 있다면, 그것을 받을 때까지 문이 기다립니다.",
+"zh": "<b>每打倒一个国度首领，下一国度之门</b>就会在战斗之后的房间里、守望者旁边打开。按<kbd>↑</kbd>，再按一次<kbd>↑</kbd>确认，就能直接前往下一个国度。塔克斯的委托会在门口交付，不必再走回兔窝。如果守望者有东西要给你，门会等你拿到之后再开。"
+},
+"<b>The Keepers hand you on.</b> After the Red and Green bosses, the realm's Keeper gives you something to carry to the next realm's Keeper, and Tux points you to them. After your 2nd job, a second banner tells you about the woman in the rain.": {
+"ko": "<b>파수꾼이 다음 길을 이어 줍니다.</b> 빨강과 초록 영역 보스를 쓰러뜨리면 그 영역의 파수꾼이 다음 영역의 파수꾼에게 가져갈 물건을 건네주고, 턱스가 그쪽으로 안내합니다. 2차 전직 뒤에는 두 번째 배너가 빗속의 여자에 대해 알려 줍니다.",
+"zh": "<b>守望者会为你引路。</b>打倒红色和绿色国度的首领后，该国度的守望者会交给你一样东西，让你带给下一个国度的守望者，塔克斯也会为你指路。二转之后，第二条横幅会告诉你雨中那个女人的事。"
+},
+"Safe spots": {
+"ko": "안전한 곳",
+"zh": "安全地点"
+},
+"<b>Campfires shelter you.</b> Standing in a fire's warmth, monsters ignore you and can't hurt you. Attacking breaks the shelter for 5 seconds.": {
+"ko": "<b>모닥불이 당신을 비호합니다.</b> 불의 온기 안에 서 있으면 몬스터가 당신을 무시하고 피해를 줄 수 없습니다. 공격하면 5초 동안 비호가 풀립니다.",
+"zh": "<b>篝火会庇护你。</b>站在火焰的温暖范围内时，怪物会无视你，也伤不到你。发动攻击会让庇护失效5秒。"
+},
+"<b>The game's own cards shelter you too:</b> the tutorial tours, the new-player cards, NPC conversations, the 2nd-job sheet and the Forge card. Monsters can't hurt you while one is open. Windows you open yourself (bag, stats, Forge) don't protect you.": {
+"ko": "<b>게임이 띄우는 카드도 당신을 비호합니다:</b> 튜토리얼 안내, 새 플레이어 카드, NPC 대화, 2차 전직 창, 대장간 카드. 이 중 하나가 열려 있는 동안에는 몬스터가 피해를 줄 수 없습니다. 직접 여는 창(가방, 능력치, 대장간)은 당신을 보호하지 않습니다.",
+"zh": "<b>游戏自己弹出的卡片也会庇护你：</b>教程导览、新玩家卡片、NPC对话、二转面板和锻造卡片。只要其中之一开着，怪物就伤不到你。你自己打开的窗口（背包、属性、锻造）不会保护你。"
+},
+"<b>\"Sheltered\"</b> now shows at the top of the screen, not over your head.": {
+"ko": "<b>'비호'</b> 표시가 이제 머리 위가 아니라 화면 위쪽에 나옵니다.",
+"zh": "<b>“庇护”</b>现在显示在屏幕顶部，而不是你的头顶。"
+},
+"The White Monkey Chief": {
+"ko": "흰털 대장원숭이",
+"zh": "白毛猴王"
+},
+"The Orange mini boss fights in a new way.": {
+"ko": "주황 영역의 중간 보스가 새로운 방식으로 싸웁니다.",
+"zh": "橙色国度的小首领换了一种打法。"
+},
+"<b>Monkey Hop:</b> a glow follows you, then locks in place. Move once it locks.": {
+"ko": "<b>몽키 홉:</b> 빛이 당신을 따라오다가 그 자리에 고정됩니다. 고정되면 움직이세요.",
+"zh": "<b>猴子跳：</b>一道光会跟着你，然后锁定在原地。锁定后就赶紧移动。"
+},
+"<b>Banana Shower:</b> every landing rains bananas, and each banana leaves a peel.": {
+"ko": "<b>바나나 샤워:</b> 착지할 때마다 바나나가 쏟아지고, 바나나마다 껍질이 남습니다.",
+"zh": "<b>香蕉雨：</b>他每次落地都会洒下香蕉，每根香蕉都会留下一块香蕉皮。"
+},
+"<b>Slip:</b> if he steps on a peel, he goes down for a moment and <b>takes double damage</b>. Stars over his head show it.": {
+"ko": "<b>미끄러짐:</b> 껍질을 밟으면 잠시 넘어지고 <b>받는 피해가 두 배</b>가 됩니다. 머리 위의 별로 알 수 있습니다.",
+"zh": "<b>滑倒：</b>他如果踩到香蕉皮，就会摔倒片刻，并<b>受到双倍伤害</b>。他头上的星星就是信号。"
+},
+"The danger zones of his moves now show before they hit.": {
+"ko": "이제 공격이 맞기 전에 위험 범위가 표시됩니다.",
+"zh": "他的招式现在会在命中前显示危险范围。"
+},
+"Combat and controls": {
+"ko": "전투와 조작",
+"zh": "战斗与操作"
+},
+"<b>Casting in the air</b> keeps your momentum for every class (it was Thief-only), and buffs cast mid-air don't stop you in the air.": {
+"ko": "<b>공중에서 스킬을 써도</b> 모든 직업이 움직이던 기세를 유지합니다(전에는 도적만 그랬습니다). 공중에서 버프를 써도 공중에서 멈추지 않습니다.",
+"zh": "<b>空中施放技能</b>时，所有职业都会保持原有的冲势（以前只有飞侠如此），空中施放增益技能也不会让你停在半空。"
+},
+"<b>Mouse buttons can be bound.</b> Put a skill on the left, middle or right mouse button in Key Bindings. With WASD movement on, left click is your main skill and right click your second one. A skill fired by mouse turns you toward the pointer.": {
+"ko": "<b>마우스 버튼에도 스킬을 지정할 수 있습니다.</b> 키 설정에서 마우스 왼쪽, 가운데, 오른쪽 버튼에 스킬을 넣으세요. WASD 이동을 켜면 왼쪽 클릭이 주 스킬, 오른쪽 클릭이 두 번째 스킬입니다. 마우스로 쓴 스킬은 포인터 쪽으로 몸을 돌립니다.",
+"zh": "<b>鼠标按键可以绑定了。</b>在按键设置中把技能放到鼠标左键、中键或右键上。开启WASD移动时，左键是你的主技能，右键是第二个技能。用鼠标施放的技能会让你转向指针方向。"
+},
+"<b>Chests open by click, tap or <kbd>T</kbd></b>, as well as by hitting them. A room chest opens in one click; a boss chest takes several.": {
+"ko": "<b>상자를 클릭, 탭, <kbd>T</kbd>로 열 수 있습니다.</b> 때려서 여는 것도 그대로 됩니다. 방 상자는 한 번 클릭으로 열리고, 보스 상자는 여러 번 눌러야 합니다.",
+"zh": "<b>宝箱可以用点击、轻触或<kbd>T</kbd>打开</b>，也可以照旧攻击打开。房间宝箱点一下就开，首领宝箱要点好几下。"
+},
+"New players": {
+"ko": "새 플레이어",
+"zh": "新玩家"
+},
+"<b>Three short prologue cards</b> before the first question (any key skips them all), then a <b>Goal</b> card that says what the game is about.": {
+"ko": "첫 질문 전에 <b>짧은 프롤로그 카드 세 장</b>이 나오고(아무 키나 누르면 모두 건너뜁니다), 이어서 이 게임이 무엇인지 알려 주는 <b>목표</b> 카드가 나옵니다.",
+"zh": "在第一个问题之前会有<b>三张简短的序章卡片</b>（按任意键可全部跳过），之后是一张说明游戏主旨的<b>目标</b>卡片。"
+},
+"<b>A Gear Set card</b> explains sets the first time you wear a set piece.": {
+"ko": "세트 장비를 처음 착용하면 <b>장비 세트 카드</b>가 세트를 설명해 줍니다.",
+"zh": "第一次穿上套装部件时，<b>装备套装卡片</b>会为你讲解套装。"
+},
+"<b>Danger warnings</b> now start when a room is <b>4 levels</b> above you (was 5): the door warns you, and in Red, Green and Yellow the padlock and the minimap marker turn red.": {
+"ko": "<b>위험 경고</b>가 이제 방이 당신보다 <b>4레벨</b> 높을 때부터 나옵니다(전에는 5레벨). 문이 경고해 주고, 빨강·초록·노랑 영역에서는 자물쇠와 미니맵 표시가 빨갛게 변합니다.",
+"zh": "<b>危险警告</b>现在从房间比你高<b>4级</b>时开始（以前是5级）：门会警告你，在红色、绿色和黄色国度中，挂锁和小地图标记会变红。"
+},
+"Smaller things": {
+"ko": "그 밖의 변경",
+"zh": "其他改动"
+},
+"<b>Bag almost full:</b> a banner every 30 seconds when a tab is 90% full, and a short lesson that points you to the dismantle hammer.": {
+"ko": "<b>가방이 거의 찼을 때:</b> 탭이 90% 차면 30초마다 배너가 뜨고, 분해 망치를 알려 주는 짧은 안내가 나옵니다.",
+"zh": "<b>背包快满时：</b>某个分页满90%后，每30秒显示一次横幅，还有一段简短教学指引你使用分解锤。"
+},
+"<b>Sheila's Larder:</b> chapter 2 can now be finished in Green and Yellow too (14 more spots).": {
+"ko": "<b>쉴라의 식료품 창고:</b> 이제 2장을 초록과 노랑 영역에서도 끝낼 수 있습니다(장소 14곳 추가).",
+"zh": "<b>希拉的储藏室：</b>第2章现在也可以在绿色和黄色国度完成（新增14处地点）。"
+},
+"<b>Campfires</b> show +HP / +MP numbers as they heal you.": {
+"ko": "<b>모닥불</b>이 회복시켜 줄 때 +HP / +MP 숫자가 나옵니다.",
+"zh": "<b>篝火</b>为你回复时会显示+HP / +MP数字。"
+},
+"<b>Sound:</b> the Den's fire and the Green realm's music are quieter.": {
+"ko": "<b>소리:</b> 토끼굴의 불 소리와 초록 영역의 음악이 더 조용해졌습니다.",
+"zh": "<b>声音：</b>兔窝的火声和绿色国度的音乐变小了。"
+},
+"<b>Korean:</b> many lines rewritten to read naturally.": {
+"ko": "<b>한국어:</b> 많은 문장을 자연스럽게 읽히도록 다시 썼습니다.",
+"zh": "<b>韩语：</b>重写了许多文本，读起来更自然。"
+},
+"<b>Parties:</b> the lag that built up over time with several players on one map (worst on phones) is fixed.": {
+"ko": "<b>파티:</b> 한 맵에 여러 명이 있을 때 시간이 지날수록 심해지던 렉(휴대폰에서 가장 심함)을 고쳤습니다.",
+"zh": "<b>组队：</b>修复了多名玩家在同一地图时随时间累积的卡顿（手机上最严重）。"
+},
+"<b>Ladders and ropes:</b> pressing Up at the top no longer climbs you into the air.": {
+"ko": "<b>사다리와 밧줄:</b> 꼭대기에서 위 방향키를 눌러도 더 이상 공중으로 올라가지 않습니다.",
+"zh": "<b>梯子和绳索：</b>在顶端按上方向键不会再爬到半空中。"
+},
+"<b>New characters</b> no longer start bald.": {
+"ko": "<b>새 캐릭터</b>가 더 이상 대머리로 시작하지 않습니다.",
+"zh": "<b>新角色</b>不会再以光头开局。"
+},
+"<b>Sunbreak</b> (\"stand in the light\"): the light's monsters no longer appear under stepped floors.": {
+"ko": "<b>햇살</b>('햇살 속에 서라'): 빛의 몬스터가 더 이상 계단식 바닥 아래에 나타나지 않습니다.",
+"zh": "<b>云开日出</b>（“站到光里”）：光里的怪物不会再出现在阶梯状地面的下方。"
+},
+"<b>Boss effects:</b> the Last Bloom's stun swirl and the Wraith's drain wisps now show.": {
+"ko": "<b>보스 효과:</b> 마지막 꽃의 기절 소용돌이와 망령의 흡수 도깨비불이 이제 보입니다.",
+"zh": "<b>首领特效：</b>最后的花的眩晕漩涡和怨灵的吸取鬼火现在会显示了。"
+},
+"<b>Arrows</b> fly nose-first.": {
+"ko": "<b>화살</b>이 화살촉을 앞으로 하고 날아갑니다.",
+"zh": "<b>箭矢</b>飞行时箭头朝前。"
+},
+"<b>Sound:</b> the Den's fire no longer sounds like scratching, and the bubble event's pop sound was replaced.": {
+"ko": "<b>소리:</b> 토끼굴의 불 소리가 더 이상 긁는 소리처럼 들리지 않고, 거품 이벤트의 터지는 소리가 바뀌었습니다.",
+"zh": "<b>声音：</b>兔窝的火声不再像刮擦声，泡泡活动的破裂音效也换了。"
+},
+"<b>Forge card:</b> fixed a wrong caption.": {
+"ko": "<b>대장간 카드:</b> 잘못된 설명 문구를 고쳤습니다.",
+"zh": "<b>锻造卡片：</b>修正了一处错误的说明文字。"
 }
 };
