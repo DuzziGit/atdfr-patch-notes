@@ -2171,5 +2171,33 @@ window.ATDFR_I18N = {
 "<b>Forge card:</b> fixed a wrong caption.": {
 "ko": "<b>대장간 카드:</b> 잘못된 설명 문구를 고쳤습니다.",
 "zh": "<b>锻造卡片：</b>修正了一处错误的说明文字。"
+},
+"Soon": {
+"ko": "예정",
+"zh": "即将"
+},
+"Coming soon": {
+"ko": "곧 찾아옵니다",
+"zh": "即将推出"
+},
+"Already built and in testing. They arrive in coming updates; no dates yet.": {
+"ko": "이미 만들어져 테스트 중입니다. 앞으로의 업데이트에서 만나요. 날짜는 아직 정해지지 않았습니다.",
+"zh": "已经做好，正在测试中。将在之后的更新中推出，具体日期暂未确定。"
+},
+"<b>Prism:</b> cut your gear like a raindrop. Up to 25 facets per piece, each adding damage and Max HP, paid for in mesos. A miss never costs you anything. Opens after the Yellow realm.": {
+"ko": "<b>프리즘:</b> 빗방울을 깎듯 장비를 다듬으세요. 장비 하나에 면을 최대 25개까지 깎을 수 있고, 면 하나마다 피해와 최대 HP가 올라갑니다. 비용은 메소이며, 실패해도 잃는 것은 없습니다. 노란 영역 이후에 열립니다.",
+"zh": "<b>棱镜：</b>像切割雨滴一样打磨你的装备。每件装备最多可切出25个刻面，每个刻面都会增加伤害和最大HP，只需花费金币。失败也不会损失任何东西。黄色国度之后开放。"
+},
+"<b>Deeper Echoes:</b> climbing past Echo 20 pays off, a rising flood becomes your wall, and every floor offers a choice of doors. The deeper you go, the more twists appear, Echo bosses learn new tricks, and room events reach Echo floors.": {
+"ko": "<b>더 깊은 에코:</b> 에코 20을 넘어 올라가면 보상이 따르고, 차오르는 물이 당신의 한계가 되며, 층마다 문을 골라야 합니다. 깊이 들어갈수록 새로운 변수가 늘어나고, 에코 보스는 새로운 기술을 익히며, 방 이벤트도 에코 층에서 일어납니다.",
+"zh": "<b>更深的回响：</b>攀过回响20将获得回报，上涨的水位成为你的极限，每一层都要在几扇门中做出选择。越往深处，变数越多，回响首领会学会新招式，房间事件也会出现在回响楼层。"
+},
+"<b>Gems:</b> every realm drops its own colour. Socket gems into your gear, refine them and tier them up, and blend colours on the way to a White gem.": {
+"ko": "<b>보석:</b> 영역마다 고유한 색의 보석이 나옵니다. 장비의 소켓에 보석을 박고, 연마하고 등급을 올리며, 여러 색을 섞어 하얀 보석에 도전하세요.",
+"zh": "<b>宝石：</b>每个国度都会掉落自己颜色的宝石。把宝石镶进装备的镶孔，精炼并提升等级，再把不同颜色融合，向白色宝石迈进。"
+},
+"<b>Drifter runs:</b> Reflections returns as runs. The weapon you pick up is your kit, supports shape a new build every run, and account-wide upgrades carry over between runs. Dying never costs what you've earned.": {
+"ko": "<b>방랑자 런:</b> 물그림자가 런 모드로 돌아옵니다. 주운 무기가 곧 당신의 스킬 구성이 되고, 매 런마다 서포트로 새로운 빌드를 만들며, 계정 전체에 적용되는 강화는 다음 런으로 이어집니다. 쓰러져도 이미 얻은 것은 잃지 않습니다.",
+"zh": "<b>漂泊者之旅：</b>倒影将以挑战模式回归。捡到的武器就是你的技能组合，每一轮都能用辅助效果打造新的流派，全账号通用的强化会一直保留。倒下也不会失去已经获得的东西。"
 }
 };
