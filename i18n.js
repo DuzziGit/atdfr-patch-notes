@@ -84,9 +84,9 @@ window.ATDFR_I18N = {
 "ko": "할로우 나이트",
 "zh": "万圣幽夜"
 },
-"Until November 5 the rain smells of candle wax. Every map is dressed up, four strange guests have moved into the Portal Room, and the Jack-o'-Lanterns are out. Collect Hollow Candy and trade it for costumes.": {
-"ko": "11월 5일까지 빗속에 촛농 냄새가 납니다. 모든 맵이 할로윈 장식으로 꾸며지고, 포탈의 방에 수상한 손님 넷이 찾아왔으며, 잭오랜턴들이 돌아다닙니다. 할로우 캔디를 모아 코스튬과 교환하세요.",
-"zh": "直到11月5日，雨中都弥漫着烛蜡的气味。所有地图都换上了万圣节装饰，四位古怪的客人住进了传送门大厅，南瓜灯们也出没了。收集幽夜糖果，换取时装吧。"
+"Until November 15 the rain smells of candle wax. Every map is dressed up, four strange guests have moved into the Portal Room, and the Jack-o'-Lanterns are out. Collect Hollow Candy and trade it for costumes.": {
+"ko": "11월 15일까지 빗속에 촛농 냄새가 납니다. 모든 맵이 할로윈 장식으로 꾸며지고, 포탈의 방에 수상한 손님 넷이 찾아왔으며, 잭오랜턴들이 돌아다닙니다. 할로우 캔디를 모아 코스튬과 교환하세요.",
+"zh": "直到11月15日，雨中都弥漫着烛蜡的气味。所有地图都换上了万圣节装饰，四位古怪的客人住进了传送门大厅，南瓜灯们也出没了。收集幽夜糖果，换取时装吧。"
 },
 "On now · ends": {
 "ko": "진행 중 · 종료",
