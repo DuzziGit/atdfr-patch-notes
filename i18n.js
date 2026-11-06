@@ -2199,5 +2199,165 @@ window.ATDFR_I18N = {
 "<b>Drifter runs:</b> Reflections returns as runs. The weapon you pick up is your kit, supports shape a new build every run, and account-wide upgrades carry over between runs. Dying never costs what you've earned.": {
 "ko": "<b>방랑자 런:</b> 물그림자가 런 모드로 돌아옵니다. 주운 무기가 곧 당신의 스킬 구성이 되고, 매 런마다 서포트로 새로운 빌드를 만들며, 계정 전체에 적용되는 강화는 다음 런으로 이어집니다. 쓰러져도 이미 얻은 것은 잃지 않습니다.",
 "zh": "<b>漂泊者之旅：</b>倒影将以挑战模式回归。捡到的武器就是你的技能组合，每一轮都能用辅助效果打造新的流派，全账号通用的强化会一直保留。倒下也不会失去已经获得的东西。"
+},
+"<span class=\"tag new\">Latest</span> Update · November 6": {
+"ko": "<span class='tag new'>최신</span> 업데이트 · 11월 6일",
+"zh": "<span class='tag new'>最新</span> 更新 · 11月6日"
+},
+"November 6 update": {
+"ko": "11월 6일 업데이트",
+"zh": "11月6日更新"
+},
+"A free pet for your 3rd job, two new ways to power up your gear (the Prism and gems), and an Echo climb that finally pushes back. The earlier notes are still below.": {
+"ko": "3차 전직을 하면 받는 무료 펫, 장비를 강화하는 두 가지 새로운 방법(프리즘과 보석), 그리고 마침내 만만치 않아진 에코 등반. 이전 패치 내용은 아래에 그대로 있습니다.",
+"zh": "完成三转即送免费宠物，两种强化装备的新方式（棱镜与宝石），以及终于更有挑战的回响攀登。之前的更新说明仍在下方。"
+},
+"MCF event: a free pet for your 3rd job": {
+"ko": "MCF 이벤트: 3차 전직하면 무료 펫",
+"zh": "MCF活动：完成三转送免费宠物"
+},
+"<b>What:</b> a free <b>Pet Coupon</b>. Trade it for any pet you like in the Cash Shop.": {
+"ko": "<b>보상:</b> 무료 <b>펫 쿠폰</b> 1장. 캐시샵에서 원하는 펫과 교환할 수 있습니다.",
+"zh": "<b>奖励：</b>免费<b>宠物券</b>一张，可在商城兑换任意宠物。"
+},
+"<b>Who:</b> the first character on each account to unlock the <b>3rd job</b> (Lv60, from Tux). One coupon per account. Already have a 3rd-job character? Log in during the event and it's yours.": {
+"ko": "<b>대상:</b> 계정에서 처음으로 <b>3차 전직</b>(Lv60, 턱스)을 한 캐릭터. 계정당 쿠폰 1장입니다. 이미 3차 전직한 캐릭터가 있다면 이벤트 기간에 접속만 하면 받을 수 있습니다.",
+"zh": "<b>对象：</b>每个账号中第一个完成<b>三转</b>（Lv60，找塔克斯）的角色。每个账号限一张。已经有三转角色？活动期间登录即可领取。"
+},
+"<b>When:</b> <b>Nov 5, 11:00 to Nov 25, 10:59 (KST)</b>.": {
+"ko": "<b>기간:</b> <b>11월 5일 11:00 ~ 11월 25일 10:59 (KST)</b>.",
+"zh": "<b>时间：</b><b>11月5日 11:00 至 11月25日 10:59（韩国时间）</b>。"
+},
+"<b>How to claim:</b> nothing to do. The coupon arrives the moment your 3rd job opens, or when you log in. Press <b>Open the shop</b> on the card, or open the Cash Shop → <b>Pets</b>, pick a pet and press <b>Use coupon</b>.": {
+"ko": "<b>받는 법:</b> 따로 할 일은 없습니다. 3차 전직이 열리는 순간, 또는 접속할 때 쿠폰이 들어옵니다. 카드의 <b>캐시샵 열기</b>를 누르거나, 캐시샵 → <b>펫</b>에서 펫을 고르고 <b>쿠폰 사용</b>을 누르세요.",
+"zh": "<b>领取方式：</b>无需任何操作。三转开启的那一刻（或登录时）宠物券就会到账。点击卡片上的<b>打开商城</b>，或打开商城 → <b>宠物</b>，选好宠物后点击<b>使用券</b>。"
+},
+"After your 2nd job a banner tells you about the event, and on PC a quest-tracker card shows how close you are.": {
+"ko": "2차 전직 후 배너로 이벤트를 알려 드리며, PC에서는 퀘스트 알리미 카드에 진행 상황이 표시됩니다.",
+"zh": "二转之后会有横幅介绍活动，PC版的任务追踪卡片会显示你离三转还有多远。"
+},
+"The Prism": {
+"ko": "프리즘",
+"zh": "棱镜"
+},
+"Cut light into your gear for more damage and Max HP.": {
+"ko": "장비에 빛을 깎아 넣어 피해량과 최대 HP를 올리세요.",
+"zh": "把光切进装备里，提升伤害与最大HP。"
+},
+"<b>Opens at the Yellow ending (Lv60).</b> June shows you the first facet. Characters already past it get the Prism at their next login.": {
+"ko": "<b>노랑 영역의 엔딩(Lv60)에서 열립니다.</b> 준이 첫 번째 면을 보여 줍니다. 이미 지난 캐릭터는 다음 접속 때 프리즘을 받습니다.",
+"zh": "<b>在黄色国度结局（Lv60）开放。</b>琼会教你切出第一个刻面。已经过了这一步的角色，下次登录时即可获得棱镜。"
+},
+"<b>Up to 25 facets per piece</b>, cut on the Forge's new <b>PRISM</b> tab. A try costs mesos only, and <b>a miss loses nothing</b>.": {
+"ko": "<b>장비 한 부위에 최대 25면</b>까지, 대장간의 새 <b>프리즘</b> 탭에서 깎습니다. 시도에는 메소만 들고, <b>실패해도 잃는 것은 없습니다</b>.",
+"zh": "<b>每件装备最多25个刻面</b>，在锻造的新<b>棱镜</b>标签页切割。每次尝试只花金币，<b>失败也不会损失任何东西</b>。"
+},
+"<b>Odds</b> fall every 5 facets (90 · 75 · 55 · 35 · 20%). The first facet costs 30,000 mesos, and each one after costs a little more.": {
+"ko": "<b>성공 확률</b>은 5면마다 낮아집니다(90 · 75 · 55 · 35 · 20%). 첫 면은 30,000 메소이고, 이후 조금씩 비싸집니다.",
+"zh": "<b>成功率</b>每5个刻面下降一档（90 · 75 · 55 · 35 · 20%）。第一个刻面30,000金币，之后每个稍贵一些。"
+},
+"<b>Each facet</b> gives +0.5% damage and Max HP up to 10, then +1%, +1.5% and +2%: <b>+27.5%</b> for a full piece.": {
+"ko": "<b>면 하나마다</b> 10면까지 피해량과 최대 HP +0.5%, 그 뒤로는 +1%, +1.5%, +2%. 꽉 채운 장비는 <b>+27.5%</b>입니다.",
+"zh": "<b>每个刻面</b>在前10个时提供+0.5%伤害与最大HP，之后依次为+1%、+1.5%、+2%：满刻面的装备共<b>+27.5%</b>。"
+},
+"<b>Room:</b> every piece starts with room for 5 facets, and every 5 Echo numbers you clear opens one more.": {
+"ko": "<b>칸:</b> 모든 장비는 5면으로 시작하고, 에코를 5단계 깰 때마다 한 칸이 더 열립니다.",
+"zh": "<b>容量：</b>每件装备起初可切5个刻面，你每通关5个回响层数就多开一个。"
+},
+"<b>New gear?</b> <b>Move facets</b> carries them all onto the replacement, in the same slot, for 10% of what they cost to cut.": {
+"ko": "<b>새 장비로 바꿨나요?</b> <b>면 옮기기</b>로 같은 부위의 새 장비에 전부 옮길 수 있습니다. 비용은 깎을 때 든 메소의 10%입니다.",
+"zh": "<b>换了新装备？</b>用<b>移动刻面</b>可把刻面全部转到同部位的新装备上，费用为切割花费的10%。"
+},
+"Gems": {
+"ko": "보석",
+"zh": "宝石"
+},
+"Every realm's monsters drop their own colour of gem.": {
+"ko": "영역마다 몬스터가 자기 색의 보석을 떨어뜨립니다.",
+"zh": "每个国度的怪物都会掉落自己颜色的宝石。"
+},
+"<b>Seven colours:</b> Ruby (Red), Emerald (Green), Topaz (Yellow), Amber (Orange), Sapphire (Blue), Lapis (Indigo) and Amethyst (Violet).": {
+"ko": "<b>일곱 가지 색:</b> 루비(빨강), 에메랄드(초록), 토파즈(노랑), 호박(주황), 사파이어(파랑), 청금석(남색), 자수정(보라).",
+"zh": "<b>七种颜色：</b>红宝石（红）、祖母绿（绿）、黄玉（黄）、琥珀（橙）、蓝宝石（蓝）、青金石（靛）和紫水晶（紫）。"
+},
+"<b>Socket them</b> on the Forge's new <b>GEMS</b> tab. Better gear has more sockets, up to 3. Setting a gem and taking it out are both free.": {
+"ko": "대장간의 새 <b>보석</b> 탭에서 <b>장착</b>합니다. 좋은 장비일수록 홈이 많아 최대 3개입니다. 보석을 끼우고 빼는 것은 모두 무료입니다.",
+"zh": "在锻造的新<b>宝石</b>标签页<b>镶嵌</b>。装备越好孔越多，最多3个。镶嵌和取下都免费。"
+},
+"<b>The slot decides what a gem does:</b> weapon sockets give attack lines, armour sockets guard lines, and earring and pendant sockets fortune lines.": {
+"ko": "<b>부위가 보석의 효과를 정합니다:</b> 무기 홈은 공격 옵션, 방어구 홈은 방어 옵션, 귀고리와 펜던트 홈은 행운 옵션을 줍니다.",
+"zh": "<b>镶在哪里决定宝石的效果：</b>武器孔提供攻击属性，防具孔提供防御属性，耳环和吊坠孔提供幸运属性。"
+},
+"<b>Fuse</b> three of a tier into the next tier, <b>Refine</b> a gem for clarity, <b>Blend</b> colours (all seven make a <b>White</b> gem), and <b>Shatter</b> spares into gem dust.": {
+"ko": "같은 단계 셋을 <b>합성</b>해 다음 단계로, <b>연마</b>로 투명도를 올리고, 색을 <b>혼합</b>하고(일곱 색을 모두 섞으면 <b>백색</b> 보석), 남는 보석은 <b>분쇄</b>해 보석 가루로 만드세요.",
+"zh": "三颗同阶宝石可<b>合成</b>为下一阶，<b>打磨</b>可提升净度，还能<b>融合</b>不同颜色（七色全融会变成<b>纯白</b>宝石），多余的宝石可<b>粉碎</b>成宝石粉。"
+},
+"<b>Where they drop:</b> about 1 in 50 monsters and 1 in 5 elites in the realms, plus boss kills, daily chests and room events. The Keepers teach you, and each lesson makes your first try free.": {
+"ko": "<b>획득처:</b> 영역 몬스터 약 50마리 중 1마리, 엘리트 약 5마리 중 1마리, 그리고 보스 처치, 일일 상자, 방 이벤트. 파수꾼들이 하나씩 가르쳐 주며, 각 수업마다 첫 시도는 무료입니다.",
+"zh": "<b>掉落：</b>国度中约每50只怪物、每5只精英掉1颗，另有首领击杀、每日宝箱和房间事件。守望者会逐一教你，每课的第一次尝试免费。"
+},
+"Echo: the climb pushes back": {
+"ko": "에코: 등반이 만만치 않아졌습니다",
+"zh": "回响：攀登更有挑战"
+},
+"<b>The wall:</b> from <b>Echo 21</b> the flood timer stops growing. Deeper numbers get tougher but the clock doesn't, so the flood becomes your wall. When the rain catches you, the result card shows where your power can still grow.": {
+"ko": "<b>벽:</b> <b>에코 21</b>부터는 물이 차오르는 시간이 더 늘지 않습니다. 깊이 갈수록 강해지지만 시간은 그대로라, 물이 곧 나의 벽이 됩니다. 비에 잡히면 결과 카드에서 아직 키울 수 있는 힘을 알려 줍니다.",
+"zh": "<b>高墙：</b>从<b>回响21</b>起，水淹倒计时不再增加。越深越难，时间却不变，于是水位成了你的墙。被雨追上时，结算卡片会告诉你还能在哪里变强。"
+},
+"<b>Climbing pays:</b> the first clear of each new number past 20 pays <b>10 × N Pigment</b>, and your weekly cache adds <b>25 × N Pigment and a Tear</b> for your deepest number that week.": {
+"ko": "<b>등반 보상:</b> 20을 넘는 새 단계를 처음 깨면 <b>안료 10 × N</b>, 주간 보관함은 그 주의 최고 단계에 따라 <b>안료 25 × N과 눈물 1개</b>를 더 줍니다.",
+"zh": "<b>攀登有奖：</b>首次通关20以上的新层数可得<b>10 × N 颜料</b>，每周宝箱还会按当周最深层数再给<b>25 × N 颜料和一颗泪滴</b>。"
+},
+"<b>Two doors after each trash floor:</b> <b>The way on</b>, or this week's risk door: <b>Storm</b> (one more affix, +25% Echo Dust), <b>Calm</b> (60% of the kills, −15% Echo Dust) or <b>Vault</b> (a chest at the end, but the flood comes sooner). The party leader picks.": {
+"ko": "<b>일반 층마다 문 두 개:</b> <b>앞으로 가는 길</b>, 또는 이번 주의 위험한 문: <b>폭풍</b>(속성 하나 추가, 에코 가루 +25%), <b>고요</b>(처치 수 60%, 에코 가루 −15%), <b>금고</b>(층 끝에 상자, 대신 물이 더 빨리 참). 파티장이 고릅니다.",
+"zh": "<b>每个普通层后有两扇门：</b><b>前进之路</b>，或本周的冒险之门：<b>风暴</b>（多一个词缀，回响之尘+25%）、<b>平静</b>（击杀数60%，回响之尘−15%）或<b>宝库</b>（层末有宝箱，但水来得更快）。由队长选择。"
+},
+"<b>Deeper means new things:</b> a 4th weekly affix from Echo 30, elites every week from Echo 41, and boss affixes from Echo 50: Shroud, Echoing Blows, Second Wind and Escort.": {
+"ko": "<b>깊이 갈수록 새로운 것:</b> 에코 30부터 주간 속성 4번째, 에코 41부터 매주 엘리트, 에코 50부터 보스 속성(장막, 메아리 타격, 기사회생, 호위).",
+"zh": "<b>越深越多新花样：</b>回响30起每周第4个词缀，回响41起每周都有精英，回响50起首领词缀：帷幕、回声打击、起死回生和护卫。"
+},
+"<b>Room events on Echo floors:</b> Lightning, Bubble rain and Sunbreak, on about 1 floor in 6. They pay Echo Dust and an Echo piece.": {
+"ko": "<b>에코 층의 방 이벤트:</b> 번개, 거품 비, 햇살이 약 6층에 1번 일어나며, 에코 가루와 에코 장비를 줍니다.",
+"zh": "<b>回响层的房间事件：</b>闪电、泡泡雨和云开日出，大约每6层出现1次，奖励回响之尘和一件回响装备。"
+},
+"<b>+Rain:</b> a toggle on each Echo row adds one more affix to every floor for <b>+20% Echo Dust</b>.": {
+"ko": "<b>+비:</b> 각 에코 줄의 토글을 켜면 모든 층에 속성이 하나 더 붙고 <b>에코 가루 +20%</b>.",
+"zh": "<b>+雨：</b>每行回响上的开关，开启后每层多一个词缀，<b>回响之尘+20%</b>。"
+},
+"<b>Fresh boards</b> past Echo 20, and Green and Orange Echo floors have shorter flood timers, re-measured against real clears.": {
+"ko": "에코 20 이후의 최단 기록 순위는 <b>새로 시작</b>하며, 초록과 주황 에코 층은 실제 클리어 기록에 맞춰 물이 차는 시간이 짧아졌습니다.",
+"zh": "回响20以后的最速榜<b>重新开始</b>；绿色和橙色回响层按真实通关重新测量，水淹时间缩短。"
+},
+"<b>The Snail pet trial</b> now starts the first time you reach the Den, not at the 2nd job. Characters past the Den who never got it get it at their next login.": {
+"ko": "<b>달팽이 펫 체험</b>이 2차 전직이 아니라 토끼굴에 처음 도착할 때 시작됩니다. 토끼굴을 지났는데 받지 못한 캐릭터는 다음 접속 때 받습니다.",
+"zh": "<b>蜗牛宠物试用</b>现在在第一次到达兔窝时开始，而不是二转时。已经过了兔窝却没拿到的角色，下次登录时会获得。"
+},
+"<b>New sounds and light</b> for the free-pet card and banner, the Snail arriving, every Prism facet, each gem action and the Echo doors.": {
+"ko": "무료 펫 카드와 배너, 달팽이 등장, 프리즘 면 하나하나, 보석 작업, 에코 문에 <b>새로운 소리와 빛</b>이 더해졌습니다.",
+"zh": "免费宠物卡片和横幅、蜗牛登场、每一个棱镜刻面、每次宝石操作以及回响之门，都加上了<b>新的音效和光效</b>。"
+},
+"<b>Messages from the developer</b> now show as a banner at the top of the screen, in your language.": {
+"ko": "<b>개발자의 메시지</b>가 화면 위쪽 배너로, 내 언어로 표시됩니다.",
+"zh": "<b>开发者的消息</b>现在会以你的语言显示在屏幕顶部的横幅中。"
+},
+"<b>The Den's portal to the Portal Room</b> no longer stays dark and shut for players who have reached its level.": {
+"ko": "<b>토끼굴에서 포탈의 방으로 가는 포탈</b>이 레벨이 충분한 플레이어에게 어둡게 닫혀 있던 문제를 고쳤습니다.",
+"zh": "<b>兔窝通往传送门大厅的传送门</b>不会再对已达到等级的玩家保持变暗、无法进入。"
+},
+"<b>Very full bags:</b> a bag holding more than a tab's slots could open empty. It now opens and shows everything.": {
+"ko": "<b>가득 찬 가방:</b> 탭 칸 수보다 많은 아이템이 든 가방이 비어 보이던 문제를 고쳤습니다. 이제 모두 표시됩니다.",
+"zh": "<b>超满背包：</b>物品超过标签页格数时，背包可能打开后显示为空。现在会正常显示全部物品。"
+},
+"<a href=\"#nov6\"><span class=\"tag\">New</span> November 6 update →</a>": {
+"ko": "<a href='#nov6'><span class='tag'>신규</span> 11월 6일 업데이트 →</a>",
+"zh": "<a href='#nov6'><span class='tag'>新</span> 11月6日更新 →</a>"
+},
+"<span class=\"dot\" style=\"background:var(--accent)\"></span>Update · Nov 6": {
+"ko": "<span class='dot' style='background:var(--accent)'></span>업데이트 · 11/6",
+"zh": "<span class='dot' style='background:var(--accent)'></span>更新 · 11/6"
+},
+"Update · November 5": {
+"ko": "업데이트 · 11월 5일",
+"zh": "更新 · 11月5日"
 }
 };
