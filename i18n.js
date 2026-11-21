@@ -2359,5 +2359,205 @@ window.ATDFR_I18N = {
 "Update · November 5": {
 "ko": "업데이트 · 11월 5일",
 "zh": "更新 · 11月5日"
+},
+"<span class=\"tag new\">Latest</span> Update · November 19": {
+"ko": "<span class='tag new'>최신</span> 업데이트 · 11월 19일",
+"zh": "<span class='tag new'>最新</span> 更新 · 11月19日"
+},
+"Update · November 6": {
+"ko": "업데이트 · 11월 6일",
+"zh": "更新 · 11月6日"
+},
+"November 19 update": {
+"ko": "11월 19일 업데이트",
+"zh": "11月19日更新"
+},
+"<a href=\"#nov19\"><span class=\"tag\">New</span> November 19 update →</a>": {
+"ko": "<a href='#nov19'><span class='tag'>신규</span> 11월 19일 업데이트 →</a>",
+"zh": "<a href='#nov19'><span class='tag'>新</span> 11月19日更新 →</a>"
+},
+"<span class=\"dot\" style=\"background:var(--accent)\"></span>Update · Nov 19": {
+"ko": "<span class='dot' style='background:var(--accent)'></span>업데이트 · 11/19",
+"zh": "<span class='dot' style='background:var(--accent)'></span>更新 · 11/19"
+},
+"<b>Reflections</b> opens: take your own character into an endless roguelike run and rebuild your skills with Mirror cards that stack. Also <b>Frenzy</b> for fast killers, gems you can farm in Echo, more Prism room from the story, a door straight into the Red Realm, and the Echo rewards you were owed. The earlier notes are still below.": {
+"ko": "<b>물그림자</b>가 열렸습니다. 내 캐릭터 그대로 끝없는 로그라이크 도전에 뛰어들어, 겹쳐 쌓이는 거울 카드로 스킬을 새로 만들어 보세요. 빠르게 사냥하는 분들을 위한 <b>광란</b>, 에코에서 파밍하는 보석, 스토리로 늘어나는 프리즘 칸, 붉은 영역으로 바로 가는 문, 그리고 받지 못했던 에코 보상도 함께 왔습니다. 이전 패치 내용은 아래에 그대로 있습니다.",
+"zh": "<b>倒影</b>开放：带着你自己的角色挑战无尽的Roguelike之旅，用可叠加的镜像（Mirror）卡重塑你的技能。此外还有为快速击杀准备的<b>狂乱</b>、可在回响中刷取的宝石、随剧情增加的棱镜容量、直通红色国度的大门，以及你应得的回响奖励。之前的更新说明仍在下方。"
+},
+"Reflections: a roguelike mode": {
+"ko": "물그림자: 로그라이크 모드",
+"zh": "倒影：Roguelike模式"
+},
+"<b>Come as you are.</b> Step through the new <b>Reflections Portal</b> in the Portal Room. Your level, skills, keys and gear all come with you.": {
+"ko": "<b>있는 그대로 입장.</b> 포탈의 방에 새로 생긴 <b>물그림자 포탈</b>로 들어가세요. 레벨, 스킬, 키 설정, 장비가 모두 그대로 따라옵니다.",
+"zh": "<b>原样出发。</b>走进传送门大厅新增的<b>倒影传送门</b>。你的等级、技能、按键和装备全部原样带入。"
+},
+"<b>Get absurdly strong, fast.</b> Kills fill your run level. Each new run level pauses the room and offers 3 cards: more damage, faster casts, extra projectiles and more. Cards have no cap. Take one again and it goes from Common to Rare to Epic, then stacks extra copies. Cards show the icon of the skill they change.": {
+"ko": "<b>빠르게, 터무니없이 강해지세요.</b> 몬스터를 처치하면 도전 레벨이 오릅니다. 도전 레벨이 오를 때마다 방이 멈추고 카드 3장이 나옵니다: 피해량 증가, 빠른 시전, 추가 투사체 등. 카드에는 상한이 없습니다. 같은 카드를 다시 고르면 일반 → 레어 → 에픽으로 오르고, 그 뒤로는 장수가 쌓입니다. 카드에는 바뀌는 스킬의 아이콘이 표시됩니다.",
+"zh": "<b>迅速变得强到离谱。</b>击杀怪物会提升挑战等级。每升一级，房间都会暂停并给出3张卡：更高伤害、更快施法、额外投射物等等。卡没有上限。再次选择同一张卡会从普通升到稀有再到史诗，之后继续叠加张数。卡上会显示它所改变的技能图标。"
+},
+"<b>Mirror cards change what a skill does.</b> There are 117, for every skill with a button, from your 1st job to your 4th. Every run opens on a Mirror pick for your main attack, and every 3rd run level brings another. Snare Volley can become one <b>Great Arrow</b> through every foe in a line, Tempest Star a <b>Cyclone</b> that circles you, and Elemental Chain a <b>Nova</b> that bursts around you.": {
+"ko": "<b>거울 카드는 스킬의 작동 방식을 바꿉니다.</b> 1차부터 4차까지, 버튼으로 쓰는 모든 스킬에 걸쳐 117장이 있습니다. 모든 도전은 주력 공격의 거울 카드 선택으로 시작하고, 도전 레벨이 3 오를 때마다 한 장씩 더 나옵니다. 스네어 볼리는 한 줄의 적을 모두 꿰뚫는 <b>거대 화살</b>로, 폭풍 표창은 내 주위를 도는 <b>사이클론</b>으로, 엘리멘탈 체인은 내 주위에서 터지는 <b>노바</b>로 바뀔 수 있습니다.",
+"zh": "<b>镜像（Mirror）卡会改变技能的效果。</b>从一转到四转，每个需要按键施放的技能都有，共117张。每轮挑战都以主攻技能的镜像卡选择开始，之后挑战等级每升3级再选一张。陷阱齐射可以变成贯穿一整排敌人的<b>巨箭</b>，暴风飞镖可以变成环绕你的<b>气旋</b>，元素锁链可以变成在你身边爆发的<b>新星</b>。"
+},
+"<b>Stack them.</b> A <b>Mirror</b> card reshapes a skill, one per skill. <b>Mirror+</b> cards add to it and stack on top: Great Arrow with <b>Minelayer</b> also throws 3 traps ahead, and Triple Throw with <b>Ricochet</b> and <b>All In</b> throws extra stars that bounce from foe to foe.": {
+"ko": "<b>겹쳐 쌓으세요.</b> <b>거울</b> 카드는 스킬의 모양을 바꾸며 스킬마다 한 장입니다. <b>거울+</b> 카드는 그 위에 더해지고 계속 겹쳐 쌓입니다: 거대 화살에 <b>지뢰 매설</b>을 더하면 덫 3개를 앞에 함께 던지고, 트리플 스로우에 <b>도탄</b>과 <b>올인</b>을 더하면 적에서 적으로 튀는 표창을 더 많이 던집니다.",
+"zh": "<b>叠加它们。</b><b>镜像（Mirror）</b>卡会重塑一个技能，每个技能一张。<b>镜像+（Mirror+）</b>卡会加在它之上并可继续叠加：巨箭加上<b>布雷手</b>还会向前扔出3个陷阱，三连环光击破加上<b>弹射</b>和<b>孤注一掷</b>会扔出更多在敌人之间弹跳的飞镖。"
+},
+"<b>A key for the run.</b> On PC, a Mirror card for a skill that isn't on your keys puts that skill on a free key until the run ends.": {
+"ko": "<b>도전 동안만 쓰는 키.</b> PC에서 키에 등록되지 않은 스킬의 거울 카드를 고르면, 그 스킬이 도전이 끝날 때까지 빈 키에 등록됩니다.",
+"zh": "<b>本轮专用按键。</b>在PC上，如果选了一个没有设置按键的技能的镜像卡，该技能会被放到一个空闲按键上，直到本轮结束。"
+},
+"<b>Pick your path.</b> Each stretch is a branching map of fights, elites, events, treasure, rests and a Merchant, with a boss at the end. Beat the boss and a harder map opens in the next realm. It only ends when you fall.": {
+"ko": "<b>길은 직접 고르세요.</b> 각 구간은 전투, 엘리트, 이벤트, 보물, 휴식, 상인으로 이루어진 갈림길 지도이고, 끝에는 보스가 있습니다. 보스를 쓰러뜨리면 다음 영역에서 더 어려운 지도가 열립니다. 쓰러질 때까지 끝나지 않습니다.",
+"zh": "<b>自己选择路线。</b>每一段都是一张分岔地图，有战斗、精英、事件、宝藏、休整和商人，终点是首领。击败首领后，下一个国度会开启一张更难的地图。直到你倒下才会结束。"
+},
+"<b>Run potions only.</b> Your bag stays shut in a run. You start with 20 HP and 20 MP run potions and buy more with Wet Paint between rooms. Your HP and MP refill at every room.": {
+"ko": "<b>전용 물약만.</b> 물그림자 안에서는 가방이 잠깁니다. 전용 HP 물약과 MP 물약을 20개씩 들고 시작하며, 방 사이에서 젖은 물감으로 더 살 수 있습니다. 방마다 HP와 MP가 가득 찹니다.",
+"zh": "<b>只能用专属药水。</b>在倒影中背包会锁上。开局自带专属HP和MP药水各20瓶，房间之间可用湿颜料购买更多。每进入一个房间，HP和MP都会回满。"
+},
+"<b>What you keep.</b> When you fall, the run's power is gone and you are back to yourself. Every room you clear banks <b>Reflection XP</b> for the account-wide <b>Reflection tree</b>. Each map's boss pays Pigment and a chance at a Tear, within the weekly cap. Kills in a run give no real EXP or item drops.": {
+"ko": "<b>남는 것.</b> 쓰러지면 이번 도전에서 얻은 힘은 사라지고 원래의 내 캐릭터로 돌아옵니다. 방을 깰 때마다 계정 공용 <b>물그림자 트리</b>에 쓰는 <b>물그림자 경험치</b>가 쌓입니다. 지도마다 보스가 주간 상한 안에서 안료와 눈물 획득 기회를 줍니다. 물그림자 안에서의 처치는 실제 경험치나 아이템을 주지 않습니다.",
+"zh": "<b>能留下什么。</b>倒下后，这一轮获得的力量会消失，你会变回原本的自己。每通关一个房间都会积累<b>倒影经验</b>，用于全账号通用的<b>倒影天赋树</b>。每张地图的首领会在每周上限内给予颜料和获得泪滴的机会。倒影中的击杀不会给予真实经验或物品掉落。"
+},
+"<b>The Reflection tree</b> buys head starts for your next run, and most of its nodes have levels: more run potions at the start (Full Pack), up to 3 run levels ahead (Head Start), faster run XP (Fast Learner), lower Merchant prices (Haggler), stronger run potions (Strong Brew), plus more Wet Paint, extra lives and rerolls.": {
+"ko": "<b>물그림자 트리</b>로 다음 도전을 유리하게 시작할 수 있고, 대부분의 노드에 레벨이 있습니다: 시작 물약 추가(꽉 찬 가방), 최대 3 도전 레벨 앞서 시작(한발 앞서), 도전 경험치 증가(속성 학습), 상인 가격 할인(흥정꾼), 더 강한 전용 물약(진한 물약), 그리고 젖은 물감 추가, 추가 목숨, 다시 뽑기까지.",
+"zh": "<b>倒影天赋树</b>能为下一轮换取开局优势，大多数节点都有等级：开局更多专属药水（满载行囊）、最多领先3个挑战等级开局（先行一步）、更快的挑战经验（速学）、更低的商人价格（砍价高手）、更强的专属药水（浓缩药剂），还有更多湿颜料、额外生命和重抽。"
+},
+"<b>Quit or lost connection?</b> Your next login offers to resume the run.": {
+"ko": "<b>나갔거나 연결이 끊겼나요?</b> 다음 접속 때 이어서 할 수 있습니다.",
+"zh": "<b>退出或掉线了？</b>下次登录时可以继续这一轮。"
+},
+"<b>Who can go:</b> after your 2nd job you get a taste of the Red realm. Restore Red to open the full mode.": {
+"ko": "<b>입장 조건:</b> 2차 전직 후에는 붉은 영역을 맛보기로 즐길 수 있습니다. 빨강을 복원하면 전체 모드가 열립니다.",
+"zh": "<b>谁能进入：</b>二转之后可以体验红色国度的试玩版。恢复红色后开放完整模式。"
+},
+"Frenzy": {
+"ko": "광란",
+"zh": "狂乱"
+},
+"<b>Kill fast, and they come back fast.</b> Kill 10 monsters within 12 seconds and a <b>Frenzy!</b> starts: monsters come back three times as fast. Every kill keeps it going; stop for a few seconds and it fades.": {
+"ko": "<b>빨리 잡으면, 빨리 돌아옵니다.</b> 12초 안에 몬스터 10마리를 처치하면 <b>광란!</b> 상태가 시작되어 몬스터가 3배 빠르게 다시 나타납니다. 처치할 때마다 이어지고, 몇 초 동안 멈추면 사라집니다.",
+"zh": "<b>杀得快，来得也快。</b>12秒内击败10只怪物就会触发<b>狂乱！</b>：怪物以3倍速度复活。每次击杀都会让它持续，停手几秒后就会消退。"
+},
+"It works in every story room, on every Echo floor and in Reflections. Bosses don't count toward it.": {
+"ko": "모든 스토리 방, 모든 에코 층, 물그림자에서 작동합니다. 보스는 처치 수에 들어가지 않습니다.",
+"zh": "在所有剧情房间、所有回响楼层和倒影中都有效。首领不计入击杀数。"
+},
+"Prism room from the story": {
+"ko": "스토리로 늘어나는 프리즘 칸",
+"zh": "随剧情增加的棱镜容量"
+},
+"<b>Every realm you restore opens Prism room.</b> Each piece gets one more facet of room per realm restored, on top of the room from your best Echo. Restore all seven and every piece has 7 more facets to cut. Before, room stayed at 5 until you cleared Echoes.": {
+"ko": "<b>영역을 복원할 때마다 프리즘 칸이 열립니다.</b> 복원한 영역 하나당 모든 장비에 면 1칸이 더해지며, 최고 에코 기록으로 열린 칸에 추가됩니다. 일곱 영역을 모두 복원하면 장비마다 7면을 더 깎을 수 있습니다. 전에는 에코를 깨기 전까지 5칸에 머물렀습니다.",
+"zh": "<b>每恢复一个国度，就开放更多棱镜容量。</b>每恢复一个国度，每件装备就多1个刻面容量，并叠加在最佳回响记录开放的容量之上。七个国度全部恢复后，每件装备可多切7个刻面。以前在通关回响之前，容量一直停在5。"
+},
+"<b>Full room (25 facets)</b> now comes at Echo 65 with all seven realms restored, instead of Echo 100.": {
+"ko": "<b>최대 칸(25면)</b>은 이제 일곱 영역을 모두 복원했을 때 에코 100이 아니라 에코 65에서 열립니다.",
+"zh": "<b>满容量（25个刻面）</b>现在在恢复全部七个国度后于回响65达成，而不是回响100。"
+},
+"The Prism tab, the Forge's <b>?</b> sheet and June's card now tell you what opens your next facet: the next realm to restore, or the next Echo.": {
+"ko": "프리즘 탭, 대장간의 <b>?</b> 안내, 준의 카드가 이제 다음 면을 여는 방법을 알려 줍니다: 다음에 복원할 영역, 또는 다음 에코.",
+"zh": "棱镜标签页、锻造的<b>?</b>说明和琼的卡片现在会告诉你下一个刻面怎么开：恢复下一个国度，或通关下一个回响。"
+},
+"Gems from Echo": {
+"ko": "에코에서 나오는 보석",
+"zh": "回响中的宝石"
+},
+"<b>Echo floors drop gems.</b> Each floor drops its realm's colour (Rubies on Red floors, Emeralds on Green, and so on) at the same rates as the story realms.": {
+"ko": "<b>에코 층에서 보석이 나옵니다.</b> 층마다 그 영역의 색 보석이 스토리 영역과 같은 확률로 떨어집니다(빨강 층은 루비, 초록 층은 에메랄드 등).",
+"zh": "<b>回响楼层会掉落宝石。</b>每层掉落所属国度颜色的宝石（红色楼层掉红宝石，绿色楼层掉祖母绿，依此类推），掉率与剧情国度相同。"
+},
+"<b>Fuse all works on clear gems.</b> It fuses three alike at clarity 0, 1 or 2 and never mixes clarities, so nothing is lost. Gems refined past clarity 2 still stay out.": {
+"ko": "<b>모두 합성이 투명도 있는 보석에도 작동합니다.</b> 투명도 0, 1, 2에서 같은 보석 셋을 합성하며 투명도를 섞지 않으므로 잃는 것이 없습니다. 투명도 2를 넘게 연마한 보석은 여전히 제외됩니다.",
+"zh": "<b>全部合成现在也能用于有净度的宝石。</b>它会把净度0、1或2的三颗相同宝石合成，从不混合不同净度，所以不会有任何损失。打磨到净度2以上的宝石仍然不会被合成。"
+},
+"The single <b>Fuse</b> asks first only when a clearer gem would lose clarity, and says which clarity the new gem keeps.": {
+"ko": "단일 <b>합성</b>은 더 투명한 보석이 투명도를 잃게 될 때만 먼저 묻고, 새 보석이 어떤 투명도를 갖는지 알려 줍니다.",
+"zh": "单次<b>合成</b>只在净度更高的宝石会损失净度时才先询问，并告诉你新宝石保留哪个净度。"
+},
+"Shattering a refined blend pays the clarity bonus once, not once per colour.": {
+"ko": "연마한 혼합 보석을 분쇄하면 투명도 보너스를 색마다가 아니라 한 번만 받습니다.",
+"zh": "粉碎打磨过的融合宝石时，净度加成只给一次，而不是每种颜色各给一次。"
+},
+"Echo: the rewards you were owed": {
+"ko": "에코: 받지 못했던 보상",
+"zh": "回响：补上你应得的奖励"
+},
+"<b>Your weekly Echo reward is claimed for you.</b> Log in after the week turns and it lands on its own: no more digging for the Claim button.": {
+"ko": "<b>주간 에코 보상을 자동으로 받습니다.</b> 주가 바뀐 뒤 접속하면 저절로 들어옵니다. 이제 받기 버튼을 찾을 필요가 없습니다.",
+"zh": "<b>每周回响奖励会自动领取。</b>新的一周开始后登录，奖励会自动到账，不用再去找领取按钮了。"
+},
+"<b>Skipped Echoes pay their Pigment.</b> From Echo 21 a fast clear jumps you ahead, and the Echoes you jumped over never paid their first-clear Pigment. Now they do, once each. If you skipped any before today, you get that Pigment at your next login.": {
+"ko": "<b>건너뛴 에코도 안료를 줍니다.</b> 에코 21부터는 빠르게 깨면 몇 단계를 건너뛰는데, 건너뛴 에코의 첫 클리어 안료는 지급되지 않았습니다. 이제는 각각 한 번씩 지급됩니다. 오늘 이전에 건너뛴 에코가 있다면 다음 접속 때 그 안료를 받습니다.",
+"zh": "<b>跳过的回响也会发放颜料。</b>从回响21起，快速通关会让你跳过几层，而被跳过的回响从未发放首通颜料。现在每层都会补发一次。如果你在今天之前跳过过，下次登录时就会收到这些颜料。"
+},
+"<b>The Last Bloom</b> (the Green Echo boss) brings in her extra moves later: the Tally from Echo 21, the fences and the second Root Run from Echo 31, and the Withering from Echo 41.": {
+"ko": "<b>마지막 꽃</b>(초록 에코 보스)의 추가 패턴이 더 늦게 나옵니다: Tally는 에코 21부터, 울타리와 두 번째 뿌리 돌진은 에코 31부터, 시듦은 에코 41부터.",
+"zh": "<b>最后的花</b>（绿色回响首领）的额外招式现在出现得更晚：Tally从回响21起，围栏和第二次根须突进从回响31起，凋零从回响41起。"
+},
+"<b>A safe landing on every floor.</b> When you arrive, monsters (not bosses) hold still until the screen clears and for 2.5 seconds after. You can't be hit for those 2.5 seconds, and monsters standing where you land are moved away.": {
+"ko": "<b>모든 층에서 안전하게 도착.</b> 도착하면 화면이 밝아질 때까지, 그리고 그 뒤 2.5초 동안 몬스터(보스 제외)가 멈춰 있습니다. 그 2.5초 동안은 피격되지 않으며, 도착 지점에 서 있던 몬스터는 멀리 옮겨집니다.",
+"zh": "<b>每层都能安全落地。</b>到达时，怪物（首领除外）会静止不动，直到画面亮起后再持续2.5秒。这2.5秒内你不会被击中，站在你落点上的怪物也会被移开。"
+},
+"<b>Two doors:</b> the Portal Room's <b>Echo Portal</b> opens the Echo ladder, and the new <b>Reflections Portal</b> opens Reflections.": {
+"ko": "<b>문이 둘로:</b> 포탈의 방의 <b>에코 포탈</b>은 에코 창을, 새 <b>물그림자 포탈</b>은 물그림자를 엽니다.",
+"zh": "<b>两扇门：</b>传送门大厅的<b>回响传送门</b>打开回响窗口，新的<b>倒影传送门</b>打开倒影。"
+},
+"New characters": {
+"ko": "새 캐릭터",
+"zh": "新角色"
+},
+"<b>Straight into the Red Realm.</b> When your 2nd job opens, its sheet has an <b>Enter the Red Realm</b> button that takes you to the first Red room. <b>Got it</b> still opens your Skills.": {
+"ko": "<b>붉은 영역으로 바로.</b> 2차 전직이 열리면 안내 창에 첫 번째 빨강 방으로 바로 가는 <b>붉은 영역으로 입장</b> 버튼이 생깁니다. <b>알겠어요</b>는 전처럼 스킬 창을 엽니다.",
+"zh": "<b>直通红色国度。</b>二转开启时，说明卡上会有<b>进入红色国度</b>按钮，直接带你去红色的第一个房间。<b>知道了</b>仍会打开技能窗口。"
+},
+"<b>MCF mission, what next:</b> when you finish \"Defeat 20 monsters\", a line tells you your World Coins are in the Event menu and how many monsters are left until your 2nd job.": {
+"ko": "<b>MCF 미션 이후:</b> \"몬스터 20마리 처치하기\"를 마치면 월드 코인은 이벤트 메뉴에 있다는 것과 2차 전직까지 남은 몬스터 수를 알려 줍니다.",
+"zh": "<b>MCF任务之后：</b>完成“击败 20 只怪物”后，会有一行提示告诉你世界币在活动菜单里，以及离二转还剩多少只怪物。"
+},
+"The \"How was that?\" card for the 2nd job now waits until you have restored your first room.": {
+"ko": "2차 전직의 \"어땠나요?\" 카드는 이제 첫 번째 방을 복원한 뒤에 나옵니다.",
+"zh": "二转的“感觉怎么样？”卡片现在会等到你恢复第一个房间之后再出现。"
+},
+"Today": {
+"ko": "오늘",
+"zh": "今天"
+},
+"When you log in, a line tells you what is waiting for you: the twins' gift in the Den, the bosses that still owe you a Legendary chest today, and your first Echo clear's bonus Echo Dust.": {
+"ko": "접속하면 기다리고 있는 것을 한 줄로 알려 줍니다: 토끼굴의 쌍둥이 선물, 오늘 아직 레전드리 상자를 주지 않은 보스, 첫 에코 클리어의 보너스 에코 가루.",
+"zh": "登录时会有一行提示告诉你还有什么在等你：兔窝里双胞胎的礼物、今天还欠你传说宝箱的首领，以及首次通关回响的额外回响之尘。"
+},
+"It shows for characters with their 2nd job, and only while something is unclaimed.": {
+"ko": "2차 전직을 한 캐릭터에게, 받지 않은 것이 있을 때만 보입니다.",
+"zh": "仅对完成二转的角色显示，并且只在还有未领取的东西时出现。"
+},
+"Story and smaller things": {
+"ko": "스토리와 그 밖의 변경",
+"zh": "剧情与其他改动"
+},
+"<b>Your 3rd job opens on its own.</b> Reach Lv60 with the Yellow realm restored and the job opens, no trip to Tux needed. The free Pet Coupon from the MCF event still comes with it (until Nov 25, 10:59 KST).": {
+"ko": "<b>3차 전직이 저절로 열립니다.</b> 노랑 영역을 복원하고 Lv60에 도달하면 턱스를 찾아가지 않아도 전직이 열립니다. MCF 이벤트의 무료 펫 쿠폰도 그대로 함께 들어옵니다(11월 25일 10:59 KST까지).",
+"zh": "<b>三转会自动开启。</b>恢复黄色国度并达到Lv60后即可转职，不用再去找塔克斯。MCF活动的免费宠物券仍会一同发放（截至11月25日 10:59 韩国时间）。"
+},
+"<b>The Wraith's Drain</b> now leaves you at 25% of your HP instead of 10%.": {
+"ko": "<b>망령의 흡수</b>가 이제 HP를 10%가 아니라 25%까지만 깎습니다.",
+"zh": "<b>怨灵的吸取</b>现在会让你保留25%的HP，而不是10%。"
+},
+"<b>Old realms at a high level</b> now pay what Orange's monsters really pay after its balance pass. Before, they paid a little more than Orange itself.": {
+"ko": "<b>높은 레벨로 예전 영역을 사냥하면</b> 이제 밸런스 조정 이후 주황 몬스터가 실제로 주는 만큼 보상을 받습니다. 전에는 주황보다 조금 더 많이 받았습니다.",
+"zh": "<b>高等级刷旧国度</b>现在的收益与平衡调整后橙色国度怪物的实际收益一致。以前比橙色国度本身还略高一些。"
+},
+"<b>Monster info card:</b> on PC it now opens when you click a monster, like a tap on phones, instead of when your pointer rests on one.": {
+"ko": "<b>몬스터 정보 카드:</b> 이제 PC에서도 휴대폰에서 탭하듯 몬스터를 클릭하면 열립니다. 마우스를 올려 두기만 해서는 열리지 않습니다.",
+"zh": "<b>怪物信息卡：</b>PC端现在和手机点按一样，点击怪物才会打开，而不是鼠标停在怪物上就打开。"
+},
+"<b>Dismantling before the Forge is lit</b> now tells you why: beat Red's boss to light the Forge first. Before, tapping gear in Dismantle mode seemed to do nothing on phones. Thanks for the report!": {
+"ko": "<b>대장간에 불을 붙이기 전에 분해하면</b> 이제 이유를 알려 줍니다: 먼저 빨강의 보스를 쓰러뜨려 대장간에 불을 붙이세요. 전에는 휴대폰에서 분해 모드로 장비를 탭해도 아무 일도 일어나지 않는 것처럼 보였습니다. 제보해 주셔서 감사합니다!",
+"zh": "<b>在锻造点燃前分解</b>现在会告诉你原因：先击败红色国度的首领来点燃锻造。以前在手机上用分解模式点装备看起来毫无反应。感谢反馈！"
+},
+"Room event lines (like the bubble shower's count) no longer flicker against the meter's caption.": {
+"ko": "방 이벤트 문구(거품 소나기의 개수 등)가 더 이상 게이지 문구와 번갈아 깜빡이지 않습니다.",
+"zh": "房间事件的提示（例如泡泡雨的计数）不再与进度条的说明文字来回闪烁。"
 }
 };
