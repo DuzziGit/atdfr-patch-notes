@@ -2392,9 +2392,9 @@ window.ATDFR_I18N = {
 "ko": "<b>있는 그대로 입장.</b> 포탈의 방에 새로 생긴 <b>물그림자 포탈</b>로 들어가세요. 레벨, 스킬, 키 설정, 장비가 모두 그대로 따라옵니다.",
 "zh": "<b>原样出发。</b>走进传送门大厅新增的<b>倒影传送门</b>。你的等级、技能、按键和装备全部原样带入。"
 },
-"<b>Get absurdly strong, fast.</b> Kills fill your run level. Each new run level pauses the room and offers 3 cards: more damage, faster casts, extra projectiles and more. Cards have no cap. Take one again and it goes from Common to Rare to Epic, then stacks extra copies. Cards show the icon of the skill they change.": {
-"ko": "<b>빠르게, 터무니없이 강해지세요.</b> 몬스터를 처치하면 도전 레벨이 오릅니다. 도전 레벨이 오를 때마다 방이 멈추고 카드 3장이 나옵니다: 피해량 증가, 빠른 시전, 추가 투사체 등. 카드에는 상한이 없습니다. 같은 카드를 다시 고르면 일반 → 레어 → 에픽으로 오르고, 그 뒤로는 장수가 쌓입니다. 카드에는 바뀌는 스킬의 아이콘이 표시됩니다.",
-"zh": "<b>迅速变得强到离谱。</b>击杀怪物会提升挑战等级。每升一级，房间都会暂停并给出3张卡：更高伤害、更快施法、额外投射物等等。卡没有上限。再次选择同一张卡会从普通升到稀有再到史诗，之后继续叠加张数。卡上会显示它所改变的技能图标。"
+"<b>Get absurdly strong, fast.</b> Kills fill your run level. Each new run level pauses the room and offers 3 cards: more damage, faster casts, extra projectiles and more. Cards have no cap. Take one again and it goes from Common to Rare to Epic, then stacks extra copies. Every card has an icon: the skill it changes, or its own art.": {
+"ko": "<b>빠르게, 터무니없이 강해지세요.</b> 몬스터를 처치하면 도전 레벨이 오릅니다. 도전 레벨이 오를 때마다 방이 멈추고 카드 3장이 나옵니다: 피해량 증가, 빠른 시전, 추가 투사체 등. 카드에는 상한이 없습니다. 같은 카드를 다시 고르면 일반 → 레어 → 에픽으로 오르고, 그 뒤로는 장수가 쌓입니다. 모든 카드에 아이콘이 있습니다: 바뀌는 스킬의 아이콘이나 카드만의 그림입니다.",
+"zh": "<b>迅速变得强到离谱。</b>击杀怪物会提升挑战等级。每升一级，房间都会暂停并给出3张卡：更高伤害、更快施法、额外投射物等等。卡没有上限。再次选择同一张卡会从普通升到稀有再到史诗，之后继续叠加张数。每张卡都有图标：它所改变的技能，或它自己的图案。"
 },
 "<b>Mirror cards change what a skill does.</b> There are 117, for every skill with a button, from your 1st job to your 4th. Every run opens on a Mirror pick for your main attack, and every 3rd run level brings another. Snare Volley can become one <b>Great Arrow</b> through every foe in a line, Tempest Star a <b>Cyclone</b> that circles you, and Elemental Chain a <b>Nova</b> that bursts around you.": {
 "ko": "<b>거울 카드는 스킬의 작동 방식을 바꿉니다.</b> 1차부터 4차까지, 버튼으로 쓰는 모든 스킬에 걸쳐 117장이 있습니다. 모든 도전은 주력 공격의 거울 카드 선택으로 시작하고, 도전 레벨이 3 오를 때마다 한 장씩 더 나옵니다. 스네어 볼리는 한 줄의 적을 모두 꿰뚫는 <b>거대 화살</b>로, 폭풍 표창은 내 주위를 도는 <b>사이클론</b>으로, 엘리멘탈 체인은 내 주위에서 터지는 <b>노바</b>로 바뀔 수 있습니다.",
@@ -2411,6 +2411,18 @@ window.ATDFR_I18N = {
 "<b>Pick your path.</b> Each stretch is a branching map of fights, elites, events, treasure, rests and a Merchant, with a boss at the end. Beat the boss and a harder map opens in the next realm. It only ends when you fall.": {
 "ko": "<b>길은 직접 고르세요.</b> 각 구간은 전투, 엘리트, 이벤트, 보물, 휴식, 상인으로 이루어진 갈림길 지도이고, 끝에는 보스가 있습니다. 보스를 쓰러뜨리면 다음 영역에서 더 어려운 지도가 열립니다. 쓰러질 때까지 끝나지 않습니다.",
 "zh": "<b>自己选择路线。</b>每一段都是一张分岔地图，有战斗、精英、事件、宝藏、休整和商人，终点是首领。击败首领后，下一个国度会开启一张更难的地图。直到你倒下才会结束。"
+},
+"<b>Every fight shows its prize.</b> The map marks what each fight pays: a Rare or better card, a Mirror card, Wet Paint, potions or run XP. Clear the room and break its chest to collect it.": {
+"ko": "<b>전투마다 보상이 보입니다.</b> 지도에 전투마다 받을 보상이 표시됩니다: 레어 이상 카드, 거울 카드, 젖은 물감, 물약, 도전 경험치 중 하나입니다. 방을 정리한 뒤 상자를 부수면 받을 수 있습니다.",
+"zh": "<b>每场战斗都标明奖励。</b>地图上会标出每场战斗的奖励：一张稀有或更高的卡、一张镜像卡、湿颜料、药水或挑战经验。清完房间后打破宝箱即可领取。"
+},
+"<b>Events and Elites.</b> An event room plays one of the room events (the <b>Bandit</b>, <b>Sunbreak</b>, <b>Lightning</b>, the <b>Bubble Shower</b> or the <b>Swarm</b>) and pays its own prize. In an elite room, one monster becomes a big gold <b>Elite</b>: beat it for a Mirror pick.": {
+"ko": "<b>이벤트와 엘리트.</b> 이벤트 방에서는 방 이벤트 중 하나(<b>산적</b>, <b>햇살</b>, <b>번개</b>, <b>거품 비</b>, <b>몬스터 떼</b>)가 열리고, 이벤트마다 보상이 따로 있습니다. 엘리트 방에서는 몬스터 하나가 황금빛 거대 <b>엘리트</b>가 됩니다. 쓰러뜨리면 거울 카드를 고를 수 있습니다.",
+"zh": "<b>活动与精英。</b>活动房间会触发一个房间活动（<b>强盗</b>、<b>云开日出</b>、<b>闪电</b>、<b>泡泡雨</b>或<b>怪潮</b>），各有专属奖励。精英房间里会有一只怪物变成金色的巨型<b>精英</b>：击败它即可选择一张镜像卡。"
+},
+"<b>Leaderboard.</b> The <b>Rankings</b> window has a <b>Reflections</b> tab: how many rooms deep you got (the faster run wins a tie), this week and all time, for all classes or one class at a time. Your rank shows on the card at the end of a run. The top 3 of every board, Echo boards included, now stand on a podium as their own characters.": {
+"ko": "<b>랭킹.</b> <b>랭킹</b> 창에 <b>물그림자</b> 탭이 생겼습니다. 몇 개의 방을 돌파했는지로 순위를 매기며(같으면 더 빠른 도전이 앞섭니다), 이번 주와 전체 기간, 모든 직업 또는 직업별로 볼 수 있습니다. 도전이 끝나면 결과 카드에 내 순위가 표시됩니다. 에코를 포함한 모든 랭킹의 1~3위는 이제 자기 캐릭터 모습으로 시상대에 섭니다.",
+"zh": "<b>排行榜。</b><b>排行榜</b>窗口新增<b>倒影</b>分页：按深入的房间数排名（相同时用时更短者胜），分本周和全部时间，可看所有职业或单个职业。挑战结束时的结算卡上会显示你的排名。包括回响在内，每个榜单的前三名现在都会以自己的角色形象站上领奖台。"
 },
 "<b>Run potions only.</b> Your bag stays shut in a run. You start with 20 HP and 20 MP run potions and buy more with Wet Paint between rooms. Your HP and MP refill at every room.": {
 "ko": "<b>전용 물약만.</b> 물그림자 안에서는 가방이 잠깁니다. 전용 HP 물약과 MP 물약을 20개씩 들고 시작하며, 방 사이에서 젖은 물감으로 더 살 수 있습니다. 방마다 HP와 MP가 가득 찹니다.",
